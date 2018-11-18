@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONBOXApp", "ONBOXApp\ONBOXApp.csproj", "{59DC5911-8879-4F59-86E0-7499B48BB7A5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OnboxSetup", "OnboxSetup\OnboxSetup.vdproj", "{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug2016|x64 = Debug2016|x64
+		Debug2017|x64 = Debug2017|x64
+		Debug2018|x64 = Debug2018|x64
+		Debug2019|x64 = Debug2019|x64
+		Release|x64 = Release|x64
+		Release2016|x64 = Release2016|x64
+		Release2017|x64 = Release2017|x64
+		Release2018|x64 = Release2018|x64
+		Release2019|x64 = Release2019|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug|x64.ActiveCfg = Debug2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug|x64.Build.0 = Debug2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2016|x64.ActiveCfg = Debug2016|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2016|x64.Build.0 = Debug2016|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2017|x64.ActiveCfg = Debug2017|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2017|x64.Build.0 = Debug2017|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2018|x64.ActiveCfg = Debug2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2018|x64.Build.0 = Debug2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2019|x64.ActiveCfg = Debug2019|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2019|x64.Build.0 = Debug2019|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release|x64.ActiveCfg = Release2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release|x64.Build.0 = Release2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2016|x64.ActiveCfg = Release2016|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2016|x64.Build.0 = Release2016|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2017|x64.ActiveCfg = Release2017|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2017|x64.Build.0 = Release2017|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2018|x64.ActiveCfg = Release2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2018|x64.Build.0 = Release2018|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2019|x64.ActiveCfg = Release2019|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2019|x64.Build.0 = Release2019|x64
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2016|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2017|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2018|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2019|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release|x64.ActiveCfg = Release
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2016|x64.ActiveCfg = Release
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2017|x64.ActiveCfg = Release
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2018|x64.ActiveCfg = Release
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2019|x64.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {050416B8-001C-4CA7-A170-C073760362D7}
+	EndGlobalSection
+EndGlobal
