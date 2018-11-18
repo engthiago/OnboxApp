@@ -1,0 +1,20 @@
+ONBOX APP BETA 0.6.0.5 para Revit 2018
+
+Muito obrigado pelo interesse em nosso aplicativo. Queremos proporcionar um software extremamente estável para a comunidade utilizar no futuro, por isso, iniciativas para testes de versões beta como esta são muito úteis.
+Infelizmente, "Versão Beta" também significa que o software foi pouco testado em ambiente profissional, portanto é recomendável fazer cópias de segurança dos projetos testados com este plugin. A ONBOX se isenta de quaisquer danos causados pelo uso direto ou indireto deste produto.
+Erros, bugs e alguns problemas conhecidos podem ocorrer, todos estão sendo verificados e serão corrigidos o quanto antes:
+
+Geral:
+- Falta de “barra de carregamento” para processos mais demorados.
+- Problemas com união de elementos com área de perfil bastante pequena, por exemplo, vigas com perfil I em união com paredes dão erro de contato, o que torna a união impossível.
+
+"Re-numeração de Vagas de estacionamento":
+- Resultados imprevisíveis principalmente quando as vagas forem em ângulo ou as vagas estiverem bastante próximas umas das outras.
+
+"Pilares por CAD":
+- Falta de checagem de interferência com pilares já existentes ou linhas de CAD duplicadas, em ambos os casos o Revit retornará um aviso.
+
+“Vigas por paredes”:
+- No caso incomum de paredes estruturais com vigas, se estas estiverem totalmente dentro da parede o Revit retornará um aviso.
+
+Quaisquer erro ou comportamento irregular do aplicativo pode ser reportado para que se possa reproduzir e resolver o problema o quanto antes. Novamente, obrigado pelo seu interesse e bons projetos!
