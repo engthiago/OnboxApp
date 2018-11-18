@@ -1,0 +1,74 @@
+﻿<Window x:Name="BeamsEntireBuildingWindow" x:Class="ONBOXAppl.BeamsFromEntireBuildingUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.BeamsForBuilding_Title}"
+        Width="357.634" SizeToContent="Height" ResizeMode="NoResize" Loaded="BeamsEntireBuildingWindow_Loaded" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ONBOXAppl;component/Styles/Revit.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel>
+                <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_ChooseBeamFamily}"/>
+                <ComboBox x:Name="comboFamily" VerticalAlignment="Top" Height="52" MinHeight="52"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_BeamTypeDimensions}"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_Width}" HorizontalAlignment="Right"/>
+                    <TextBox x:Name="textWidth" Height="20" MinWidth="60" MaxHeight="60" HorizontalAlignment="Right" TextAlignment="Right"/>
+                    <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_Height}" HorizontalAlignment="Right"/>
+                    <TextBox x:Name="textHeight" Height="20" MinWidth="60" MaxHeight="60" HorizontalAlignment="Right" TextAlignment="Right"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <StackPanel Margin="0,10,0,0">
+                    <StackPanel x:Name="StackLink">
+                        <CheckBox x:Name="checkIsLinked" Content="{x:Static p:WindowLanguage.BeamsForBuilding_LinkedFiles}" Margin="0,10,0,0" Click="checkIsLinked_Click"/>
+                        <DataGrid x:Name="gridLinkedFiles" MinHeight="80" MaxHeight="80" Margin="0,10,0,0" SelectionChanged="gridLinkedFiles_SelectionChanged"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_ChooseLevelsToBeRenumbered}" />
+                <DataGrid x:Name="gridLevel" MinHeight="120" MaxHeight="120" MouseRightButtonDown="gridLevel_MouseRightButtonDown"/>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0">
+                <StackPanel>
+                    <GroupBox Header="{x:Static p:WindowLanguage.BeamsForBuilding_ChooseLevelsToBeRenumbered}">
+                        <StackPanel Margin="5,10,5,5">
+                            <CheckBox x:Name="checkIntermediateLevels" Content="{x:Static p:WindowLanguage.BeamsForBuilding_CreateBeamsOnIntermediateLevels}" Margin="5"/>
+                            <DockPanel  Margin="5">
+                                <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_StandardLevels}" />
+                                <Button x:Name="btnLevels" Content="..." Width="30" HorizontalAlignment="Right" Click="btnLevels_Click"/>
+                            </DockPanel>
+                            <CheckBox x:Name="checkGroupCopy" Content="{x:Static p:WindowLanguage.BeamsForBuilding_IgnoreStandardLevels}" Margin="5"/>
+
+
+                            <DockPanel Margin="5">
+                                <Label Content="{x:Static p:WindowLanguage.BeamsForBuilding_IgnoreWallsWidthLessThan}"/>
+                                <TextBox x:Name="textMinWallWidth" Height="20" HorizontalAlignment="Right" Width="40" TextAlignment="Right"/>
+                            </DockPanel>
+                            <DockPanel Margin="5">
+                                <CheckBox x:Name="checkJoinBeams" Content="{x:Static p:WindowLanguage.BeamsForBuilding_TryToJoin}" />
+                            </DockPanel>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,5">
+                <DockPanel>
+                    <Button x:Name="btnOK" Width="80" Height="23" HorizontalAlignment="Right" Content="{x:Static p:WindowLanguage.Common_OK}" Click="btnOK_Click"/>
+                </DockPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

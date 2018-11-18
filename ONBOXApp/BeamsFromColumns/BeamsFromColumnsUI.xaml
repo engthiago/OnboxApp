@@ -1,0 +1,71 @@
+﻿<Window x:Name="BeamFromColumnsWindow" x:Class="ONBOXAppl.BeamsFromColumnsUI"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:p="clr-namespace:ONBOXAppl.Properties"
+      Icon="/ONBOXAppl;component/Resources/onBox32.png"
+      mc:Ignorable="d"
+        Title="{x:Static p:WindowLanguage.BeamsFromColumns_Title}"
+        Width="280" MinWidth="230" MinHeight="150" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SnapsToDevicePixels="True" Loaded="BeamFromColumnsWindow_Loaded" Topmost="True" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Closed="BeamFromColumnsWindow_Closed" SizeToContent="Height">
+
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="{x:Static p:WindowLanguage.BeamsFromColumns_ChooseBeamFamily}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="146"/>
+        <ComboBox x:Name="comboFamily" VerticalAlignment="Top" Height="52" Margin="10,41,10,0" SelectionChanged="comboFamily_SelectionChanged"/>
+        <Button x:Name="btnReload" Margin="0,11,10,0" VerticalAlignment="Top" Height="23" Click="btnReload_Click" Background="#FFDDDDDD" HorizontalAlignment="Right" Width="24">
+            <Grid Height="16" Width="16">
+                <Grid.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="/ONBOXAppl;component/Resources/Reload.png"/>
+                </Grid.Background>
+            </Grid>
+        </Button>
+        <StackPanel Margin="10,5,10,40" Grid.Row="1">
+            <Expander x:Name="expMoreOptions" Header="{x:Static p:WindowLanguage.BeamsFromColumns_MoreOptions}">
+                <StackPanel Margin="0,10">
+                    <GroupBox Header="{x:Static p:WindowLanguage.BeamsFromColumns_Width}">
+                        <StackPanel Margin="5">
+                            <ComboBox x:Name="comboBeamWidth" SelectedIndex="0" SelectionChanged="comboBeamWidth_SelectionChanged">
+                                <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromColumns_FirstSelectedColumn}"/>
+                                <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromColumns_SecondSelectedColumn}"/>
+                                <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromColumns_FixedWidth}"/>
+                            </ComboBox>
+                            <DockPanel Margin="0,10,0,0">
+                                <TextBox x:Name="txtBeamWidth" Text="" Width="50" HorizontalAlignment="Right" MaxLength="2" MaxLines="1" TextChanged="Validate_TextChanged" IsEnabled="False" HorizontalContentAlignment="Right"/>
+                            </DockPanel>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Header="{x:Static p:WindowLanguage.BeamsFromColumns_Height}">
+                        <StackPanel Margin="5">
+                            <ComboBox x:Name="comboBeamHeight" SelectedIndex="0" SelectionChanged="comboBeamHeight_SelectionChanged">
+                                <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromColumns_FixedHeight}"/>
+                                <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromColumns_SpanDividedBy}"/>
+                            </ComboBox>
+                            <DockPanel Margin="0,10,0,0">
+                                <TextBox x:Name="txtBeamHeight" Text="60" Width="50" HorizontalAlignment="Right" MaxLength="3" MaxLines="1" TextChanged="Validate_TextChanged" HorizontalContentAlignment="Right"/>
+                            </DockPanel>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+        <Button x:Name="btnCreate" Content="{x:Static p:WindowLanguage.BeamsFromColumns_Create}" Margin="10,0,10,10" Click="btnCreate_Click" VerticalAlignment="Bottom" Grid.Row="1" Height="20"/>
+        <CheckBox x:Name="checkChain" Content="{x:Static p:WindowLanguage.BeamsFromColumns_Chain}" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Height="16" Width="68" IsChecked="True"/>
+        <Button x:Name="btnLoadFamily" HorizontalAlignment="Right" Margin="0,11,39,0" VerticalAlignment="Top" Width="24" Height="23" Click="btnLoadFamily_Click" BorderBrush="#FF707070">
+            <StackPanel Height="16" Width="16">
+                <StackPanel.Background>
+                    <ImageBrush Stretch= "Uniform" ImageSource="/ONBOXAppl;component/Resources/LoadFamily.png" />
+                </StackPanel.Background>
+            </StackPanel>
+        </Button>
+
+
+
+    </Grid>
+</Window>

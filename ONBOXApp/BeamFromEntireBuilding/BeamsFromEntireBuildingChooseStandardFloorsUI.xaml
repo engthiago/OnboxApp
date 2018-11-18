@@ -1,0 +1,46 @@
+﻿<Window x:Name="BeamsEntireBuildingWindow" x:Class="ONBOXAppl.BeamsFromEntireBuildingChooseStandardFloorsUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_Title}" Width="424" ResizeMode="NoResize" SizeToContent="Height" Loaded="BeamsEntireBuildingWindow_Loaded" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ONBOXAppl;component/Styles/Revit.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="267*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10" Grid.RowSpan="2">
+            <StackPanel>
+                <GroupBox Header="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_ChooseStandardFloors}">
+                    <StackPanel>
+                        <StackPanel Margin="0,10,0,0">
+                            <DockPanel>
+                                <RadioButton x:Name="radioPickStandardLevelsByName" Content="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_LevelsThatContainsName}" Margin="0,0,10,0" GroupName="LevelsGroup" Click="radioPickStandardLevelsByName_Click" IsChecked="True"/>
+                                <TextBox x:Name="textStandardLevelName" TextAlignment="Right" Text="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_Standard}"/>
+                            </DockPanel>
+                            <StackPanel Margin="10,5,0,0">
+                                <CheckBox x:Name="checkIsCaseSensitive" Content="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_MatchCase}" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,10,0,0">
+                            <RadioButton x:Name="radioPickStandardLevels" Content="{x:Static p:WindowLanguage.BeamsForBuildingLevelOptions_ManuallyPickStandardFloors}" GroupName="LevelsGroup" Click="radioPickStandardLevels_Click"/>
+                            <DataGrid x:Name="gridLevel" MinHeight="200" MouseRightButtonDown="gridLevel_MouseRightButtonDown"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,5">
+                <Button x:Name="btnOK" Content="{x:Static p:WindowLanguage.Common_OK}" HorizontalAlignment="Right" Width="90" Height="23" Click="btnOK_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

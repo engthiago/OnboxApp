@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<RevitAddIns>
+
+  <AddIn Type="Application">
+
+    <Name>ONBOX Application</Name>
+
+    <Assembly>"ONBOX/ONBOXAppl.dll"</Assembly>
+
+    <AddInId>33DC8041-8285-4A01-B0A3-63DCC326A4C9</AddInId>
+
+    <FullClassName>ONBOXAppl.ONBOXApplication</FullClassName>
+
+    <VendorId>OBOX</VendorId>
+
+    <VendorDescription>ONBOX Design, http:http://www.onboxdesign.com.br</VendorDescription>
+
+  </AddIn>
+
+</RevitAddIns>

@@ -1,0 +1,95 @@
+﻿<Window x:Name="beamsFromWallsWindow" x:Class="ONBOXAppl.BeamsFromWallsUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.BeamsFromWalls_Title}" 
+        Height="Auto" Width="Auto" 
+        SizeToContent="WidthAndHeight"
+        MinWidth="250" MinHeight="267" ResizeMode="NoResize" Topmost="True" Loaded="beamsFromWallsWindow_Loaded" Closed="beamsFromWallsWindow_Closed">
+
+    <StackPanel>
+        <StackPanel Margin="10,10,10,0">
+            <Grid>
+                <GroupBox Margin="0,10,0,0">
+                    <DockPanel>
+                        <ComboBox x:Name="comboFamily" VerticalAlignment="Top" Height="52" Margin="10,30,10,10"/>
+                    </DockPanel>
+                </GroupBox>
+                <Button x:Name="btnReload" Margin="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="23" Width="23" Click="btnReload_Click">
+                    <StackPanel Height="16" Width="16">
+                        <StackPanel.Background>
+                            <ImageBrush Stretch= "Uniform" ImageSource="/ONBOXAppl;component/Resources/Reload.png" />
+                        </StackPanel.Background>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="btnLoadFamily"  HorizontalAlignment="Left" Margin="38,0,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="btnLoadFamily_Click">
+                    <StackPanel Height="16" Width="16">
+                        <StackPanel.Background>
+                            <ImageBrush Stretch= "Uniform" ImageSource="/ONBOXAppl;component/Resources/LoadFamily.png" />
+                        </StackPanel.Background>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Expander Header="{x:Static p:WindowLanguage.BeamsFromWalls_Position}">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Margin="10">
+                            <CheckBox x:Name="checkUpperBeam" Content="{x:Static p:WindowLanguage.BeamsFromWalls_UpperBeam}" IsChecked="True" Click="checkUpperBeam_Click"/>
+                            <CheckBox x:Name="checkInvertedUpperBeam" Margin="10,5,0,0" Content="{x:Static p:WindowLanguage.BeamsFromWalls_Inverted}" />
+                        </StackPanel>
+                        <StackPanel Margin="10">
+                            <CheckBox x:Name="checkLowerBeam" Content="{x:Static p:WindowLanguage.BeamsFromWalls_LowerBeam}" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+            <Expander Header="{x:Static p:WindowLanguage.BeamsFromWalls_Dimensions}">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,10,0,0">
+                    <StackPanel>
+                        <GroupBox Header="{x:Static p:WindowLanguage.BeamsFromWalls_Height}" Margin="0,0,1,0">
+                            <StackPanel Margin="5">
+                                <ComboBox x:Name="comboBeamHeight" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="comboBeamHeight_SelectionChanged">
+                                    <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromWalls_FixedHeight}"/>
+                                    <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromWalls_SpanDividedBy}"/>
+                                    <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromWalls_ToTheHighestCasing}"/>
+                                </ComboBox>
+                                <DockPanel Margin="0,5,0,0" HorizontalAlignment="Right" MinWidth="30">
+                                    <TextBox x:Name="textHeight" Text="60" TextAlignment="Right"/>
+                                </DockPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <GroupBox Header="{x:Static p:WindowLanguage.BeamsForBuilding_Width}" Margin="1,0,0,0">
+                            <StackPanel Margin="5">
+                                <ComboBox x:Name="comboBeamWidth" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="comboBeamWidth_SelectionChanged">
+                                    <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromWalls_WallWidthAddedTo}" />
+                                    <ComboBoxItem Content="{x:Static p:WindowLanguage.BeamsFromWalls_FixedWidth}"/>
+                                </ComboBox>
+                                <DockPanel Margin="0,5,0,0" HorizontalAlignment="Right">
+                                    <TextBox x:Name="textWidth" MinWidth="30" Text="0" TextAlignment="Right"/>
+                                </DockPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+            <Expander Header="{x:Static p:WindowLanguage.BeamsFromWalls_MoreOptions}">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="10">
+                        <CheckBox x:Name="checkJoin" Content="{x:Static p:WindowLanguage.BeamsFromWalls_JoinWithWalls}" IsChecked="True"/>
+                    </StackPanel>
+                    <StackPanel Margin="10">
+                        <CheckBox x:Name="checkLinks" Content="{x:Static p:WindowLanguage.BeamsFromWalls_Links}" Click="checkLinks_Click" />
+                        <!--<CheckBox x:Name="checkSloped" Margin ="0,5,0,0" Content="Seguir inclinações" />-->
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+        <StackPanel Margin="10,10,10,20">
+            <Button x:Name="btnCreate" Content="{x:Static p:WindowLanguage.BeamsFromWalls_Create}" Click="btnCreate_Click"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>

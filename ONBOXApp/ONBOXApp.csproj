@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59DC5911-8879-4F59-86E0-7499B48BB7A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ONBOXAppl</RootNamespace>
+    <AssemblyName>ONBOXAppl</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2016|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug2016\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2016</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2016|x64'">
+    <OutputPath>bin\x64\Release2016\</OutputPath>
+    <DefineConstants>TRACE;R2016</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2017|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug2017\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2017</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2017|x64'">
+    <OutputPath>bin\x64\Release2017\</OutputPath>
+    <DefineConstants>TRACE;R2017</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2018|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug2018\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2018</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2019|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <OutputPath>bin\x64\Debug2019\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2019</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2018|x64'">
+    <OutputPath>bin\x64\Release2018\</OutputPath>
+    <DefineConstants>TRACE;R2018</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2019|x64'">
+    <OutputPath>bin\x64\Release2019\</OutputPath>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <DefineConstants>TRACE;R2019</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Debug2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Release2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Release2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Release2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPI" Condition="'$(Configuration)' == 'Release2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Debug2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Release2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Release2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Release2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI" Condition="'$(Configuration)' == 'Release2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Debug2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Debug2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Debug2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Debug2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Release2016'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2016\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Release2017'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2017\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Release2018'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2018\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC" Condition="'$(Configuration)' == 'Release2019'">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Autodesk\Revit 2019\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs" />
+    <Compile Include="AboutUI.xaml.cs">
+      <DependentUpon>AboutUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElmentsJoin\ElementJoinSelect.cs" />
+    <Compile Include="ElmentsJoin\ElementJoinSelectUI.xaml.cs">
+      <DependentUpon>ElementJoinSelectUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElmentsJoin\ElementsJoinAdvanced.cs" />
+    <Compile Include="ElmentsJoin\ElementsJoinUIAdvanced.xaml.cs">
+      <DependentUpon>ElementsJoinUIAdvanced.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="BeamFromEntireBuilding\BeamsFromEntireBuilding.cs" />
+    <Compile Include="BeamFromEntireBuilding\BeamsFromEntireBuildingChooseStandardFloorsUI.xaml.cs">
+      <DependentUpon>BeamsFromEntireBuildingChooseStandardFloorsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeamFromEntireBuilding\BeamsFromEntireBuildingUI.xaml.cs">
+      <DependentUpon>BeamsFromEntireBuildingUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeamsFromColumns\BeamsFromColumns.cs" />
+    <Compile Include="BeamsFromColumns\BeamsFromColumnsUI.xaml.cs">
+      <DependentUpon>BeamsFromColumnsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeamsFromWalls\BeamsFromWalls.cs" />
+    <Compile Include="BeamsFromWalls\BeamsFromWallsUI.xaml.cs">
+      <DependentUpon>BeamsFromWallsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeamUpdate\BeamsUpdateUI.xaml.cs">
+      <DependentUpon>BeamsUpdateUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeamUpdate\BeamUpdate.cs" />
+    <Compile Include="ColumnsFromDwg\ColumnsFromDwg.cs" />
+    <Compile Include="ColumnsFromDwg\ColumnsFromDwgUI.xaml.cs">
+      <DependentUpon>ColumnsFromDwgUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElementsCopy\ElementsCopyToLevels.cs" />
+    <Compile Include="ElementsCopy\ElementsCopyUI.xaml.cs">
+      <DependentUpon>ElementsCopyUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElmentsJoin\ElementsJoin.cs" />
+    <Compile Include="ElmentsJoin\ElementsJoinUI.xaml.cs">
+      <DependentUpon>ElementsJoinUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionManager\ExceptionManager.cs" />
+    <Compile Include="ExceptionManager\ExceptionManagerUI.xaml.cs">
+      <DependentUpon>ExceptionManagerUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ONBOXApp.cs" />
+    <Compile Include="PadsFromFloor\PadsFromFloors.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\RibbonLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RibbonLanguage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\WindowLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WindowLanguage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberBeams\RenumberBeams.cs" />
+    <Compile Include="RenumberBeams\RenumberBeamsUI.xaml.cs">
+      <DependentUpon>RenumberBeamsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberBeams\RenumberBeamTypesUI.xaml.cs">
+      <DependentUpon>RenumberBeamTypesUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberBeams\RenumberLevelPrefixUI.xaml.cs">
+      <DependentUpon>RenumberLevelPrefixUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberColumns\RenumberColumns.cs" />
+    <Compile Include="RenumberColumns\RenumberColumnsLevelsUI.xaml.cs">
+      <DependentUpon>RenumberColumnsLevelsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberColumns\RenumberColumnsUI.xaml.cs">
+      <DependentUpon>RenumberColumnsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberColumns\RenumberColumnsTypeUI.xaml.cs">
+      <DependentUpon>RenumberColumnsTypeUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberColumns\RenumberColumnsSelectionUI.xaml.cs">
+      <DependentUpon>RenumberColumnsSelectionUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberGrids\GridAdvanced.cs" />
+    <Compile Include="RenumberGrids\Grids.cs" />
+    <Compile Include="RenumberGrids\RenumberGridsUI.xaml.cs">
+      <DependentUpon>RenumberGridsUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberGrids\RenumberGridsAdvUI.xaml.cs">
+      <DependentUpon>RenumberGridsAdvUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberParking\Parking.cs" />
+    <Compile Include="RenumberParking\renumberBlocksUI.xaml.cs">
+      <DependentUpon>renumberBlocksUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberParking\RenumberParkingCleanerUI.xaml.cs">
+      <DependentUpon>RenumberParkingCleanerUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberParking\renumberParkingPrefixUI.xaml.cs">
+      <DependentUpon>renumberParkingPrefixUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberParking\renumberParkingUI.xaml.cs">
+      <DependentUpon>renumberParkingUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenumberParking\RenumberTypeUI.xaml.cs">
+      <DependentUpon>RenumberTypeUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RevitZip\RevitZip.cs" />
+    <Compile Include="RevitZip\RevitZipUI.xaml.cs">
+      <DependentUpon>RevitZipUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs" />
+    <Compile Include="TopoFromDwgMarks\TopoFromDwgMarks.cs" />
+    <Compile Include="TopoFromPointCloud\CreateBoundingBoxReferencePlanes.cs" />
+    <Compile Include="TopoFromPointCloud\TopoFromPointCloudAdvanced.cs" />
+    <Compile Include="TopoFromPointCloud\TopoFromPointCloud.cs" />
+    <Compile Include="TopoFromPointCloud\TopoPointCloudUIAdvanced.xaml.cs">
+      <DependentUpon>TopoPointCloudUIAdvanced.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TopoSlope\TopoSlopes.cs" />
+    <Compile Include="TopoSlope\TopoSlopesUI.xaml.cs">
+      <DependentUpon>TopoSlopesUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Properties\Messages.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\RibbonLanguage.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\RibbonLanguage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RibbonLanguage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\WindowLanguage.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\WindowLanguage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WindowLanguage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AboutUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ElmentsJoin\ElementJoinSelectUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElmentsJoin\ElementsJoinUIAdvanced.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BeamFromEntireBuilding\BeamsFromEntireBuildingChooseStandardFloorsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BeamFromEntireBuilding\BeamsFromEntireBuildingUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BeamsFromColumns\BeamsFromColumnsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BeamsFromWalls\BeamsFromWallsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BeamUpdate\BeamsUpdateUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ColumnsFromDwg\ColumnsFromDwgUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ElementsCopy\ElementsCopyUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ElmentsJoin\ElementsJoinUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ExceptionManager\ExceptionManagerUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberBeams\RenumberBeamsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberBeams\RenumberBeamTypesUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberBeams\RenumberLevelPrefixUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberColumns\RenumberColumnsLevelsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberColumns\RenumberColumnsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberColumns\RenumberColumnsTypeUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberColumns\RenumberColumnsSelectionUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberGrids\RenumberGridsUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberGrids\RenumberGridsAdvUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberParking\renumberBlocksUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberParking\RenumberParkingCleanerUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberParking\renumberParkingPrefixUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberParking\renumberParkingUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RenumberParking\RenumberTypeUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RevitZip\RevitZipUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Revit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TopoFromPointCloud\TopoPointCloudUIAdvanced.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TopoSlope\TopoSlopesUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\btnProjectExamplesFolder16.png" />
+    <Resource Include="Resources\btnPackage32.png" />
+    <Resource Include="Resources\btnPackage16.png" />
+    <Resource Include="Resources\btnTopoSlope16.png" />
+    <Resource Include="Resources\btnTopoFromPointCloud16.png" />
+    <Resource Include="Resources\btnTopoFromDWG16.png" />
+    <Resource Include="Resources\btnJoinSelectMultiple16.png" />
+    <Resource Include="Resources\btnJoinMultiple16.png" />
+    <Resource Include="Resources\btnBeamsCopyLevels16.png" />
+    <Resource Include="Resources\btnWallsToBeams16.png" />
+    <Resource Include="Resources\btnColumnsToBeams16.png" />
+    <Resource Include="Resources\btnColumnsFromDWG16.png" />
+    <Resource Include="Resources\btnBeamsFromBuilding16.png" />
+    <Resource Include="Resources\btnRenumberBlockParking16.png" />
+    <Resource Include="Resources\btnRenumberDeleteParking16.png" />
+    <Resource Include="Resources\btnRenameColumns16.png" />
+    <Resource Include="Resources\LoadFamily.png" />
+    <Resource Include="Resources\btnJoinSelectMultiple.png" />
+    <Resource Include="Resources\btnShowSelect.png" />
+    <Resource Include="Resources\btnRenameColumns32Select.png" />
+    <Resource Include="Resources\btnPackage.png" />
+    <Resource Include="Resources\loadFamily30.png" />
+    <Resource Include="Resources\MouseMultipleCleanEnabled.png" />
+    <Resource Include="Resources\MouseMultipleSelectEnabled.png" />
+    <Resource Include="Resources\facebookAccount.png" />
+    <Resource Include="Resources\UpdateOnbox32.png" />
+    <Resource Include="Resources\UpdateOnbox16.png" />
+    <Content Include="ONBOXApp.addin" />
+    <Resource Include="Resources\PlaceHolder32.png" />
+    <Resource Include="Resources\PlaceHolder16.png" />
+    <Resource Include="Resources\onBox32New.png" />
+    <Resource Include="OnboxAppInfo.xml" />
+    <Resource Include="Resources\Warning.png" />
+    <Resource Include="Resources\mail.png" />
+    <Resource Include="Resources\youtube.png" />
+    <Resource Include="Resources\facebook.png" />
+    <None Include="Resources\onbox_icon.ico" />
+    <Resource Include="Resources\ONBOXApps.png" />
+    <Resource Include="Resources\tickNull.png" />
+    <Resource Include="Resources\TickFlip.png" />
+    <Resource Include="Resources\Tick.png" />
+    <Resource Include="Resources\Section1.png" />
+    <Resource Include="Resources\Section0.png" />
+    <Resource Include="Resources\RemoveBeam.png" />
+    <Resource Include="Resources\Reload.png" />
+    <Resource Include="Resources\Points2.png" />
+    <Resource Include="Resources\onBox32.png" />
+    <Resource Include="Resources\onBox16.png" />
+    <Resource Include="Resources\MousePointerSelectEnabled.png" />
+    <Resource Include="Resources\MousePointerSelectDisabled.png" />
+    <Resource Include="Resources\Locker1.png" />
+    <Resource Include="Resources\Locker0.png" />
+    <Resource Include="Resources\layerBucket.png" />
+    <Resource Include="Resources\Join.png" />
+    <Resource Include="Resources\iconUjoin.ico" />
+    <Resource Include="Resources\iconJoin.ico" />
+    <Resource Include="Resources\Error.png" />
+    <Resource Include="Resources\CreateBeam.png" />
+    <Resource Include="Resources\Constraints1.png" />
+    <Resource Include="Resources\Constraints0.png" />
+    <Resource Include="Resources\Close.png" />
+    <Resource Include="Resources\btnWallsToBeamsUpdate32.png" />
+    <Resource Include="Resources\btnWallsToBeamsCreate32.png" />
+    <Resource Include="Resources\btnWallsToBeams32.png" />
+    <Resource Include="Resources\btnTopoSlope.png" />
+    <Resource Include="Resources\btnTopoFromPointCloud32.png" />
+    <Resource Include="Resources\btnTopoFromDWG.png" />
+    <Resource Include="Resources\btnRenumGrids36.png" />
+    <Resource Include="Resources\btnRenumGrids34.png" />
+    <Resource Include="Resources\btnRenumGrids32.png" />
+    <Resource Include="Resources\btnRenumberParking32.png" />
+    <Resource Include="Resources\btnRenumberParking16.png" />
+    <Resource Include="Resources\btnRenumberGrid36.png" />
+    <Resource Include="Resources\btnRenumberGrid32.png" />
+    <Resource Include="Resources\btnRenumberGrid16.png" />
+    <Resource Include="Resources\btnRenumberDeleteParking32.png" />
+    <Resource Include="Resources\btnRenumberColumns16.png" />
+    <Resource Include="Resources\btnRenumberBlockParking32.png" />
+    <Resource Include="Resources\btnRenumberBeams32.png" />
+    <Resource Include="Resources\btnRenumberBeams16.png" />
+    <Resource Include="Resources\btnRenameColumns32.png" />
+    <Resource Include="Resources\btnProjectExamplesFolder.png" />
+    <Resource Include="Resources\btnJoinMultiple.png" />
+    <Resource Include="Resources\btnInfo32.png" />
+    <Resource Include="Resources\btnInfo16.png" />
+    <Resource Include="Resources\btnColumnsToBeams32.png" />
+    <Resource Include="Resources\btnColumnsFromDWG32.png" />
+    <Resource Include="Resources\btnBeamsFromBuilding32.png" />
+    <Resource Include="Resources\btnBeamsCopyLevels.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo Configuration: $(Configuration)
+
+if $(Configuration) == Debug2016 goto 2016
+if $(Configuration) == Debug2017 goto 2017
+if $(Configuration) == Debug2018 goto 2018
+if $(Configuration) == Debug2019 goto 2019
+
+goto exit
+
+:2016
+echo Copying results to 2016
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2016\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2016\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2016\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2016\"
+goto exit
+
+:2017
+echo Copying results to 2017
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2017\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2017\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2017\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2017\"
+goto exit
+
+:2018
+echo Copying results to 2018
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2018\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2018\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2018\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2018\"
+goto exit
+
+:2019
+echo Copying results to 2019
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2019\"
+goto exit
+
+:exit</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
