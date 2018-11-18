@@ -1,0 +1,80 @@
+﻿<Window x:Name="renumberBlocksWindow" x:Class="ONBOXAppl.renumberBlocksUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.RenumberParkBlock_Title}"  ResizeMode="NoResize" MinWidth="308" MinHeight="230" Loaded="renumberBlocksWindow_Loaded" Height="232" Width="340.5" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ONBOXAppl;component/Styles/Revit.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="325*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="{x:Static p:WindowLanguage.RenumberParkBlock_GuessNext}" Margin="10,10,1,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="76*"/>
+                    <ColumnDefinition Width="75*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="23"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnLevel" Content="{x:Static p:WindowLanguage.RenumberParkBlock_Level}" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" Width="132" Click="btnLevel_Click"/>
+                <Button x:Name="btnAll" Content="{x:Static p:WindowLanguage.RenumberParkBlock_All}" Margin="0,0,10,0" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Width="130" Click="btnAll_Click"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="{x:Static p:WindowLanguage.RenumberParkBlock_Prefix}" HorizontalAlignment="Left" Margin="20,27,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="46"/>
+        <Label Content="{x:Static p:WindowLanguage.RenumberParkBlock_Numbering}" Margin="0,27,81,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="72" Height="26"/>
+        <GroupBox Header="{x:Static p:WindowLanguage.RenumberParkBlock_NextNumbering}" Margin="10,5,1,0" Grid.Row="1" Height="81" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrefix" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Margin="26,53,0,0" Grid.Row="1"/>
+        <TextBox x:Name="txtNumber" HorizontalAlignment="Right" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Margin="0,53,17,0" Grid.Row="1"/>
+        <Button x:Name="btnSelect" Margin="10,0,0,10" Grid.Row="2" VerticalAlignment="Bottom" Height="23" Click="btnSelect_Click" HorizontalAlignment="Left" Width="23">
+            <Button.Foreground>
+                <ImageBrush TileMode="Tile" Stretch="None"/>
+            </Button.Foreground>
+            <Grid Height="19" Width="19">
+                <Grid.Background>
+                    <ImageBrush TileMode="Tile" ImageSource="/ONBOXAppl;component/Resources/MousePointerSelectEnabled.png"/>
+                </Grid.Background>
+            </Grid>
+        </Button>
+        <Button x:Name="btnExit" Content="{x:Static p:WindowLanguage.Common_Close}" Margin="0,0,1,10" Grid.Row="2" HorizontalAlignment="Right" Click="btnExit_Click"/>
+        <Button x:Name="btnSelectMultiple" Margin="38,0,0,10" Grid.Row="2" VerticalAlignment="Bottom" Height="23" Click="btnSelectMultiple_Click" HorizontalAlignment="Left" Width="23">
+            <Button.Foreground>
+                <ImageBrush TileMode="Tile" Stretch="None"/>
+            </Button.Foreground>
+            <Grid Height="19" Width="19">
+                <Grid.Background>
+                    <ImageBrush TileMode="Tile" ImageSource="/ONBOXAppl;component/Resources/MouseMultipleSelectEnabled.png"/>
+                </Grid.Background>
+            </Grid>
+        </Button>
+        <Button x:Name="btnMultipleClear" Margin="66,0,0,10" Grid.Row="2" VerticalAlignment="Bottom" Height="23" Click="btnMultipleClear_Click" HorizontalAlignment="Left" Width="23">
+            <Button.Foreground>
+                <ImageBrush TileMode="Tile" Stretch="None"/>
+            </Button.Foreground>
+            <Grid Height="19" Width="19">
+                <Grid.Background>
+                    <ImageBrush TileMode="Tile" ImageSource="/ONBOXAppl;component/Resources/MouseMultipleCleanEnabled.png"/>
+                </Grid.Background>
+            </Grid>
+        </Button>
+
+
+    </Grid>
+</Window>

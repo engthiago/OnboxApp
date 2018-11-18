@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="BeamsForBuilding_NoBeamFamilyLoaded" xml:space="preserve">
+		<value>Não há famílias de vigas estruturais válidas carregadas no projeto. Por favor, carregue pelo menos uma e tente usar este comando novamente.</value>
+	</data>
+	<data name="BeamsForBuilding_Transaction" xml:space="preserve">
+		<value>Criar Vigas</value>
+	</data>
+	<data name="BeamsFromCAD_NoColumnFamilyLoaded" xml:space="preserve">
+		<value>Não há famílias de pilares estruturais válidas carregadas no projeto. Por favor, carregue pelo menos uma e tente usar este comando novamente.</value>
+	</data>
+	<data name="BeamsFromCAD_NoValidCADElements" xml:space="preserve">
+		<value>Não foi possível encontrar formas 2D retangulares ou circulares na instância selecionada. Por favor, adicione esses elementos e tente novamente.</value>
+	</data>
+	<data name="BeamsFromCAD_RotateTransaction" xml:space="preserve">
+		<value>Rotacionar Pilares</value>
+	</data>
+	<data name="BeamsFromCAD_SelectCADInstance" xml:space="preserve">
+		<value>Selecione uma instância do CAD.</value>
+	</data>
+	<data name="BeamsFromCAD_Transaction" xml:space="preserve">
+		<value>Criar Pilares</value>
+	</data>
+	<data name="BeamsFromColumns_DeletedBeamFamily" xml:space="preserve">
+		<value>Esta família foi deletada do projeto, por favor carregue as famílias necessárias e clique no botão de recarga na janela flutuante.</value>
+	</data>
+	<data name="BeamsFromColumns_Not3dView" xml:space="preserve">
+		<value>Por favor, verifique se você está no modo de exibição 3D para executar este comando.</value>
+	</data>
+	<data name="BeamsFromColumns_NotGraphicalView" xml:space="preserve">
+		<value>Por favor ative uma vista gráfica para executar este comando.</value>
+	</data>
+	<data name="BeamsFromColumns_SelectColumnToOffset" xml:space="preserve">
+		<value>Selecione o pilar para ajustar seu deslocamento</value>
+	</data>
+	<data name="BeamsFromColumns_SelectFirstColumn" xml:space="preserve">
+		<value>Selecione o primeiro pilar estrutural</value>
+	</data>
+	<data name="BeamsFromColumns_SelectFirstColumnOrBeam" xml:space="preserve">
+		<value>Selecione o primeiro pilar ou a última viga para ajustar o deslocamento.
+</value>
+	</data>
+	<data name="BeamsFromColumns_SelectSecondColumn" xml:space="preserve">
+		<value>Selecione o segundo pilar estrutural.</value>
+	</data>
+	<data name="BeamsFromColumns_Transaction" xml:space="preserve">
+		<value>Criar Viga</value>
+	</data>
+	<data name="BeamsFromColumns_Transaction_AdjustOffset" xml:space="preserve">
+		<value>Ajustar deslocamento</value>
+	</data>
+	<data name="BeamsFromWalls_DeletedBeamFamily" xml:space="preserve">
+		<value>Esta família foi deletada do projeto, por favor carregue as famílias necessárias e clique no botão de recargar na janela flutuante.</value>
+	</data>
+	<data name="BeamsFromWalls_NotGraphicalView" xml:space="preserve">
+		<value>Por favor ative uma vista gráfica para executar este comando.</value>
+	</data>
+	<data name="BeamsFromWalls_SelectArchitecturalWall" xml:space="preserve">
+		<value>Selecione uma parede arquitetônica</value>
+	</data>
+	<data name="BeamsFromWalls_SelectWallFromLink" xml:space="preserve">
+		<value>Selecione uma parede arquitetônica do modelo vinculado.</value>
+	</data>
+	<data name="BeamsFromWalls_Transaction" xml:space="preserve">
+		<value>Criar Viga</value>
+	</data>
+	<data name="Common_Error" xml:space="preserve">
+		<value>Erro</value>
+	</data>
+	<data name="CopyBeamsToLevels_SelectBeam" xml:space="preserve">
+		<value>Selecione uma viga.</value>
+	</data>
+	<data name="CopyBeamsToLevels_Transaction" xml:space="preserve">
+		<value>Copiar Vigas</value>
+	</data>
+	<data name="ElementJoinSelect_JoinTransaction" xml:space="preserve">
+		<value>Unir Elementos</value>
+	</data>
+	<data name="ElementJoinSelect_NotGraphicalView" xml:space="preserve">
+		<value>Por favor ative uma vista gráfica para executar este comando.</value>
+	</data>
+	<data name="ElementJoinSelect_SelectElements" xml:space="preserve">
+		<value>Selecione elementos para unir.</value>
+	</data>
+	<data name="ElementJoinSelect_UnJoinTransaction" xml:space="preserve">
+		<value>Desunir Elemento</value>
+	</data>
+	<data name="ElementJoin_JoinTransaction" xml:space="preserve">
+		<value>Unir Elementos</value>
+	</data>
+	<data name="ElementJoin_Transaction" xml:space="preserve">
+		<value>Unit Elementos</value>
+	</data>
+	<data name="ElementJoin_UnJoinTransaction" xml:space="preserve">
+		<value>Desunir Elementos</value>
+	</data>
+	<data name="Exceptions_Data" xml:space="preserve">
+		<value>Dados</value>
+	</data>
+	<data name="Exceptions_Detail" xml:space="preserve">
+		<value>Detalhes</value>
+	</data>
+	<data name="Exceptions_Help" xml:space="preserve">
+		<value>Ajuda</value>
+	</data>
+	<data name="Exceptions_Location" xml:space="preserve">
+		<value>Localização</value>
+	</data>
+	<data name="Exceptions_Message" xml:space="preserve">
+		<value>Mensagem</value>
+	</data>
+	<data name="Exceptions_Source" xml:space="preserve">
+		<value>Fonte</value>
+	</data>
+	<data name="PackageProject_FileTypeName" xml:space="preserve">
+		<value>Zipar Arquivo</value>
+	</data>
+	<data name="PackageProject_SaveProjectFirst" xml:space="preserve">
+		<value>Por favor salve o projeto antes de usar este comando.</value>
+	</data>
+	<data name="RenumberBeams_NoBeamFamilyLoaded" xml:space="preserve">
+		<value>Não há famílias de vigas estruturais válidas carregadas no projeto. Por favor, carregue pelo menos uma e tente usar este comando novamente.</value>
+	</data>
+	<data name="RenumberBeams_RenumberBeams" xml:space="preserve">
+		<value>Renumerar Vigas</value>
+	</data>
+	<data name="RenumberColumns_NoColumnFamilyLoaded" xml:space="preserve">
+		<value>Não há famílias de pilares estruturais válidas carregadas no projeto. Por favor, carregue pelo menos uma e tente usar este comando novamente.</value>
+	</data>
+	<data name="RenumberColumns_NoGuess" xml:space="preserve">
+		<value>Por favor, antes de renumerar as colunas clique no botão 'Adivinhar' ou insira o número manualmente.</value>
+	</data>
+	<data name="RenumberColumns_NotPlanView" xml:space="preserve">
+		<value>Por favor, certifique-se de estar em uma visão de planta para executar este comando.</value>
+	</data>
+	<data name="RenumberColumns_RemoveNumbers_Transaction" xml:space="preserve">
+		<value>Remover Numeração dos Pilares</value>
+	</data>
+	<data name="RenumberColumns_SelectFirstColumn" xml:space="preserve">
+		<value>Selecione o primeiro pilar para renumerar.</value>
+	</data>
+	<data name="RenumberColumns_SelectTheRowOfColumns" xml:space="preserve">
+		<value>Selecione a linha de pilares.</value>
+	</data>
+	<data name="RenumberColumns_Transaction" xml:space="preserve">
+		<value>Renumerar Pilares</value>
+	</data>
+	<data name="RenumberGrids_NoGrids" xml:space="preserve">
+		<value>Não foi possível encontrar nenhum eixo no projeto, crie-os e execute o comando novamente.</value>
+	</data>
+	<data name="RenumberGrids_SameNumbering" xml:space="preserve">
+		<value>Há uma ou mais grades com a mesma numeração nova, clique no botão renumerar tabela ou altere-as manualmente.</value>
+	</data>
+	<data name="RenumberGrids_Transaction" xml:space="preserve">
+		<value>Renumerar Eixos</value>
+	</data>
+	<data name="RenumberGrids_Transaction_AdjustNames" xml:space="preserve">
+		<value>Ajustar Nomes</value>
+	</data>
+	<data name="RenumberParking_ClearParkNumbering" xml:space="preserve">
+		<value>Limpar Numeração dos Estacionamentos</value>
+	</data>
+	<data name="RenumberParking_IntegerNumber" xml:space="preserve">
+		<value>Por favor, insira um número inteiro válido.</value>
+	</data>
+	<data name="RenumberParking_NoParking" xml:space="preserve">
+		<value>Não foi possível encontrar estacionamentos no projeto, crie-os e execute este comando novamente.</value>
+	</data>
+	<data name="RenumberParking_NotPlanView" xml:space="preserve">
+		<value>Por favor, certifique-se de estar em uma vista de planta para executar este comando.</value>
+	</data>
+	<data name="RenumberParking_SelectFirstOrChangeNumbering" xml:space="preserve">
+		<value>Por favor, selecione o primeiro estacionamento ou altere a ordem de numeração.</value>
+	</data>
+	<data name="RenumberParking_SelectFirstParkingSpace" xml:space="preserve">
+		<value>Select the first parking space</value>
+	</data>
+	<data name="RenumberParking_SelectParkingSpace" xml:space="preserve">
+		<value>Selecione um estacionamento</value>
+	</data>
+	<data name="RenumberParking_Transaction" xml:space="preserve">
+		<value>Renumerar Estacionamentos</value>
+	</data>
+	<data name="SlopeGradingFromPads_NoPads" xml:space="preserve">
+		<value>Não foi possível encontrar plataformas de construção no projeto.</value>
+	</data>
+	<data name="SlopeGradingFromPads_Not3DView" xml:space="preserve">
+		<value>Por favor, certifique-se de estar em uma visão 3D para executar este comando.</value>
+	</data>
+	<data name="SlopeGradingFromPads_NoTopoAssociate" xml:space="preserve">
+		<value>Não foi possível estabelecer uma superfície topográfica associada a plataforma. Recrie a plataforma para tentar novamente.</value>
+	</data>
+	<data name="SlopeGradingFromPads_OuterLoopIssue" xml:space="preserve">
+		<value>Não foi possível determinar o limite externo da plataforma, tente recriá-la.</value>
+	</data>
+	<data name="SlopeGradingFromPads_OuterOffsetLoopIssue" xml:space="preserve">
+		<value>Não foi possível determinar o deslocamento do limite externo da plataforma. Tente novamente com uma geometria mais simples.</value>
+	</data>
+	<data name="SlopeGradingFromPads_PadsWithMoreThanOneUpperFace" xml:space="preserve">
+		<value>Plataformas com mais de uma face superior não são suportadas, por favor, use uma plataforma com apenas uma face superior.</value>
+	</data>
+	<data name="SlopeGradingFromPads_SelectPad" xml:space="preserve">
+		<value>Selecione uma plataforma.</value>
+	</data>
+	<data name="SlopeGradingFromPads_Transaction" xml:space="preserve">
+		<value>Criar Talude</value>
+	</data>
+	<data name="SlopeGradingFromPads_UpperFaceNotPlanar" xml:space="preserve">
+		<value>A face superior deve ser plana.</value>
+	</data>
+	<data name="TopoFromPointCloud_InvalidPointCloud" xml:space="preserve">
+		<value>Elemento inválido selecionado.</value>
+	</data>
+	<data name="TopoFromPointCloud_MaxPointsReached" xml:space="preserve">
+		<value>Número máximo de pontos atingidos, por favor, altere a iteração</value>
+	</data>
+	<data name="TopoFromPointCloud_MinPointsReached" xml:space="preserve">
+		<value>Número mínimo de pontos atingidos, por favor altere a iteração</value>
+	</data>
+	<data name="TopoFromPointCloud_Not3DView" xml:space="preserve">
+		<value>Por favor, certifique-se de estar em uma visão 3D para executar este comando.</value>
+	</data>
+	<data name="TopoFromPointCloud_NotEnoughPoints" xml:space="preserve">
+		<value>Não há pontos suficientes para criar a superfície topográfica, altere as configurações de iteração e execute este comando novamente.</value>
+	</data>
+	<data name="TopoFromPointCloud_SelectPointCloudInstance" xml:space="preserve">
+		<value>Por favor, selecione uma instância da nuvem de pontos.</value>
+	</data>
+	<data name="TopoFromPointCloud_Transaction" xml:space="preserve">
+		<value>Criar toposuperfície</value>
+	</data>
+	<data name="Common_Warning" xml:space="preserve">
+		<value>Aviso</value>
+	</data>
+	<data name="SampleProjects_DirNotFound" xml:space="preserve">
+		<value>Diretório não encontrado! Por favor, reinstale o aplicativo ou baixe uma nova versão em http://www.onboxdesign.com.br/</value>
+	</data>
+	<data name="Common_Issues" xml:space="preserve">
+		<value>Alguns problemas foram encontrados:</value>
+	</data>
+	<data name="Common_Sucess" xml:space="preserve">
+		<value>Sucesso</value>
+	</data>
+</root>

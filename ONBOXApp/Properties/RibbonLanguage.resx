@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="About_Onbox_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="About_Onbox_ToolTip" xml:space="preserve">
+    <value>About this application</value>
+  </data>
+	<data name="About_SampleProjects" xml:space="preserve">
+    <value>Sample\nProjects</value>
+  </data>
+	<data name="About_SampleProjects_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="About_SampleProjects_ToolTip" xml:space="preserve">
+    <value>Folder that contains the Onbox sample projects</value>
+  </data>
+	<data name="About_Site_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="About_Site_ToolTip" xml:space="preserve">
+    <value>Go to Onbox Website</value>
+  </data>
+	<data name="About_Title" xml:space="preserve">
+    <value>About</value>
+  </data>
+	<data name="Manage_PackageProject" xml:space="preserve">
+    <value>Package\nProject</value>
+  </data>
+	<data name="Manage_PackageProject_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="Manage_PackageProject_ToolTip" xml:space="preserve">
+    <value>Creates a zip file with all project related files</value>
+  </data>
+	<data name="Manage_Title" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+	<data name="ModifyElements_CopyBeamsToLevels" xml:space="preserve">
+    <value>Copy Beams\nTo Levels</value>
+  </data>
+	<data name="ModifyElements_CopyBeamsToLevels_Descrip" xml:space="preserve">
+    <value>This command copies structural beams to the selected level from the selected structural beam level, all beams from the source level will be copied</value>
+  </data>
+	<data name="ModifyElements_CopyBeamsToLevels_ToolTip" xml:space="preserve">
+    <value>Create beams selecting structural columns</value>
+  </data>
+	<data name="ModifyElements_JoinElements" xml:space="preserve">
+    <value>Join Elements</value>
+  </data>
+	<data name="ModifyElements_JoinElements_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="ModifyElements_JoinElements_ToolTip" xml:space="preserve">
+    <value>Join structural and non structural elements</value>
+  </data>
+	<data name="ModifyElements_JoinMultipleElements" xml:space="preserve">
+    <value>Join Multiple Elements</value>
+  </data>
+	<data name="ModifyElements_SelectElementsToJoin" xml:space="preserve">
+    <value>Select Elements\nTo Join</value>
+  </data>
+	<data name="ModifyElements_SelectElementsToJoin_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="ModifyElements_SelectElementsToJoin_ToolTip" xml:space="preserve">
+    <value>Select and join structural and non structural elements</value>
+  </data>
+	<data name="ModifyElements_Title" xml:space="preserve">
+    <value>Modify Elements</value>
+  </data>
+	<data name="MoreInfo_Title" xml:space="preserve">
+    <value>More Information</value>
+  </data>
+	<data name="Notififications_Title" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+	<data name="RenumberElements_ClearParkingNumbering" xml:space="preserve">
+    <value>Clear\nNumbering</value>
+  </data>
+	<data name="RenumberElements_ClearParkingNumbering_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="RenumberElements_ClearParkingNumbering_ToolTip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="RenumberElements_Columns" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+	<data name="RenumberElements_Columns_Descrip" xml:space="preserve">
+    <value>Command to automatically renumber structural columns</value>
+  </data>
+	<data name="RenumberElements_Columns_ToolTip" xml:space="preserve">
+    <value>Renumber columns</value>
+  </data>
+	<data name="RenumberElements_Grids" xml:space="preserve">
+    <value>Grids</value>
+  </data>
+	<data name="RenumberElements_Grids_Descrip" xml:space="preserve">
+    <value>Command to automatically renumber grids: A sequence of numbers or letters can be selected, including subletters and sub numbers. This command has also the ability to use a table to reorder and organize all grids</value>
+  </data>
+	<data name="RenumberElements_Grids_ToolTip" xml:space="preserve">
+    <value>Renumber Grids</value>
+  </data>
+	<data name="RenumberElements_NearestSpaces" xml:space="preserve">
+    <value>Nearest\nSpaces</value>
+  </data>
+	<data name="RenumberElements_NearestSpaces_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="RenumberElements_NearestSpaces_ToolTip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="RenumberElements_ParkingSpaces" xml:space="preserve">
+    <value>Parking\nSpaces</value>
+  </data>
+	<data name="RenumberElements_RenumberBeams" xml:space="preserve">
+    <value>Beams</value>
+  </data>
+	<data name="RenumberElements_RenumberBeams_Descrip" xml:space="preserve">
+    <value>Command to automatically renumber structural beams</value>
+  </data>
+	<data name="RenumberElements_RenumberBeams_ToolTip" xml:space="preserve">
+    <value>Renumber Structural Beams</value>
+  </data>
+	<data name="RenumberElements_RenumberColumns" xml:space="preserve">
+    <value>Renumber Columns</value>
+  </data>
+	<data name="RenumberElements_RenumberParkingSpaces" xml:space="preserve">
+    <value>Renumber Parking Spaces</value>
+  </data>
+	<data name="RenumberElements_RenumberParkingSpaces_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="RenumberElements_RenumberParkingSpaces_ToolTip" xml:space="preserve">
+    <value>Renumber parking spaces</value>
+  </data>
+	<data name="RenumberElements_SelectColumns" xml:space="preserve">
+    <value>Select\nColumns</value>
+  </data>
+	<data name="RenumberElements_SelectColumns_Descrip" xml:space="preserve">
+    <value>Command to automatically renumber selected structural columns</value>
+  </data>
+	<data name="RenumberElements_SelectColumns_ToolTip" xml:space="preserve">
+    <value>Renumber selected columns</value>
+  </data>
+	<data name="RenumberElements_Title" xml:space="preserve">
+    <value>Renumber Elements</value>
+  </data>
+	<data name="StructuralElements_BeamsForBuilding" xml:space="preserve">
+    <value>Create Beams</value>
+  </data>
+	<data name="StructuralElements_BeamsForBuilding_Descrip" xml:space="preserve">
+    <value>This command reads all walls in the current project or in a linked file to create structural beams in all chosen levels</value>
+  </data>
+	<data name="StructuralElements_BeamsForBuilding_ToolTip" xml:space="preserve">
+    <value>Distribute beams on every valid wall on the building</value>
+  </data>
+	<data name="StructuralElements_BeamsFromColumns" xml:space="preserve">
+    <value>Beams\nFrom Columns</value>
+  </data>
+	<data name="StructuralElements_BeamsFromColumns_Descrip" xml:space="preserve">
+    <value>This command creates structural beams from selected structural columns, the command creates the types automatically, it is possible to pre-establish the beam height, create them in a chain along with other options</value>
+  </data>
+	<data name="StructuralElements_BeamsFromColumns_ToolTip" xml:space="preserve">
+    <value>Create structural beams from structural columns</value>
+  </data>
+	<data name="StructuralElements_BeamsFromWalls" xml:space="preserve">
+    <value>Beams\nFrom Walls</value>
+  </data>
+	<data name="StructuralElements_BeamsFromWalls_Descrip" xml:space="preserve">
+    <value>This command creates structural beams from walls, it creates all types automatically, it is possible to pre-establish the beam height, join these beams with nearest walls and utilize linked files along with other options</value>
+  </data>
+	<data name="StructuralElements_BeamsFromWalls_ToolTip" xml:space="preserve">
+    <value>Create beams selecting architectural walls</value>
+  </data>
+	<data name="StructuralElements_ColumnsFromCAD" xml:space="preserve">
+    <value>Columns\nFrom CAD</value>
+  </data>
+	<data name="StructuralElements_ColumnsFromCAD_Descrip" xml:space="preserve">
+    <value>This command creates structural columns from linked 2D CAD files, it reads the closed rectangles and circles on the selected layer and restricts to the heights of the specified levels</value>
+  </data>
+	<data name="StructuralElements_ColumnsFromCAD_ToolTip" xml:space="preserve">
+    <value>Create structural columns from a CAD import or link</value>
+  </data>
+	<data name="StructuralElements_Title" xml:space="preserve">
+    <value>Structural Elements</value>
+  </data>
+	<data name="Topography_SlopeByPads" xml:space="preserve">
+    <value>Slope Grading\n By Pads</value>
+  </data>
+	<data name="Topography_SlopeByPads_Descrip" xml:space="preserve">
+    <value>This command creates slope gradings from selected building pads, it is possible to define the angle and the number of iteration poins by each segment</value>
+  </data>
+	<data name="Topography_SlopeByPads_ToolTip" xml:space="preserve">
+    <value>Create slope grading from selected pads</value>
+  </data>
+	<data name="Topography_SurfaceByPointCloud" xml:space="preserve">
+    <value>Surface\nBy PointCloud</value>
+  </data>
+	<data name="Topography_SurfaceByPointCloud_Descrip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="Topography_SurfaceByPointCloud_ToolTip" xml:space="preserve">
+    <value>Create Toposurface from a selected PointCloud instance</value>
+  </data>
+	<data name="Topography_Title" xml:space="preserve">
+    <value>Topography</value>
+  </data>
+</root>

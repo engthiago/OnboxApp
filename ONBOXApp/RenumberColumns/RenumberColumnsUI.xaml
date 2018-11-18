@@ -1,0 +1,55 @@
+﻿<Window x:Name="RenumberColumnsWindow" x:Class="ONBOXAppl.RenumberColumnsUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.RenumberColumns_Title}" Height="291.994" Width="326.323" Loaded="RenumberColumnsWindow_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ONBOXAppl;component/Styles/Revit.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="101.333"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="14*"/>
+                <ColumnDefinition Width="468*"/>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="comboColumnOrder" Grid.Column="1" Margin="0,13,4,0" VerticalAlignment="Top" Height="22" SelectedIndex="0" HorizontalAlignment="Right" Width="160">
+                <ComboBoxItem Content="{x:Static p:WindowLanguage.RenumberColumns_Upwards}"/>
+                <ComboBoxItem Content="{x:Static p:WindowLanguage.RenumberColumns_Downwards}"/>
+            </ComboBox>
+            <Label Content="{x:Static p:WindowLanguage.RenumberColumns_NumberingRule}" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top" Height="26" Width="134" Grid.ColumnSpan="2"/>
+            <Label Content="{x:Static p:WindowLanguage.RenumberColumns_LevelOptions}" HorizontalAlignment="Left" Margin="1,0,0,39" VerticalAlignment="Bottom" Height="26" Width="249" Grid.Row="2" Grid.Column="1"/>
+            <Label Content="{x:Static p:WindowLanguage.RenumberColumns_TypeOptions}" HorizontalAlignment="Left" Margin="1,0,0,8" VerticalAlignment="Bottom" Height="26" Width="228" Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="btnTypes" Content="..." Grid.Column="1" Margin="0,0,4,8" VerticalAlignment="Bottom" Height="22" HorizontalAlignment="Right" Width="27" Grid.Row="2" Click="btnTypes_Click" />
+            <Button x:Name="btnLevels" Content="..." Grid.Column="1" Margin="0,0,4,39" VerticalAlignment="Bottom" Height="22" HorizontalAlignment="Right" Width="27" Grid.Row="2" Click="btnLevels_Click" />
+            <Grid HorizontalAlignment="Left" Height="100" Margin="21,1.333,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+            <GroupBox Grid.Column="1" Header="{x:Static p:WindowLanguage.RenumberColumns_GeneralOptions}" Margin="0,50,2,7" Grid.RowSpan="2">
+                <Grid Margin="138,0,8,4">
+                    <TextBox x:Name="txtLvlIndicator" Height="23" Margin="0,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="53" MaxLength="6" TextAlignment="Right" Text="{x:Static p:WindowLanguage.RenumberColumns_LevelLabeler}"/>
+                    <TextBox x:Name="txtConcat" Height="23" Margin="0,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="53" MaxLength="6" TextAlignment="Right" Text="{x:Static p:WindowLanguage.RenumberColumns_LevelConcatenator}"/>
+                </Grid>
+            </GroupBox>
+            <Label Content="{x:Static p:WindowLanguage.RenumberColumns_LevelLabel}" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top" Height="26" Width="188" Grid.Row="1" Grid.Column="1"/>
+            <Label Content="{x:Static p:WindowLanguage.RenumberColumns_Concatenation}" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Height="26" Width="188" Grid.Row="1" Grid.Column="1"/>
+
+        </Grid>
+        <Button x:Name="btnRenumber" Content="{x:Static p:WindowLanguage.RenumberColumns_Renumber}" Margin="10,0,10,10" Grid.Row="1" VerticalAlignment="Bottom" Height="23" Click="btnRenumber_Click" Width="Auto"/>
+    </Grid>
+
+</Window>
