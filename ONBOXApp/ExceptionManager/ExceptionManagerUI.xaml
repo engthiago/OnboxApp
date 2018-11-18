@@ -1,0 +1,29 @@
+﻿<Window x:Class="ONBOXAppl.ExceptionManagerUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.Exceptions_Title}" Width="400" ResizeMode="NoResize" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" SizeToContent="Height">
+    <Grid>
+        <StackPanel Margin="10">
+            <DockPanel>
+                <Image x:Name="imgWarningType" Source="/ONBOXAppl;component/Resources/Error.png" Height="64" HorizontalAlignment="Left"/>
+                <Image Source="/ONBOXAppl;component/Resources/ONBOXApps.png" Height="60" HorizontalAlignment="Center" />
+            </DockPanel>
+            <StackPanel>
+                <StackPanel Margin="0,20,0,0">
+                    <TextBlock x:Name="txtInformation" Text="{x:Static p:WindowLanguage.Exceptions_DefaultMessage}" TextWrapping="Wrap" TextAlignment="Justify"/>
+                </StackPanel>
+                <StackPanel x:Name="stackReport" Margin="0,20,0,0">
+                    <TextBlock x:Name="txtReport" Text="{x:Static p:WindowLanguage.Exceptions_Report}" />
+                    <ScrollViewer Margin="0,10,0,0" Height="180" MaxHeight="180">
+                        <TextBox x:Name="textError"  Text="" TextWrapping="Wrap" TextAlignment="Justify" IsReadOnly="True" BorderThickness="0"/>
+                    </ScrollViewer>
+                </StackPanel>
+                <StackPanel Margin="0,20,0,5">
+                    <Button x:Name="btnOK" Content="{x:Static p:WindowLanguage.Common_OK}" MinHeight="23" HorizontalAlignment="Right" MinWidth="100" Click="btnOK_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

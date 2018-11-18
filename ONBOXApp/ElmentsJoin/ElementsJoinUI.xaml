@@ -1,0 +1,30 @@
+﻿<Window x:Name="currentJoinWindow" x:Class="ONBOXAppl.ElementsJoinUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Unir elementos" ResizeMode="NoResize" SizeToContent="Height" Width="310" Loaded="currentJoinWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10">
+            <DockPanel>
+                <Label Content="Primeira categoria:  "/>
+                <ComboBox x:Name="comboFirstCategory" SelectedIndex="0">
+                    <ComboBoxItem Content="Paredes"/>
+                    <ComboBoxItem Content="Vigas"/>
+                    <ComboBoxItem Content="Pilares"/>
+                    <ComboBoxItem Content="Lajes"/>
+                </ComboBox>
+            </DockPanel>
+            <DockPanel Margin="0,5,0,0" >
+                <Label Content="Segunda categoria: "/>
+                <ComboBox x:Name="comboSecondCategory" SelectedIndex="0">
+                    <ComboBoxItem Content="Paredes"/>
+                    <ComboBoxItem Content="Vigas"/>
+                    <ComboBoxItem Content="Pilares"/>
+                    <ComboBoxItem Content="Lajes"/>
+                </ComboBox>
+            </DockPanel>
+            <DockPanel Margin="0,10,0,5">
+                <Button x:Name="btnOK" Content="Unir elementos" Height="23" Click="btnOK_Click"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>

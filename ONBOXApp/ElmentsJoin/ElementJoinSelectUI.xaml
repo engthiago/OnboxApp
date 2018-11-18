@@ -1,0 +1,81 @@
+﻿<Window x:Name="JoinElementsWindow" x:Class="ONBOXAppl.ElementJoinSelectUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ONBOXAppl"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        mc:Ignorable="d"
+        Title="{x:Static p:WindowLanguage.JoinUnjoinSelected_Title}" Topmost="True" ResizeMode="NoResize" Closed="JoinElementsWindow_Closed" Loaded="JoinElementsWindow_Loaded" SizeToContent="WidthAndHeight">
+    <StackPanel Margin="10">
+        <StackPanel>
+            <GroupBox Header="{x:Static p:WindowLanguage.JoinUnjoinSelected_Join}">
+                <StackPanel Margin="5">
+                    <DockPanel Height="28">
+                        <ComboBox x:Name="comboFirstElements" MinWidth="180" SelectedIndex="0">
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_All}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Walls}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Beams}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Columns}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Floors}"/>
+                        </ComboBox>
+                        <Button Margin="5,0,0,0" x:Name="btnSelectFirstElementsJoin" MaxWidth="28" Click="btnSelectFirstElementsJoin_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/MouseMultipleSelectEnabled.png" />
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="5,0,0,0" x:Name="btnShowFirstElements" MinWidth="28" MaxWidth="28" Click="btnShowFirstElements_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/btnShowSelect.png" />
+                            </StackPanel>
+                        </Button>
+                    </DockPanel>
+                    <DockPanel Margin="0,5,0,0">
+                        <Label x:Name="lblFirstElementsSelected" Content="" FontWeight="Bold"/>
+                        <Button x:Name="btnDeSelectFirstElements" HorizontalAlignment="Right" MinWidth="28" MaxWidth="28" Click="btnDeSelectFirstElements_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/MouseMultipleCleanEnabled.png" />
+                            </StackPanel>
+                        </Button>
+                    </DockPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="{x:Static p:WindowLanguage.JoinUnjoinSelected_JoinWith}">
+                <StackPanel Margin="5">
+                    <DockPanel Height="28">
+                        <ComboBox x:Name="comboSecondElements" MinWidth="180" SelectedIndex="0">
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_All}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Walls}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Beams}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Columns}"/>
+                            <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_Floors}"/>
+                        </ComboBox>
+                        <Button Margin="5,0,0,0" x:Name="btnSelectSecondElementsJoin" MaxWidth="28" Click="btnSelectSecondElementsJoin_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/MouseMultipleSelectEnabled.png" />
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="5,0,0,0" x:Name="btnShowSecondElements" MinWidth="28" MaxWidth="28" Click="btnShowSecondElements_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/btnShowSelect.png" />
+                            </StackPanel>
+                        </Button>
+                    </DockPanel>
+                    <DockPanel Margin="0,5,0,0">
+                        <Label x:Name="lblSecondElementsSelected" Content="" FontWeight="Bold"/>
+                        <Button x:Name="btnDeSelectSecondElements" HorizontalAlignment="Right" MinWidth="28" MaxWidth="28" Click="btnDeSelectSecondElements_Click">
+                            <StackPanel>
+                                <Image Source="/ONBOXAppl;component/Resources/MouseMultipleCleanEnabled.png" />
+                            </StackPanel>
+                        </Button>
+                    </DockPanel>
+                </StackPanel>
+            </GroupBox>
+            <DockPanel>
+                <Button x:Name="btnUnjoin" Width="130" Margin="0,10,5,0" Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_UnjoinAction}" Height="25" Click="btnUnjoin_Click"/>
+                <Button x:Name="btnJoin" Margin="0,10,0,0" Content="{x:Static p:WindowLanguage.JoinUnjoinSelected_JoinAction}" Height="25" Click="btnJoin_Click"/>
+            </DockPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

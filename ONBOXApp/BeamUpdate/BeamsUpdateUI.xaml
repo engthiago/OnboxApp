@@ -1,0 +1,59 @@
+﻿<Window x:Name="beamsFromWallsWindow" x:Class="ONBOXAppl.BeamsUpdateUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Atualizar vigas" Width="Auto" SizeToContent="WidthAndHeight" MinWidth="250" ResizeMode="NoResize" Topmost="True" Loaded="beamsFromWallsWindow_Loaded" Closed="beamsFromWallsWindow_Closed">
+
+    <StackPanel>
+        <StackPanel Margin="10,10,10,0">
+            <Grid>
+                <GroupBox Margin="0,10,0,0">
+                    <DockPanel>
+                        <ComboBox x:Name="comboFamily" VerticalAlignment="Top" Height="52" Margin="10,30,10,10"/>
+                    </DockPanel>
+                </GroupBox>
+                <Button x:Name="btnReload" Margin="10,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="23" Width="23" Click="btnReload_Click">
+                    <StackPanel Height="16" Width="16">
+                        <StackPanel.Background>
+                            <ImageBrush Stretch= "Uniform" ImageSource="/ONBOXAppl;component/Resources/Reload.png" />
+                        </StackPanel.Background>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Expander Header="Dimensões">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,10,0,0">
+                    <StackPanel>
+                        <GroupBox Header="Altura: " Margin="0,0,1,0">
+                            <StackPanel Margin="5">
+                                <ComboBox x:Name="comboBeamHeight" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="comboBeamHeight_SelectionChanged">
+                                    <ComboBoxItem Content="Altura fixa:"/>
+                                    <ComboBoxItem Content="Vão divido por:"/>
+                                    <ComboBoxItem Content="Até a maior abertura"/>
+                                </ComboBox>
+                                <DockPanel Margin="0,5,0,0" HorizontalAlignment="Right" MinWidth="30">
+                                    <TextBox x:Name="textHeight" Text="60" TextAlignment="Right"/>
+                                </DockPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <GroupBox Header="Largura: " Margin="1,0,0,0">
+                            <StackPanel Margin="5">
+                                <ComboBox x:Name="comboBeamWidth" SelectedIndex="0" HorizontalAlignment="Stretch" SelectionChanged="comboBeamWidth_SelectionChanged">
+                                    <ComboBoxItem Content="Espessura da parede mais: " />
+                                    <ComboBoxItem Content="Largura fixa: "/>
+                                </ComboBox>
+                                <DockPanel Margin="0,5,0,0" HorizontalAlignment="Right">
+                                    <TextBox x:Name="textWidth" MinWidth="30" Text="0" TextAlignment="Right"/>
+                                </DockPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+        <StackPanel Margin="10,10,10,20">
+            <Button x:Name="btnCreate" Content="Criar" Click="btnCreate_Click"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>

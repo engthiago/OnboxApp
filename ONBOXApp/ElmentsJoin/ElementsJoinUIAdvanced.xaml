@@ -1,0 +1,41 @@
+﻿<Window x:Name="currentJoinWindow" x:Class="ONBOXAppl.ElementsJoinUIAdvanced"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.JoinUnjoin_Title}" ResizeMode="NoResize" SizeToContent="Height" Width="440.574" Loaded="currentJoinWindow_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10">
+            <DockPanel>
+                <Label Content="{x:Static p:WindowLanguage.JoinUnjoin_FirstCategory}"/>
+                <ComboBox x:Name="comboFirstCategory" SelectedIndex="0">
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Walls}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Beams}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Columns}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Floors}"/>
+                </ComboBox>
+            </DockPanel>
+            <DockPanel Margin="0,5,0,0" >
+                <Label Content="{x:Static p:WindowLanguage.JoinUnjoin_SecondCategory}"/>
+                <ComboBox x:Name="comboSecondCategory" SelectedIndex="0">
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Walls}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Beams}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Columns}"/>
+                    <ComboBoxItem Content="{x:Static p:WindowLanguage.JoinUnjoin_Floors}"/>
+                </ComboBox>
+            </DockPanel>
+            <DockPanel  Margin="1,20,0,0">
+                <Label Content="{x:Static p:WindowLanguage.JoinUnjoin_FromLevel}"/>
+                <ComboBox x:Name="comboLowerLevel" Loaded="lowerLevel_Loaded" SelectionChanged="comboLowerLevel_SelectionChanged"></ComboBox>
+            </DockPanel>
+            <DockPanel  Margin="0,5,0,0">
+                <Label Content="{x:Static p:WindowLanguage.JoinUnjoin_ToLevel}"/>
+                <ComboBox x:Name="comboUpperLevel" Loaded="upperLevel_Loaded" SelectionChanged="comboUpperLevel_SelectionChanged"></ComboBox>
+            </DockPanel>
+            <DockPanel Margin="0,20,0,5">
+                <Button x:Name="btnUN" Margin="0,0,5,0" Content="{x:Static p:WindowLanguage.JoinUnjoin_UnjoinAction}" Height="23" MinWidth="180" Click="btnUN_Click"/>
+                <Button x:Name="btnOK" Content="{x:Static p:WindowLanguage.JoinUnjoin_JoinAction}" Height="23" Click="btnOK_Click"/>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
