@@ -1,0 +1,40 @@
+﻿<Window x:Name="RevitZipWindow" x:Class="ONBOXAppl.RevitZipUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ONBOXAppl"
+        mc:Ignorable="d"
+        Title="Empacotar projeto" Width="300" SizeToContent="Height" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="10">
+        <StackPanel Orientation="Horizontal">
+            <CheckBox x:Name="checkProject" Content="Incluir projeto" IsChecked="True"/>
+        </StackPanel>
+        <StackPanel>
+            <GroupBox Margin="10">
+                <StackPanel Margin="5">
+                    <CheckBox x:Name="checkTexture" Content="Texturas" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkAutodeskTexture" Content="Texturas Autodesk" Margin="12,5,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkCAD" Content="Vínculos CAD" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkPointCloud" Content="Nuvem de pontos" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkExtra" Content="Extras" Margin="0,8,0,0" IsChecked="True"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <CheckBox x:Name="checkLink" Content="Incluir projetos vinculados" IsChecked="True"/>
+        </StackPanel>
+        <StackPanel>
+            <GroupBox Margin="10">
+                <StackPanel Margin="5">
+                    <CheckBox x:Name="checkLinkTexture" Content="Texturas" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkLinkAutodeskTexture" Content="Texturas Autodesk" Margin="12,5,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkLinkCAD" Content="Vínculos CAD" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkLinkPointCloud" Content="Nuvem de pontos" Margin="0,8,0,0" IsChecked="True"/>
+                    <CheckBox x:Name="checkLinkExtra" Content="Extras" Margin="0,8,0,0" IsChecked="True"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <Button x:Name="btnOk" Content="Empacotar" MinHeight="23" Click="btnOk_Click"/>
+    </StackPanel>
+</Window>

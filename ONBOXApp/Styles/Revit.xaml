@@ -1,0 +1,128 @@
+﻿<ResourceDictionary x:Class="PIG.Styles.RevitSy"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PIG.Styles">
+
+    <SolidColorBrush x:Key="WindowBackground" Color="#f0f0f0"/>
+    <SolidColorBrush x:Key="WindowInnerColor" Color="#ffffff"/>
+    <Color x:Key="GridInnerDashLines">#6d6d6d</Color>
+    <SolidColorBrush x:Key="BorderColor" Color="#d9d9d9"/>
+
+    <Style TargetType="Button">
+        <Setter Property="Width" Value="75"/>
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="Button" x:Key="ButtonRectTransp">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style TargetType="ComboBox">
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+    
+    <Style TargetType="DockPanel">
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+
+    <Style TargetType="StackPanel">
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+
+    <Style TargetType="Grid">
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+
+    <Style TargetType="GroupBox">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style TargetType="Window" x:Key="WindowDefault">
+        <Setter Property="Background" Value="{StaticResource WindowBackground}"/>
+        <Setter Property="SizeToContent" Value="WidthAndHeight"/>
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <!--<Setter Property="Icon" Value="/PIG;component/Resources/pig32.png"/>-->
+    </Style>
+
+    <Style TargetType="Separator">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Width" Value="7"/>
+        <Setter Property="Height" Value="7"/>
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="DataGridCell" x:Key="CenterCellTemplate">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <!--<Setter Property="Height" Value="26"/>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridCell}">
+                    <Grid Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <LinearGradientBrush x:Key="VerticalLines" StartPoint="0,0" EndPoint="0,3" MappingMode="Absolute" SpreadMethod="Repeat">
+        <GradientStop Offset="0" Color="{StaticResource GridInnerDashLines}"/>
+        <GradientStop Offset="0.5" Color="{StaticResource GridInnerDashLines}"/>
+        <GradientStop Offset="0.5" Color="Transparent"/>
+        <GradientStop Offset="1" Color="Transparent"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="HorizontalLines" StartPoint="0,0" EndPoint="3,0" MappingMode="Absolute" SpreadMethod="Repeat">
+        <GradientStop Offset="0" Color="{StaticResource GridInnerDashLines}"/>
+        <GradientStop Offset="0.5" Color="{StaticResource GridInnerDashLines}"/>
+        <GradientStop Offset="0.5" Color="Transparent"/>
+        <GradientStop Offset="1" Color="Transparent"/>
+    </LinearGradientBrush>
+
+    <Style TargetType="DataGrid">
+        <Setter Property="Background" Value="{StaticResource WindowInnerColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CanUserAddRows" Value="False"/>
+        <Setter Property="CanUserDeleteRows" Value="False"/>
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+        <Setter Property="CanUserResizeRows" Value="False"/>
+        <!--<Setter Property="CanUserResizeColumns" Value="False"/>-->
+        <Setter Property="CanUserReorderColumns" Value="False"/>
+        <Setter Property="CanUserSortColumns" Value="False"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource HorizontalLines}"/>
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource VerticalLines}"/>
+        <Setter Property="VerticalScrollBarVisibility" Value="Visible"/>
+        <Setter Property="HorizontalScrollBarVisibility" Value="Hidden"/>
+        <Setter Property="HeadersVisibility" Value="Column"/>
+        <Setter Property="CellStyle" Value="{StaticResource CenterCellTemplate}"/>
+    </Style>
+
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="Height" Value="23"/>
+        <Setter Property="BorderBrush" Value="{StaticResource BorderColor}"/>
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+        <Setter Property="Background" Value="{StaticResource WindowBackground}"/>
+        <Setter Property="Padding" Value="4,0,0,0"/>
+    </Style>
+
+</ResourceDictionary>

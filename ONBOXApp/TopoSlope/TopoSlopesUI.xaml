@@ -1,0 +1,29 @@
+﻿<Window x:Name="TopoSlopeWindow" x:Class="ONBOXAppl.TopoSlopesUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:ONBOXAppl.Properties"
+        Icon="/ONBOXAppl;component/Resources/onBox32.png"
+        Title="{x:Static p:WindowLanguage.SlopeGrading_Title}" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel>
+                <DockPanel>
+                    <Label Content="{x:Static p:WindowLanguage.SlopeGrading_MaxDistance}"/>
+                    <TextBox x:Name="textMaxDist" Text="1" HorizontalAlignment="Right" MinWidth="40" MaxHeight="23" TextAlignment="Right"/>
+                </DockPanel>
+                <DockPanel Margin="0,5,0,0">
+                    <Label Content="{x:Static p:WindowLanguage.SlopeGrading_MaxAngle}"/>
+                    <TextBox x:Name="textAngle" Text="45" HorizontalAlignment="Right" MinWidth="40" MaxHeight="23" TextAlignment="Right"/>
+                </DockPanel>
+                <DockPanel Margin="0,10,0,0">
+                    <CheckBox x:Name="checkContinuous" Content="{x:Static p:WindowLanguage.SlopeGrading_MultiplePads}" />
+                </DockPanel>
+            </StackPanel>
+            <StackPanel Margin="0,20,0,5">
+                <DockPanel>
+                    <Button x:Name="btnCreate" Content="{x:Static p:WindowLanguage.SlopeGrading_CreateSlopeGradings}" MinHeight="23" Click="btnCreate_Click"/>
+                </DockPanel>
+            </StackPanel>
+            </StackPanel>
+    </Grid>
+</Window>
