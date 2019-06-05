@@ -650,7 +650,9 @@
     <Resource Include="Resources\btnBeamsFromBuilding32.png" />
     <Resource Include="Resources\btnBeamsCopyLevels.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="docs\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>goto exit
