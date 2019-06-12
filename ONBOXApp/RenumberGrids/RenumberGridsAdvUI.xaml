@@ -41,7 +41,7 @@
                     <DataGrid x:Name="gridGrids" MinHeight="200" MaxHeight="200" AllowDrop="True">
                         <DataGrid.ContextMenu>
                             <ContextMenu>
-                                <MenuItem Header="{x:Static p:WindowLanguage.RenumberGrids_RestoreOrientation}" Click="ChangeOrientation_Click"/>
+                                <MenuItem Header="{x:Static p:WindowLanguage.RenumberGrids_FlipOrientation}" Click="ChangeOrientation_Click"/>
                             </ContextMenu>
                         </DataGrid.ContextMenu>
                     </DataGrid>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,711 +59,714 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="About_Information" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Information" xml:space="preserve">
     <value>What is OnBox?
 
 Onbox is a free and open source Revit App that helps day to day tasks like renumbering elements, creating structural components, topo surface manipulations, and content management.
 
 Originally created in 2014 as a collection of macros to improve and speed up workflows for multi-story buildings, it had its first public release in September 2016 as a Revit Application. It became very popular in Brazil and other countries like Spain, Mexico, and Portugal, helping AEC students and professionals across 39 different countries to be more productive and efficient.</value>
   </data>
-	<data name="About_Title" xml:space="preserve">
+  <data name="About_Title" xml:space="preserve">
     <value>OnboxApp</value>
   </data>
-	<data name="About_Version" xml:space="preserve">
+  <data name="About_Version" xml:space="preserve">
     <value>Version</value>
   </data>
-	<data name="About_Website" xml:space="preserve">
+  <data name="About_Website" xml:space="preserve">
     <value>Website</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_ChooseStandardFloors" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_ChooseStandardFloors" xml:space="preserve">
     <value>Choose the Standard Floors</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_Invert" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_Invert" xml:space="preserve">
     <value>Invert Selection</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_IsStandard" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_IsStandard" xml:space="preserve">
     <value>Is Standard?</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_LevelsThatContainsName" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_LevelsThatContainsName" xml:space="preserve">
     <value>Level that Contains the Name</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_ManuallyPickStandardFloors" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_ManuallyPickStandardFloors" xml:space="preserve">
     <value>Manually Pick Standard Floors</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_MatchCase" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_MatchCase" xml:space="preserve">
     <value>Case Sensitive</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_Name" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_SelectAll" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_SelectAll" xml:space="preserve">
     <value>Select All</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_SelectNone" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_SelectNone" xml:space="preserve">
     <value>Deselect All</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_Standard" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_Standard" xml:space="preserve">
     <value>standard</value>
   </data>
-	<data name="BeamsForBuildingLevelOptions_Title" xml:space="preserve">
+  <data name="BeamsForBuildingLevelOptions_Title" xml:space="preserve">
     <value>Standard Floors</value>
   </data>
-	<data name="BeamsForBuilding_BeamTypeDimensions" xml:space="preserve">
+  <data name="BeamsForBuilding_BeamTypeDimensions" xml:space="preserve">
     <value>Beam Type Dimensions</value>
   </data>
-	<data name="BeamsForBuilding_ChooseBeamFamily" xml:space="preserve">
+  <data name="BeamsForBuilding_ChooseBeamFamily" xml:space="preserve">
     <value>Choose Beam Family</value>
   </data>
-	<data name="BeamsForBuilding_ChooseLevelsToBeRenumbered" xml:space="preserve">
+  <data name="BeamsForBuilding_ChooseLevelsToBeRenumbered" xml:space="preserve">
     <value>Choose Levels to be Renumbered</value>
   </data>
-	<data name="BeamsForBuilding_CreateBeamsOnIntermediateLevels" xml:space="preserve">
+  <data name="BeamsForBuilding_CreateBeamsOnIntermediateLevels" xml:space="preserve">
     <value>Create Beams on Intermediate Levels</value>
   </data>
-	<data name="BeamsForBuilding_Height" xml:space="preserve">
+  <data name="BeamsForBuilding_Height" xml:space="preserve">
     <value>Height</value>
   </data>
-	<data name="BeamsForBuilding_IgnoreStandardLevels" xml:space="preserve">
+  <data name="BeamsForBuilding_IgnoreStandardLevels" xml:space="preserve">
     <value>Ignore Standard Levels</value>
   </data>
-	<data name="BeamsForBuilding_IgnoreWallsWidthLessThan" xml:space="preserve">
+  <data name="BeamsForBuilding_IgnoreWallsWidthLessThan" xml:space="preserve">
     <value>Ignore Walls with Width Less Than</value>
   </data>
-	<data name="BeamsForBuilding_Invert" xml:space="preserve">
+  <data name="BeamsForBuilding_Invert" xml:space="preserve">
     <value>Invert Selection</value>
   </data>
-	<data name="BeamsForBuilding_LevelName" xml:space="preserve">
+  <data name="BeamsForBuilding_LevelName" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="BeamsForBuilding_LevelUse" xml:space="preserve">
+  <data name="BeamsForBuilding_LevelUse" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="BeamsForBuilding_LinkedFileName" xml:space="preserve">
+  <data name="BeamsForBuilding_LinkedFileName" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="BeamsForBuilding_LinkedFiles" xml:space="preserve">
+  <data name="BeamsForBuilding_LinkedFiles" xml:space="preserve">
     <value>Linked Files</value>
   </data>
-	<data name="BeamsForBuilding_Options" xml:space="preserve">
+  <data name="BeamsForBuilding_Options" xml:space="preserve">
     <value>Options</value>
   </data>
-	<data name="BeamsForBuilding_SelectAll" xml:space="preserve">
+  <data name="BeamsForBuilding_SelectAll" xml:space="preserve">
     <value>Select All</value>
   </data>
-	<data name="BeamsForBuilding_SelectNone" xml:space="preserve">
+  <data name="BeamsForBuilding_SelectNone" xml:space="preserve">
     <value>Select None</value>
   </data>
-	<data name="BeamsForBuilding_StandardLevels" xml:space="preserve">
+  <data name="BeamsForBuilding_StandardLevels" xml:space="preserve">
     <value>Standard Levels</value>
   </data>
-	<data name="BeamsForBuilding_Title" xml:space="preserve">
+  <data name="BeamsForBuilding_Title" xml:space="preserve">
     <value>Create Beams For The Entire Building</value>
   </data>
-	<data name="BeamsForBuilding_TryToJoin" xml:space="preserve">
+  <data name="BeamsForBuilding_TryToJoin" xml:space="preserve">
     <value>Try to Join Beams with Nearby Walls</value>
   </data>
-	<data name="BeamsForBuilding_Width" xml:space="preserve">
+  <data name="BeamsForBuilding_Width" xml:space="preserve">
     <value>Width</value>
   </data>
-	<data name="BeamsFromColumns_Chain" xml:space="preserve">
+  <data name="BeamsFromColumns_Chain" xml:space="preserve">
     <value>Chain</value>
   </data>
-	<data name="BeamsFromColumns_ChooseBeamFamily" xml:space="preserve">
+  <data name="BeamsFromColumns_ChooseBeamFamily" xml:space="preserve">
     <value>Choose Beam Family</value>
   </data>
-	<data name="BeamsFromColumns_Create" xml:space="preserve">
+  <data name="BeamsFromColumns_Create" xml:space="preserve">
     <value>Create</value>
   </data>
-	<data name="BeamsFromColumns_FirstSelectedColumn" xml:space="preserve">
+  <data name="BeamsFromColumns_FirstSelectedColumn" xml:space="preserve">
     <value>First Selected Column</value>
   </data>
-	<data name="BeamsFromColumns_FixedHeight" xml:space="preserve">
+  <data name="BeamsFromColumns_FixedHeight" xml:space="preserve">
     <value>Fixed Height</value>
   </data>
-	<data name="BeamsFromColumns_FixedWidth" xml:space="preserve">
+  <data name="BeamsFromColumns_FixedWidth" xml:space="preserve">
     <value>Fixed Width</value>
   </data>
-	<data name="BeamsFromColumns_Height" xml:space="preserve">
+  <data name="BeamsFromColumns_Height" xml:space="preserve">
     <value>Height</value>
   </data>
-	<data name="BeamsFromColumns_MoreOptions" xml:space="preserve">
+  <data name="BeamsFromColumns_MoreOptions" xml:space="preserve">
     <value>More Options</value>
   </data>
-	<data name="BeamsFromColumns_SecondSelectedColumn" xml:space="preserve">
+  <data name="BeamsFromColumns_SecondSelectedColumn" xml:space="preserve">
     <value>Second Selected Column</value>
   </data>
-	<data name="BeamsFromColumns_SpanDividedBy" xml:space="preserve">
+  <data name="BeamsFromColumns_SpanDividedBy" xml:space="preserve">
     <value>Span Divided By</value>
   </data>
-	<data name="BeamsFromColumns_Title" xml:space="preserve">
+  <data name="BeamsFromColumns_Title" xml:space="preserve">
     <value>Beams From Structural Columns</value>
   </data>
-	<data name="BeamsFromColumns_Width" xml:space="preserve">
+  <data name="BeamsFromColumns_Width" xml:space="preserve">
     <value>Width</value>
   </data>
-	<data name="BeamsFromWalls_Create" xml:space="preserve">
+  <data name="BeamsFromWalls_Create" xml:space="preserve">
     <value>Create</value>
   </data>
-	<data name="BeamsFromWalls_Dimensions" xml:space="preserve">
+  <data name="BeamsFromWalls_Dimensions" xml:space="preserve">
     <value>Dimensions</value>
   </data>
-	<data name="BeamsFromWalls_FixedHeight" xml:space="preserve">
+  <data name="BeamsFromWalls_FixedHeight" xml:space="preserve">
     <value>Fixed Height</value>
   </data>
-	<data name="BeamsFromWalls_FixedWidth" xml:space="preserve">
+  <data name="BeamsFromWalls_FixedWidth" xml:space="preserve">
     <value>Fixed Width</value>
   </data>
-	<data name="BeamsFromWalls_Height" xml:space="preserve">
+  <data name="BeamsFromWalls_Height" xml:space="preserve">
     <value>Height</value>
   </data>
-	<data name="BeamsFromWalls_Inverted" xml:space="preserve">
+  <data name="BeamsFromWalls_Inverted" xml:space="preserve">
     <value>Inverted</value>
   </data>
-	<data name="BeamsFromWalls_JoinWithWalls" xml:space="preserve">
+  <data name="BeamsFromWalls_JoinWithWalls" xml:space="preserve">
     <value>Join With Walls</value>
   </data>
-	<data name="BeamsFromWalls_Links" xml:space="preserve">
+  <data name="BeamsFromWalls_Links" xml:space="preserve">
     <value>Links</value>
   </data>
-	<data name="BeamsFromWalls_LowerBeam" xml:space="preserve">
+  <data name="BeamsFromWalls_LowerBeam" xml:space="preserve">
     <value>Lower Beam</value>
   </data>
-	<data name="BeamsFromWalls_MoreOptions" xml:space="preserve">
+  <data name="BeamsFromWalls_MoreOptions" xml:space="preserve">
     <value>More Options</value>
   </data>
-	<data name="BeamsFromWalls_Position" xml:space="preserve">
+  <data name="BeamsFromWalls_Position" xml:space="preserve">
     <value>Position</value>
   </data>
-	<data name="BeamsFromWalls_SpanDividedBy" xml:space="preserve">
+  <data name="BeamsFromWalls_SpanDividedBy" xml:space="preserve">
     <value>Span Divided by</value>
   </data>
-	<data name="BeamsFromWalls_Title" xml:space="preserve">
+  <data name="BeamsFromWalls_Title" xml:space="preserve">
     <value>Beams From Walls</value>
   </data>
-	<data name="BeamsFromWalls_ToTheHighestCasing" xml:space="preserve">
+  <data name="BeamsFromWalls_ToTheHighestCasing" xml:space="preserve">
     <value>To The Highest Opening</value>
   </data>
-	<data name="BeamsFromWalls_UpperBeam" xml:space="preserve">
+  <data name="BeamsFromWalls_UpperBeam" xml:space="preserve">
     <value>Upper Beam</value>
   </data>
-	<data name="BeamsFromWalls_WallWidthAddedTo" xml:space="preserve">
+  <data name="BeamsFromWalls_WallWidthAddedTo" xml:space="preserve">
     <value>Wall Width Added to</value>
   </data>
-	<data name="BeamsFromWalls_Width" xml:space="preserve">
+  <data name="BeamsFromWalls_Width" xml:space="preserve">
     <value>Width</value>
   </data>
-	<data name="ColumnsFromCAD_ChooseCircularFamily" xml:space="preserve">
+  <data name="ColumnsFromCAD_ChooseCircularFamily" xml:space="preserve">
     <value>Choose Circular Family</value>
   </data>
-	<data name="ColumnsFromCAD_ChooseRectangularFamily" xml:space="preserve">
+  <data name="ColumnsFromCAD_ChooseRectangularFamily" xml:space="preserve">
     <value>Choose Rectangular Family</value>
   </data>
-	<data name="ColumnsFromCAD_ChooseTheLayer" xml:space="preserve">
+  <data name="ColumnsFromCAD_ChooseTheLayer" xml:space="preserve">
     <value>Choose The Layer</value>
   </data>
-	<data name="ColumnsFromCAD_ChooseTheLevels" xml:space="preserve">
+  <data name="ColumnsFromCAD_ChooseTheLevels" xml:space="preserve">
     <value>Choose The Levels To Be Used</value>
   </data>
-	<data name="ColumnsFromCAD_InvertSelection" xml:space="preserve">
+  <data name="ColumnsFromCAD_InvertSelection" xml:space="preserve">
     <value>Invert Selection</value>
   </data>
-	<data name="ColumnsFromCAD_LevelName" xml:space="preserve">
+  <data name="ColumnsFromCAD_LevelName" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="ColumnsFromCAD_LevelUse" xml:space="preserve">
+  <data name="ColumnsFromCAD_LevelUse" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="ColumnsFromCAD_SelectAll" xml:space="preserve">
+  <data name="ColumnsFromCAD_SelectAll" xml:space="preserve">
     <value>Select All</value>
   </data>
-	<data name="ColumnsFromCAD_SelectNone" xml:space="preserve">
+  <data name="ColumnsFromCAD_SelectNone" xml:space="preserve">
     <value>Select None</value>
   </data>
-	<data name="ColumnsFromCAD_Title" xml:space="preserve">
+  <data name="ColumnsFromCAD_Title" xml:space="preserve">
     <value>Structural Columns From CAD</value>
   </data>
-	<data name="Common_Apply" xml:space="preserve">
+  <data name="Common_Apply" xml:space="preserve">
     <value>_Apply</value>
   </data>
-	<data name="Common_Close" xml:space="preserve">
+  <data name="Common_Close" xml:space="preserve">
     <value>_Close</value>
   </data>
-	<data name="Common_OK" xml:space="preserve">
+  <data name="Common_OK" xml:space="preserve">
     <value>_OK</value>
   </data>
-	<data name="CopyElements_CopyAction" xml:space="preserve">
+  <data name="CopyElements_CopyAction" xml:space="preserve">
     <value>Copy</value>
   </data>
-	<data name="CopyElements_DeleteBeamsOnTargetLevel" xml:space="preserve">
+  <data name="CopyElements_DeleteBeamsOnTargetLevel" xml:space="preserve">
     <value>Delete Beams on Target Level</value>
   </data>
-	<data name="CopyElements_Title" xml:space="preserve">
+  <data name="CopyElements_Title" xml:space="preserve">
     <value>Copy Beams</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_GenerateTopo" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_GenerateTopo" xml:space="preserve">
     <value>Generate Toposurface</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_Horizontal" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_Horizontal" xml:space="preserve">
     <value>Horizontal</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_IterationDistance" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_IterationDistance" xml:space="preserve">
     <value>Iteration Distance</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_Iterations" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_Iterations" xml:space="preserve">
     <value>Iterations</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_Title" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_Title" xml:space="preserve">
     <value>Create Toposurface from Point Cloud</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_TotalDistance" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_TotalDistance" xml:space="preserve">
     <value>Total Distance</value>
   </data>
-	<data name="CreateTopoSurfacePointCloud_Vertical" xml:space="preserve">
+  <data name="CreateTopoSurfacePointCloud_Vertical" xml:space="preserve">
     <value>Vertical</value>
   </data>
-	<data name="Exceptions_DefaultMessage" xml:space="preserve">
+  <data name="Exceptions_DefaultMessage" xml:space="preserve">
     <value>Sorry, the app ran through an unmanaged error, please, contact us at contato@onboxdesign.com.br with the report below and as much more information as you can, so we can try to fix the issue.</value>
   </data>
-	<data name="Exceptions_Report" xml:space="preserve">
+  <data name="Exceptions_Report" xml:space="preserve">
     <value>Error Report</value>
   </data>
-	<data name="Exceptions_Title" xml:space="preserve">
+  <data name="Exceptions_Title" xml:space="preserve">
     <value>Ops!</value>
   </data>
-	<data name="JoinUnjoinSelected_All" xml:space="preserve">
+  <data name="JoinUnjoinSelected_All" xml:space="preserve">
     <value>All</value>
   </data>
-	<data name="JoinUnjoinSelected_Beams" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Beams" xml:space="preserve">
     <value>Beams</value>
   </data>
-	<data name="JoinUnjoinSelected_Columns" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Columns" xml:space="preserve">
     <value>Columns</value>
   </data>
-	<data name="JoinUnjoinSelected_Floors" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Floors" xml:space="preserve">
     <value>Floors</value>
   </data>
-	<data name="JoinUnjoinSelected_Join" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Join" xml:space="preserve">
     <value>Join</value>
   </data>
-	<data name="JoinUnjoinSelected_JoinAction" xml:space="preserve">
+  <data name="JoinUnjoinSelected_JoinAction" xml:space="preserve">
     <value>Join</value>
   </data>
-	<data name="JoinUnjoinSelected_JoinWith" xml:space="preserve">
+  <data name="JoinUnjoinSelected_JoinWith" xml:space="preserve">
     <value>Join With</value>
   </data>
-	<data name="JoinUnjoinSelected_MarkedElement" xml:space="preserve">
+  <data name="JoinUnjoinSelected_MarkedElement" xml:space="preserve">
     <value>Marked Element</value>
   </data>
-	<data name="JoinUnjoinSelected_MarkedElements" xml:space="preserve">
+  <data name="JoinUnjoinSelected_MarkedElements" xml:space="preserve">
     <value>Marked Elements</value>
   </data>
-	<data name="JoinUnjoinSelected_Title" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Title" xml:space="preserve">
     <value>Join / Unjoin Elements</value>
   </data>
-	<data name="JoinUnjoinSelected_UnjoinAction" xml:space="preserve">
+  <data name="JoinUnjoinSelected_UnjoinAction" xml:space="preserve">
     <value>Unjoin</value>
   </data>
-	<data name="JoinUnjoinSelected_Walls" xml:space="preserve">
+  <data name="JoinUnjoinSelected_Walls" xml:space="preserve">
     <value>Walls</value>
   </data>
-	<data name="JoinUnjoin_Beams" xml:space="preserve">
+  <data name="JoinUnjoin_Beams" xml:space="preserve">
     <value>Beams</value>
   </data>
-	<data name="JoinUnjoin_Columns" xml:space="preserve">
+  <data name="JoinUnjoin_Columns" xml:space="preserve">
     <value>Columns</value>
   </data>
-	<data name="JoinUnjoin_DownToLevel" xml:space="preserve">
+  <data name="JoinUnjoin_DownToLevel" xml:space="preserve">
     <value>Down To Level</value>
   </data>
-	<data name="JoinUnjoin_FirstCategory" xml:space="preserve">
+  <data name="JoinUnjoin_FirstCategory" xml:space="preserve">
     <value>First Category</value>
   </data>
-	<data name="JoinUnjoin_Floors" xml:space="preserve">
+  <data name="JoinUnjoin_Floors" xml:space="preserve">
     <value>Floors</value>
   </data>
-	<data name="JoinUnjoin_FromLevel" xml:space="preserve">
+  <data name="JoinUnjoin_FromLevel" xml:space="preserve">
     <value>From Level</value>
   </data>
-	<data name="JoinUnjoin_JoinAction" xml:space="preserve">
+  <data name="JoinUnjoin_JoinAction" xml:space="preserve">
     <value>Join</value>
   </data>
-	<data name="JoinUnjoin_SecondCategory" xml:space="preserve">
+  <data name="JoinUnjoin_SecondCategory" xml:space="preserve">
     <value>Second Category</value>
   </data>
-	<data name="JoinUnjoin_Title" xml:space="preserve">
+  <data name="JoinUnjoin_Title" xml:space="preserve">
     <value>Join / Unjoin Elements</value>
   </data>
-	<data name="JoinUnjoin_ToLevel" xml:space="preserve">
+  <data name="JoinUnjoin_ToLevel" xml:space="preserve">
     <value>To Level</value>
   </data>
-	<data name="JoinUnjoin_UnjoinAction" xml:space="preserve">
+  <data name="JoinUnjoin_UnjoinAction" xml:space="preserve">
     <value>Unjoin</value>
   </data>
-	<data name="JoinUnjoin_UpToLevel" xml:space="preserve">
+  <data name="JoinUnjoin_UpToLevel" xml:space="preserve">
     <value>Up To Level</value>
   </data>
-	<data name="JoinUnjoin_Walls" xml:space="preserve">
+  <data name="JoinUnjoin_Walls" xml:space="preserve">
     <value>Walls</value>
   </data>
-	<data name="RenumberBeamLevelOptions_Name" xml:space="preserve">
+  <data name="RenumberBeamLevelOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberBeamLevelOptions_NumberingByLevel" xml:space="preserve">
+  <data name="RenumberBeamLevelOptions_NumberingByLevel" xml:space="preserve">
     <value>Numbering by level</value>
   </data>
-	<data name="RenumberBeamLevelOptions_Prefix" xml:space="preserve">
+  <data name="RenumberBeamLevelOptions_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberBeamLevelOptions_Title" xml:space="preserve">
+  <data name="RenumberBeamLevelOptions_Title" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberBeamLevelOptions_Use" xml:space="preserve">
+  <data name="RenumberBeamLevelOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberBeamsTypeOptions_Name" xml:space="preserve">
+  <data name="RenumberBeamsTypeOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberBeamsTypeOptions_Prefix" xml:space="preserve">
+  <data name="RenumberBeamsTypeOptions_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberBeamsTypeOptions_Restrict" xml:space="preserve">
+  <data name="RenumberBeamsTypeOptions_Restrict" xml:space="preserve">
     <value>Restrict beam types to be renumbered</value>
   </data>
-	<data name="RenumberBeamsTypeOptions_Title" xml:space="preserve">
+  <data name="RenumberBeamsTypeOptions_Title" xml:space="preserve">
     <value>Renumber Beam Types</value>
   </data>
-	<data name="RenumberBeamsTypeOptions_Use" xml:space="preserve">
+  <data name="RenumberBeamsTypeOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberBeams_DecimalPlaces" xml:space="preserve">
+  <data name="RenumberBeams_DecimalPlaces" xml:space="preserve">
     <value>Decimal Places</value>
   </data>
-	<data name="RenumberBeams_HorizontalsFirst" xml:space="preserve">
+  <data name="RenumberBeams_HorizontalsFirst" xml:space="preserve">
     <value>Hoizontals First</value>
   </data>
-	<data name="RenumberBeams_LevelOptions" xml:space="preserve">
+  <data name="RenumberBeams_LevelOptions" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberBeams_NoRule" xml:space="preserve">
+  <data name="RenumberBeams_NoRule" xml:space="preserve">
     <value>No Rule</value>
   </data>
-	<data name="RenumberBeams_Renumber" xml:space="preserve">
+  <data name="RenumberBeams_Renumber" xml:space="preserve">
     <value>Renumber</value>
   </data>
-	<data name="RenumberBeams_RenumberingRule" xml:space="preserve">
+  <data name="RenumberBeams_RenumberingRule" xml:space="preserve">
     <value>Renumbering Rule</value>
   </data>
-	<data name="RenumberBeams_Title" xml:space="preserve">
+  <data name="RenumberBeams_Title" xml:space="preserve">
     <value>Renumber Beams</value>
   </data>
-	<data name="RenumberBeams_TypeOptions" xml:space="preserve">
+  <data name="RenumberBeams_TypeOptions" xml:space="preserve">
     <value>Type Options</value>
   </data>
-	<data name="RenumberBeams_VerticalsFirst" xml:space="preserve">
+  <data name="RenumberBeams_VerticalsFirst" xml:space="preserve">
     <value>Verticals First</value>
   </data>
-	<data name="RenumberColumnsLevelOptions_ColumnsLevelOptions" xml:space="preserve">
+  <data name="RenumberColumnsLevelOptions_ColumnsLevelOptions" xml:space="preserve">
     <value>Columns Level Options</value>
   </data>
-	<data name="RenumberColumnsLevelOptions_Label" xml:space="preserve">
+  <data name="RenumberColumnsLevelOptions_Label" xml:space="preserve">
     <value>Label</value>
   </data>
-	<data name="RenumberColumnsLevelOptions_Name" xml:space="preserve">
+  <data name="RenumberColumnsLevelOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberColumnsLevelOptions_Title" xml:space="preserve">
+  <data name="RenumberColumnsLevelOptions_Title" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberColumnsLevelOptions_Use" xml:space="preserve">
+  <data name="RenumberColumnsLevelOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberColumnsSelection_Concatenation" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Concatenation" xml:space="preserve">
     <value>Concatenation</value>
   </data>
-	<data name="RenumberColumnsSelection_Concatenator" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Concatenator" xml:space="preserve">
     <value>to</value>
   </data>
-	<data name="RenumberColumnsSelection_Downwards" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Downwards" xml:space="preserve">
     <value>Downwards</value>
   </data>
-	<data name="RenumberColumnsSelection_GeneralOptions" xml:space="preserve">
+  <data name="RenumberColumnsSelection_GeneralOptions" xml:space="preserve">
     <value>General Options</value>
   </data>
-	<data name="RenumberColumnsSelection_Guess" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Guess" xml:space="preserve">
     <value>Guess</value>
   </data>
-	<data name="RenumberColumnsSelection_LevelLabel" xml:space="preserve">
+  <data name="RenumberColumnsSelection_LevelLabel" xml:space="preserve">
     <value>Level Label</value>
   </data>
-	<data name="RenumberColumnsSelection_LevelLabeler" xml:space="preserve">
+  <data name="RenumberColumnsSelection_LevelLabeler" xml:space="preserve">
     <value>Level</value>
   </data>
-	<data name="RenumberColumnsSelection_LevelOptions" xml:space="preserve">
+  <data name="RenumberColumnsSelection_LevelOptions" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberColumnsSelection_NextNumbering" xml:space="preserve">
+  <data name="RenumberColumnsSelection_NextNumbering" xml:space="preserve">
     <value>Next Numbering</value>
   </data>
-	<data name="RenumberColumnsSelection_RenumberingRule" xml:space="preserve">
+  <data name="RenumberColumnsSelection_RenumberingRule" xml:space="preserve">
     <value>Renumbering Rule</value>
   </data>
-	<data name="RenumberColumnsSelection_Title" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Title" xml:space="preserve">
     <value>Renumber Columns by Selection</value>
   </data>
-	<data name="RenumberColumnsSelection_TypeOptions" xml:space="preserve">
+  <data name="RenumberColumnsSelection_TypeOptions" xml:space="preserve">
     <value>Type Options</value>
   </data>
-	<data name="RenumberColumnsSelection_Upwards" xml:space="preserve">
+  <data name="RenumberColumnsSelection_Upwards" xml:space="preserve">
     <value>Upwards</value>
   </data>
-	<data name="RenumberColumnsTypeOptions_ColumnTypesToBeRenumbered" xml:space="preserve">
+  <data name="RenumberColumnsTypeOptions_ColumnTypesToBeRenumbered" xml:space="preserve">
     <value>Column Types To Be Renumbered</value>
   </data>
-	<data name="RenumberColumnsTypeOptions_Name" xml:space="preserve">
+  <data name="RenumberColumnsTypeOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberColumnsTypeOptions_Prefix" xml:space="preserve">
+  <data name="RenumberColumnsTypeOptions_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberColumnsTypeOptions_Title" xml:space="preserve">
+  <data name="RenumberColumnsTypeOptions_Title" xml:space="preserve">
     <value>Types To Be Renumbered</value>
   </data>
-	<data name="RenumberColumnsTypeOptions_Use" xml:space="preserve">
+  <data name="RenumberColumnsTypeOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberColumns_Concatenation" xml:space="preserve">
+  <data name="RenumberColumns_Concatenation" xml:space="preserve">
     <value>Concatenation</value>
   </data>
-	<data name="RenumberColumns_Downwards" xml:space="preserve">
+  <data name="RenumberColumns_Downwards" xml:space="preserve">
     <value>Downwards</value>
   </data>
-	<data name="RenumberColumns_GeneralOptions" xml:space="preserve">
+  <data name="RenumberColumns_GeneralOptions" xml:space="preserve">
     <value>General Options</value>
   </data>
-	<data name="RenumberColumns_LevelConcatenator" xml:space="preserve">
+  <data name="RenumberColumns_LevelConcatenator" xml:space="preserve">
     <value>to</value>
   </data>
-	<data name="RenumberColumns_LevelLabel" xml:space="preserve">
+  <data name="RenumberColumns_LevelLabel" xml:space="preserve">
     <value>Level Label</value>
   </data>
-	<data name="RenumberColumns_LevelLabeler" xml:space="preserve">
+  <data name="RenumberColumns_LevelLabeler" xml:space="preserve">
     <value>Level</value>
   </data>
-	<data name="RenumberColumns_LevelOptions" xml:space="preserve">
+  <data name="RenumberColumns_LevelOptions" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberColumns_NumberingRule" xml:space="preserve">
+  <data name="RenumberColumns_NumberingRule" xml:space="preserve">
     <value>Numbering Rule</value>
   </data>
-	<data name="RenumberColumns_Renumber" xml:space="preserve">
+  <data name="RenumberColumns_Renumber" xml:space="preserve">
     <value>Renumber</value>
   </data>
-	<data name="RenumberColumns_Title" xml:space="preserve">
+  <data name="RenumberColumns_Title" xml:space="preserve">
     <value>Renumber Columns</value>
   </data>
-	<data name="RenumberColumns_TypeOptions" xml:space="preserve">
+  <data name="RenumberColumns_TypeOptions" xml:space="preserve">
     <value>Type Options</value>
   </data>
-	<data name="RenumberColumns_Upwards" xml:space="preserve">
+  <data name="RenumberColumns_Upwards" xml:space="preserve">
     <value>Upwards</value>
   </data>
-	<data name="RenumberGrids_HorizontalGrids" xml:space="preserve">
+  <data name="RenumberGrids_FlipOrientation" xml:space="preserve">
+    <value>Flip Orientation</value>
+  </data>
+  <data name="RenumberGrids_HorizontalGrids" xml:space="preserve">
     <value>Horizontal Grids</value>
   </data>
-	<data name="RenumberGrids_InvertOrientation" xml:space="preserve">
+  <data name="RenumberGrids_InvertOrientation" xml:space="preserve">
     <value>Invert Orientation</value>
   </data>
-	<data name="RenumberGrids_Letters" xml:space="preserve">
+  <data name="RenumberGrids_Letters" xml:space="preserve">
     <value>Letters</value>
   </data>
-	<data name="RenumberGrids_MoreOptions" xml:space="preserve">
+  <data name="RenumberGrids_MoreOptions" xml:space="preserve">
     <value>More Options</value>
   </data>
-	<data name="RenumberGrids_NewNumbering" xml:space="preserve">
+  <data name="RenumberGrids_NewNumbering" xml:space="preserve">
     <value>New</value>
   </data>
-	<data name="RenumberGrids_Numbers" xml:space="preserve">
+  <data name="RenumberGrids_Numbers" xml:space="preserve">
     <value>Numbers</value>
   </data>
-	<data name="RenumberGrids_Orientation" xml:space="preserve">
+  <data name="RenumberGrids_Orientation" xml:space="preserve">
     <value>Orientation</value>
   </data>
-	<data name="RenumberGrids_PrevNumbering" xml:space="preserve">
+  <data name="RenumberGrids_PrevNumbering" xml:space="preserve">
     <value>Previous</value>
   </data>
-	<data name="RenumberGrids_RenumberList" xml:space="preserve">
+  <data name="RenumberGrids_RenumberList" xml:space="preserve">
     <value>Renumber List</value>
   </data>
-	<data name="RenumberGrids_RestoreOrder" xml:space="preserve">
+  <data name="RenumberGrids_RestoreOrder" xml:space="preserve">
     <value>Restore Order</value>
   </data>
-	<data name="RenumberGrids_RestoreOrientation" xml:space="preserve">
+  <data name="RenumberGrids_RestoreOrientation" xml:space="preserve">
     <value>Restore Orientation</value>
   </data>
-	<data name="RenumberGrids_SubNumbering" xml:space="preserve">
+  <data name="RenumberGrids_SubNumbering" xml:space="preserve">
     <value>Sub Numbering</value>
   </data>
-	<data name="RenumberGrids_Title" xml:space="preserve">
+  <data name="RenumberGrids_Title" xml:space="preserve">
     <value>Renumber Grids</value>
   </data>
-	<data name="RenumberGrids_VerticalGrids" xml:space="preserve">
+  <data name="RenumberGrids_VerticalGrids" xml:space="preserve">
     <value>Vertical Grids</value>
   </data>
-	<data name="RenumberParkBlock_All" xml:space="preserve">
+  <data name="RenumberParkBlock_All" xml:space="preserve">
     <value>All</value>
   </data>
-	<data name="RenumberParkBlock_GuessNext" xml:space="preserve">
+  <data name="RenumberParkBlock_GuessNext" xml:space="preserve">
     <value>Guess Next</value>
   </data>
-	<data name="RenumberParkBlock_Level" xml:space="preserve">
+  <data name="RenumberParkBlock_Level" xml:space="preserve">
     <value>Level</value>
   </data>
-	<data name="RenumberParkBlock_NextNumbering" xml:space="preserve">
+  <data name="RenumberParkBlock_NextNumbering" xml:space="preserve">
     <value>Next Numbering</value>
   </data>
-	<data name="RenumberParkBlock_Numbering" xml:space="preserve">
+  <data name="RenumberParkBlock_Numbering" xml:space="preserve">
     <value>Numbering</value>
   </data>
-	<data name="RenumberParkBlock_Prefix" xml:space="preserve">
+  <data name="RenumberParkBlock_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberParkBlock_Title" xml:space="preserve">
+  <data name="RenumberParkBlock_Title" xml:space="preserve">
     <value>Renumber Parking Spaces</value>
   </data>
-	<data name="RenumberParkClear_All" xml:space="preserve">
+  <data name="RenumberParkClear_All" xml:space="preserve">
     <value>All</value>
   </data>
-	<data name="RenumberParkClear_Level" xml:space="preserve">
+  <data name="RenumberParkClear_Level" xml:space="preserve">
     <value>Level</value>
   </data>
-	<data name="RenumberParkClear_Options" xml:space="preserve">
+  <data name="RenumberParkClear_Options" xml:space="preserve">
     <value>Options</value>
   </data>
-	<data name="RenumberParkClear_Title" xml:space="preserve">
+  <data name="RenumberParkClear_Title" xml:space="preserve">
     <value>Clear Numbering</value>
   </data>
-	<data name="RenumberParkLevelOptions_LevelIndependent" xml:space="preserve">
+  <data name="RenumberParkLevelOptions_LevelIndependent" xml:space="preserve">
     <value>Independent numbering by level</value>
   </data>
-	<data name="RenumberParkLevelOptions_Name" xml:space="preserve">
+  <data name="RenumberParkLevelOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberParkLevelOptions_Prefix" xml:space="preserve">
+  <data name="RenumberParkLevelOptions_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberParkLevelOptions_Title" xml:space="preserve">
+  <data name="RenumberParkLevelOptions_Title" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberParkLevelOptions_Use" xml:space="preserve">
+  <data name="RenumberParkLevelOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberParkTypeOptions_Name" xml:space="preserve">
+  <data name="RenumberParkTypeOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>
-	<data name="RenumberParkTypeOptions_Prefix" xml:space="preserve">
+  <data name="RenumberParkTypeOptions_Prefix" xml:space="preserve">
     <value>Prefix</value>
   </data>
-	<data name="RenumberParkTypeOptions_Restrict" xml:space="preserve">
+  <data name="RenumberParkTypeOptions_Restrict" xml:space="preserve">
     <value>Restrict types of parkings to be renumbered</value>
   </data>
-	<data name="RenumberParkTypeOptions_Title" xml:space="preserve">
+  <data name="RenumberParkTypeOptions_Title" xml:space="preserve">
     <value>Type Options</value>
   </data>
-	<data name="RenumberParkTypeOptions_Use" xml:space="preserve">
+  <data name="RenumberParkTypeOptions_Use" xml:space="preserve">
     <value>Use</value>
   </data>
-	<data name="RenumberPark_Downwards" xml:space="preserve">
+  <data name="RenumberPark_Downwards" xml:space="preserve">
     <value>Downwards</value>
   </data>
-	<data name="RenumberPark_LevelOptions" xml:space="preserve">
+  <data name="RenumberPark_LevelOptions" xml:space="preserve">
     <value>Level Options</value>
   </data>
-	<data name="RenumberPark_Renumber" xml:space="preserve">
+  <data name="RenumberPark_Renumber" xml:space="preserve">
     <value>Renumber</value>
   </data>
-	<data name="RenumberPark_RenumberingOrder" xml:space="preserve">
+  <data name="RenumberPark_RenumberingOrder" xml:space="preserve">
     <value>Numbering Order</value>
   </data>
-	<data name="RenumberPark_Title" xml:space="preserve">
+  <data name="RenumberPark_Title" xml:space="preserve">
     <value>Renumber Parking Spaces</value>
   </data>
-	<data name="RenumberPark_TypeOptions" xml:space="preserve">
+  <data name="RenumberPark_TypeOptions" xml:space="preserve">
     <value>Type Options</value>
   </data>
-	<data name="RenumberPark_Upwards" xml:space="preserve">
+  <data name="RenumberPark_Upwards" xml:space="preserve">
     <value>Upwards</value>
   </data>
-	<data name="SlopeGrading_CreateSlopeGradings" xml:space="preserve">
+  <data name="SlopeGrading_CreateSlopeGradings" xml:space="preserve">
     <value>Create Slope Gradings</value>
   </data>
-	<data name="SlopeGrading_MaxAngle" xml:space="preserve">
+  <data name="SlopeGrading_MaxAngle" xml:space="preserve">
     <value>Max Slope Angle (Degrees)</value>
   </data>
-	<data name="SlopeGrading_MaxDistance" xml:space="preserve">
+  <data name="SlopeGrading_MaxDistance" xml:space="preserve">
     <value>Max Distance Between Points (meters)</value>
   </data>
-	<data name="SlopeGrading_MultiplePads" xml:space="preserve">
+  <data name="SlopeGrading_MultiplePads" xml:space="preserve">
     <value>Multiple Pads</value>
   </data>
-	<data name="SlopeGrading_Title" xml:space="preserve">
+  <data name="SlopeGrading_Title" xml:space="preserve">
     <value>Slope Grading by Pads</value>
   </data>
 </root>

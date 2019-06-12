@@ -65,7 +65,7 @@ namespace ONBOXAppl.Properties {
         ///
         ///Onbox is a free and open source Revit App that helps day to day tasks like renumbering elements, creating structural components, topo surface manipulations, and content management.
         ///
-        ///Originally created in 2015 as a collection of macros to improve and speed up workflows for multi-story buildings, it had its first public release in September 2016 as a Revit Application. It became very popular in Brazil and other countries like Spain, Mexico, and Portugal, helping AEC students and profession [rest of string was truncated]&quot;;.
+        ///Originally created in 2014 as a collection of macros to improve and speed up workflows for multi-story buildings, it had its first public release in September 2016 as a Revit Application. It became very popular in Brazil and other countries like Spain, Mexico, and Portugal, helping AEC students and profession [rest of string was truncated]&quot;;.
         /// </summary>
         public static string About_Information {
             get {
@@ -317,7 +317,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MatchCase.
+        ///   Looks up a localized string similar to Case Sensitive.
         /// </summary>
         public static string BeamsForBuildingLevelOptions_MatchCase {
             get {
@@ -398,7 +398,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FirstSelectedColumn.
+        ///   Looks up a localized string similar to First Selected Column.
         /// </summary>
         public static string BeamsFromColumns_FirstSelectedColumn {
             get {
@@ -443,7 +443,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SecondSelectedColumn.
+        ///   Looks up a localized string similar to Second Selected Column.
         /// </summary>
         public static string BeamsFromColumns_SecondSelectedColumn {
             get {
@@ -596,7 +596,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to To The Highest Casing.
+        ///   Looks up a localized string similar to To The Highest Opening.
         /// </summary>
         public static string BeamsFromWalls_ToTheHighestCasing {
             get {
@@ -1091,240 +1091,6 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Activate.
-        /// </summary>
-        public static string LicenseActivate_ActivateAction {
-            get {
-                return ResourceManager.GetString("LicenseActivate_ActivateAction", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail.
-        /// </summary>
-        public static string LicenseActivate_Email {
-            get {
-                return ResourceManager.GetString("LicenseActivate_Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password.
-        /// </summary>
-        public static string LicenseActivate_Password {
-            get {
-                return ResourceManager.GetString("LicenseActivate_Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Recover password.
-        /// </summary>
-        public static string LicenseActivate_Recover {
-            get {
-                return ResourceManager.GetString("LicenseActivate_Recover", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Signup.
-        /// </summary>
-        public static string LicenseActivate_Signup {
-            get {
-                return ResourceManager.GetString("LicenseActivate_Signup", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Activate product.
-        /// </summary>
-        public static string LicenseActivate_Title {
-            get {
-                return ResourceManager.GetString("LicenseActivate_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Agree with usage terms.
-        /// </summary>
-        public static string LicenseSignup_AgreeWithTerms {
-            get {
-                return ResourceManager.GetString("LicenseSignup_AgreeWithTerms", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Already Registred.
-        /// </summary>
-        public static string LicenseSignup_AlreadyRegistred {
-            get {
-                return ResourceManager.GetString("LicenseSignup_AlreadyRegistred", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current country.
-        /// </summary>
-        public static string LicenseSignup_ChooseCountry {
-            get {
-                return ResourceManager.GetString("LicenseSignup_ChooseCountry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to City.
-        /// </summary>
-        public static string LicenseSignup_City {
-            get {
-                return ResourceManager.GetString("LicenseSignup_City", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Country.
-        /// </summary>
-        public static string LicenseSignup_Country {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Country", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail.
-        /// </summary>
-        public static string LicenseSignup_Email {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail (Confirm).
-        /// </summary>
-        public static string LicenseSignup_EmailConfirm {
-            get {
-                return ResourceManager.GetString("LicenseSignup_EmailConfirm", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Last Name.
-        /// </summary>
-        public static string LicenseSignup_LastName {
-            get {
-                return ResourceManager.GetString("LicenseSignup_LastName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Name.
-        /// </summary>
-        public static string LicenseSignup_Name {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password.
-        /// </summary>
-        public static string LicenseSignup_Password {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password (Confirm).
-        /// </summary>
-        public static string LicenseSignup_PasswordConfirm {
-            get {
-                return ResourceManager.GetString("LicenseSignup_PasswordConfirm", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Choose your role.
-        /// </summary>
-        public static string LicenseSignup_Role {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Architect.
-        /// </summary>
-        public static string LicenseSignup_Role_Architect {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role_Architect", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Draftsperson.
-        /// </summary>
-        public static string LicenseSignup_Role_DraftsPerson {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role_DraftsPerson", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Engineer.
-        /// </summary>
-        public static string LicenseSignup_Role_Engineer {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role_Engineer", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Student.
-        /// </summary>
-        public static string LicenseSignup_Role_Student {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role_Student", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Technician.
-        /// </summary>
-        public static string LicenseSignup_Role_Technician {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Role_Technician", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Signup.
-        /// </summary>
-        public static string LicenseSignup_SignupAction {
-            get {
-                return ResourceManager.GetString("LicenseSignup_SignupAction", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to State / Province.
-        /// </summary>
-        public static string LicenseSignup_StateProvince {
-            get {
-                return ResourceManager.GetString("LicenseSignup_StateProvince", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User SignUp.
-        /// </summary>
-        public static string LicenseSignup_Title {
-            get {
-                return ResourceManager.GetString("LicenseSignup_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string RenumberBeamLevelOptions_Name {
@@ -1811,6 +1577,15 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Flip Orientation.
+        /// </summary>
+        public static string RenumberGrids_FlipOrientation {
+            get {
+                return ResourceManager.GetString("RenumberGrids_FlipOrientation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Horizontal Grids.
         /// </summary>
         public static string RenumberGrids_HorizontalGrids {
@@ -1964,7 +1739,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Renumbering Order.
+        ///   Looks up a localized string similar to Numbering Order.
         /// </summary>
         public static string RenumberPark_RenumberingOrder {
             get {
@@ -2207,7 +1982,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Max Distance Between Point (meters).
+        ///   Looks up a localized string similar to Max Distance Between Points (meters).
         /// </summary>
         public static string SlopeGrading_MaxDistance {
             get {
