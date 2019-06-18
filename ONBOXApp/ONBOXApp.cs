@@ -227,7 +227,7 @@ namespace ONBOXAppl
             PushButton btnRevitZip = panelManage.AddItem(new PushButtonData(Properties.RibbonLanguage.Manage_PackageProject, Properties.RibbonLanguage.Manage_PackageProject.Replace("\\n", "\n"), dll, "ONBOXAppl.RevitZip")) as PushButton;
 
             PushButton btnONBOXSite = panelAbout.AddItem(new PushButtonData("  Onbox  ", "  Onbox  ", dll, "ONBOXAppl.SiteONBOX")) as PushButton;
-            PushButton btnProjectExamplesFolder = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_SampleProjects, Properties.RibbonLanguage.About_SampleProjects.Replace("\\n", "\n"), dll, "ONBOXAppl.ProjectFolder")) as PushButton;
+            //PushButton btnProjectExamplesFolder = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_SampleProjects, Properties.RibbonLanguage.About_SampleProjects.Replace("\\n", "\n"), dll, "ONBOXAppl.ProjectFolder")) as PushButton;
             PushButton btnInfo = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_Title, Properties.RibbonLanguage.About_Title, dll, "ONBOXAppl.AboutONBOXApp")) as PushButton;
 
             //SplitButtons for Parking
@@ -277,8 +277,8 @@ namespace ONBOXAppl
             BitmapImage ONBOX16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/onBox16.png", UriKind.Absolute));
             BitmapImage INFO32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnInfo32.png", UriKind.Absolute));
             BitmapImage INFO16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnInfo16.png", UriKind.Absolute));
-            BitmapImage ProjectExamples16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder16.png", UriKind.Absolute));
-            BitmapImage ProjectExamples32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder.png", UriKind.Absolute));
+            //BitmapImage ProjectExamples16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder16.png", UriKind.Absolute));
+            //BitmapImage ProjectExamples32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder.png", UriKind.Absolute));
             BitmapImage Package16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnPackage16.png", UriKind.Absolute));
             BitmapImage Package32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnPackage32.png", UriKind.Absolute));
 
@@ -367,10 +367,10 @@ namespace ONBOXAppl
             btnInfo.ToolTip = Properties.RibbonLanguage.About_Onbox_ToolTip;
             btnInfo.ToolTip = Properties.RibbonLanguage.About_Onbox_Descrip;
 
-            btnProjectExamplesFolder.Image = ProjectExamples16;
-            btnProjectExamplesFolder.LargeImage = ProjectExamples32;
-            btnProjectExamplesFolder.ToolTip = Properties.RibbonLanguage.About_SampleProjects_ToolTip;
-            btnProjectExamplesFolder.LongDescription = Properties.RibbonLanguage.About_SampleProjects_Descrip;
+            //btnProjectExamplesFolder.Image = ProjectExamples16;
+            //btnProjectExamplesFolder.LargeImage = ProjectExamples32;
+            //btnProjectExamplesFolder.ToolTip = Properties.RibbonLanguage.About_SampleProjects_ToolTip;
+            //btnProjectExamplesFolder.LongDescription = Properties.RibbonLanguage.About_SampleProjects_Descrip;
 
             btnRevitZip.Image = Package16;
             btnRevitZip.LargeImage = Package32;

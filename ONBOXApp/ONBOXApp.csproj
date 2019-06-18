@@ -653,13 +653,13 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>goto exit
-echo Configuration: $(Configuration)
+    <PostBuildEvent>echo Configuration: $(Configuration)
 
 if $(Configuration) == Debug2016 goto 2016
 if $(Configuration) == Debug2017 goto 2017
 if $(Configuration) == Debug2018 goto 2018
 if $(Configuration) == Debug2019 goto 2019
+if $(Configuration) == Debug2020 goto 2020
 
 goto exit
 
@@ -689,6 +689,13 @@ echo Copying results to 2019
 if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\"
 XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2019\ONBOX\" /Y /R /F /I /S
 copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2019\"
+goto exit
+
+:2020
+echo Copying results to 2020
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2020\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2020\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2020\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2020\"
 goto exit
 
 :exit</PostBuildEvent>
