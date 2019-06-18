@@ -205,26 +205,41 @@ namespace ONBOXAppl
             allFreePanels.Add(panelNotifications);
 
             PushButton btnRenumberGrids = panelRenumber.AddItem(new PushButtonData(Properties.RibbonLanguage.RenumberElements_Grids, Properties.RibbonLanguage.RenumberElements_Grids.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberGridsAdvanced")) as PushButton;
+            btnRenumberGrids.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberGrids));
             SplitButton sptRenumberParking = panelRenumber.AddItem(new SplitButtonData(Properties.RibbonLanguage.RenumberElements_RenumberParkingSpaces, Properties.RibbonLanguage.RenumberElements_RenumberParkingSpaces)) as SplitButton;
+            sptRenumberParking.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.sptRenumberParking));
             PushButton btnRenumberBeams = panelRenumber.AddItem(new PushButtonData(Properties.RibbonLanguage.RenumberElements_RenumberBeams, Properties.RibbonLanguage.RenumberElements_RenumberBeams.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberBeams")) as PushButton;
+            btnRenumberBeams.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberBeams));
             SplitButton sptRenumberColumns = panelRenumber.AddItem(new SplitButtonData(Properties.RibbonLanguage.RenumberElements_RenumberColumns, Properties.RibbonLanguage.RenumberElements_RenumberColumns)) as SplitButton;
+            sptRenumberColumns.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.sptRenumberColumns));
             SplitButton sptJoinElements = panelModifyElem.AddItem(new SplitButtonData(Properties.RibbonLanguage.ModifyElements_JoinMultipleElements, Properties.RibbonLanguage.ModifyElements_JoinMultipleElements)) as SplitButton;
+            sptJoinElements.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.sptJoinElements));
 
             PushButton btnCreateBeamsFromBuilding = panelStructuralMembers.AddItem(new PushButtonData(Properties.RibbonLanguage.StructuralElements_BeamsForBuilding, Properties.RibbonLanguage.StructuralElements_BeamsForBuilding.Replace("\\n", "\n"), dll, "ONBOXAppl.BeamsFromEntireBuilding")) as PushButton;
+            btnCreateBeamsFromBuilding.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateBeamsFromBuilding));
             PushButton btnCreateBeam = panelStructuralMembers.AddItem(new PushButtonData(Properties.RibbonLanguage.StructuralElements_BeamsFromWalls, Properties.RibbonLanguage.StructuralElements_BeamsFromWalls.Replace("\\n","\n"), dll, "ONBOXAppl.BeamsFromWalls")) as PushButton;
+            btnCreateBeam.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateBeam));
             PushButton btnCreateBeamsFromColumns = panelStructuralMembers.AddItem(new PushButtonData(Properties.RibbonLanguage.StructuralElements_BeamsFromColumns, Properties.RibbonLanguage.StructuralElements_BeamsFromColumns.Replace("\\n", "\n"), dll, "ONBOXAppl.BeamsFromColumns")) as PushButton;
+            btnCreateBeamsFromColumns.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateBeamsFromColumns));
             PushButton btnCreateColumnsFromDwg = panelStructuralMembers.AddItem(new PushButtonData(Properties.RibbonLanguage.StructuralElements_ColumnsFromCAD, Properties.RibbonLanguage.StructuralElements_ColumnsFromCAD.Replace("\\n", "\n"), dll, "ONBOXAppl.ColumnsFromDwg")) as PushButton;
+            btnCreateColumnsFromDwg.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateColumnsFromDwg));
 
             //PushButton btnCreateBeamsUpdate = panelModifyElem.AddItem(new PushButtonData("  Atualizar \n vigas  ", "  Atualizar \n vigas  ", dll, "ONBOXAppl.BeamUpdate")) as PushButton;
             PushButton btnElementsCopyLevel = panelModifyElem.AddItem(new PushButtonData(Properties.RibbonLanguage.ModifyElements_CopyBeamsToLevels, Properties.RibbonLanguage.ModifyElements_CopyBeamsToLevels.Replace("\\n", "\n"), dll, "ONBOXAppl.ElementsCopyToLevels")) as PushButton;
+            btnElementsCopyLevel.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnElementsCopyLevel));
             PushButton btnElmentsJoin = sptJoinElements.AddPushButton(new PushButtonData(Properties.RibbonLanguage.ModifyElements_JoinElements, Properties.RibbonLanguage.ModifyElements_JoinElements.Replace("\\n", "\n"), dll, "ONBOXAppl.ElementsJoinAdvanced")) as PushButton;
+            btnElmentsJoin.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnElmentsJoin));
             PushButton btnElmentsSelectJoin = sptJoinElements.AddPushButton(new PushButtonData(Properties.RibbonLanguage.ModifyElements_SelectElementsToJoin, Properties.RibbonLanguage.ModifyElements_SelectElementsToJoin.Replace("\\n", "\n"), dll, "ONBOXAppl.ElementJoinSelect")) as PushButton;
+            btnElmentsSelectJoin.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnElmentsSelectJoin));
 
             PushButton btnCreateTopoFromPointCloud = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SurfaceByPointCloud, Properties.RibbonLanguage.Topography_SurfaceByPointCloud.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoFromPointCloudAdvanced")) as PushButton;
+            btnCreateTopoFromPointCloud.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateTopoFromPointCloud));
             //PushButton btnCreateTopoFromDwgMarks = panelTopo.AddItem(new PushButtonData("  Topografia por CAD planimétrico  ", "  Topografia por \n  planimetria  ", dll, "ONBOXAppl.TopoFromDwgMarks")) as PushButton;
             PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SlopeByPads, Properties.RibbonLanguage.Topography_SlopeByPads.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSlopes")) as PushButton;
-            
+            btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnTopoSlope));
+
             PushButton btnRevitZip = panelManage.AddItem(new PushButtonData(Properties.RibbonLanguage.Manage_PackageProject, Properties.RibbonLanguage.Manage_PackageProject.Replace("\\n", "\n"), dll, "ONBOXAppl.RevitZip")) as PushButton;
+            btnRevitZip.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRevitZip));
 
             PushButton btnONBOXSite = panelAbout.AddItem(new PushButtonData("  Onbox  ", "  Onbox  ", dll, "ONBOXAppl.SiteONBOX")) as PushButton;
             //PushButton btnProjectExamplesFolder = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_SampleProjects, Properties.RibbonLanguage.About_SampleProjects.Replace("\\n", "\n"), dll, "ONBOXAppl.ProjectFolder")) as PushButton;
@@ -232,11 +247,16 @@ namespace ONBOXAppl
 
             //SplitButtons for Parking
             PushButton btnRenumberParking = sptRenumberParking.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_ParkingSpaces, Properties.RibbonLanguage.RenumberElements_ParkingSpaces.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberParking")) as PushButton;
+            btnRenumberParking.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberParking));
             PushButton btnRenumberBlockParking = sptRenumberParking.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_NearestSpaces, Properties.RibbonLanguage.RenumberElements_NearestSpaces.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberBlockParking")) as PushButton;
+            btnRenumberBlockParking.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberBlockParking));
             PushButton btnRenumberClearParking = sptRenumberParking.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_ClearParkingNumbering, Properties.RibbonLanguage.RenumberElements_ClearParkingNumbering.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberCleaner")) as PushButton;
+            btnRenumberClearParking.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberClearParking));
             //SplitButtons for Columns
             PushButton btnRenumberColumns = sptRenumberColumns.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_Columns, Properties.RibbonLanguage.RenumberElements_Columns.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberColumns")) as PushButton;
+            btnRenumberColumns.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberColumns));
             PushButton btnRenumberColumnsSelect = sptRenumberColumns.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_SelectColumns, Properties.RibbonLanguage.RenumberElements_SelectColumns.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberColumnsSelection")) as PushButton;
+            btnRenumberColumnsSelect.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRenumberColumnsSelect));
 
             BitmapImage grid32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnRenumberGrid32.png", UriKind.Absolute));
             BitmapImage grid16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnRenumberGrid16.png", UriKind.Absolute));
