@@ -27,7 +27,7 @@ Originalmente criado em 2014 como uma coleção de macros para melhorar e aceler
 
 Se voce é um desenvolvedor, sinta-se livre para dar um branch no repositõrio e me enviar pull requests.
 
-Documentação Oficial (Em inglês): https://t-almeidaeng.gitbook.io/onboxapp/
+Documentação Oficial (Em inglês): https://onboxapp-onbox.gitbook.io/onboxapp/
 
 Download do App: http://onboxdesign.com.br/
 
