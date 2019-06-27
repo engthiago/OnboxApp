@@ -118,63 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCreateBeam" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/beams-from-walls</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-walls</value>
   </data>
   <data name="btnCreateBeamsFromBuilding" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/create-beams-for-entire-building</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/create-beams-for-entire-building</value>
   </data>
   <data name="btnCreateBeamsFromColumns" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/beams-from-structural-columns</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-structural-columns</value>
   </data>
   <data name="btnCreateColumnsFromDwg" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/columns-from-cad</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/columns-from-cad</value>
   </data>
   <data name="btnCreateTopoFromPointCloud" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/topography/surface-by-pointcloud</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/topography/surface-by-pointcloud</value>
   </data>
   <data name="btnElementsCopyLevel" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/copy-beams</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/copy-beams</value>
   </data>
   <data name="btnElmentsJoin" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-elements</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements</value>
   </data>
   <data name="btnElmentsSelectJoin" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-selected-elements</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-selected-elements</value>
   </data>
   <data name="btnRenumberBeams" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-beams</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-beams</value>
   </data>
   <data name="btnRenumberBlockParking" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-nearest-spaces</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-nearest-spaces</value>
   </data>
   <data name="btnRenumberClearParking" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/clear-parking-numbering</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/clear-parking-numbering</value>
   </data>
   <data name="btnRenumberColumns" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
   </data>
   <data name="btnRenumberColumnsSelect" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns-by-selection</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns-by-selection</value>
   </data>
   <data name="btnRenumberGrids" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-grids</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-grids</value>
   </data>
   <data name="btnRenumberParking" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-parking-spaces</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-parking-spaces</value>
   </data>
   <data name="btnRevitZip" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/manage/package-project</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/manage/package-project</value>
   </data>
   <data name="btnTopoSlope" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/topography/slope-grading-by-pads</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/topography/slope-grading-by-pads</value>
   </data>
   <data name="sptJoinElements" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-elements</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements</value>
   </data>
   <data name="sptRenumberColumns" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
   </data>
   <data name="sptRenumberParking" xml:space="preserve">
-    <value>https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/parking</value>
+    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/parking</value>
   </data>
 </root>

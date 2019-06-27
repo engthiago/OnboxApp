@@ -19,7 +19,7 @@ namespace ONBOXAppl.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class HelpLinks {
@@ -61,7 +61,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/beams-from-walls.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-walls.
         /// </summary>
         public static string btnCreateBeam {
             get {
@@ -70,7 +70,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/create-beams-for-entire-building.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/create-beams-for-entire-building.
         /// </summary>
         public static string btnCreateBeamsFromBuilding {
             get {
@@ -79,7 +79,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/beams-from-structural-columns.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-structural-columns.
         /// </summary>
         public static string btnCreateBeamsFromColumns {
             get {
@@ -88,7 +88,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/structural-elements/columns-from-cad.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/columns-from-cad.
         /// </summary>
         public static string btnCreateColumnsFromDwg {
             get {
@@ -97,7 +97,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/topography/surface-by-pointcloud.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/topography/surface-by-pointcloud.
         /// </summary>
         public static string btnCreateTopoFromPointCloud {
             get {
@@ -106,7 +106,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/copy-beams.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/copy-beams.
         /// </summary>
         public static string btnElementsCopyLevel {
             get {
@@ -115,7 +115,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-elements.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements.
         /// </summary>
         public static string btnElmentsJoin {
             get {
@@ -124,7 +124,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-selected-elements.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-selected-elements.
         /// </summary>
         public static string btnElmentsSelectJoin {
             get {
@@ -133,7 +133,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-beams.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-beams.
         /// </summary>
         public static string btnRenumberBeams {
             get {
@@ -142,7 +142,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-nearest-spaces.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-nearest-spaces.
         /// </summary>
         public static string btnRenumberBlockParking {
             get {
@@ -151,7 +151,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/clear-parking-numbering.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/clear-parking-numbering.
         /// </summary>
         public static string btnRenumberClearParking {
             get {
@@ -160,7 +160,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns.
         /// </summary>
         public static string btnRenumberColumns {
             get {
@@ -169,7 +169,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns-by-selection.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns-by-selection.
         /// </summary>
         public static string btnRenumberColumnsSelect {
             get {
@@ -178,7 +178,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-grids.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-grids.
         /// </summary>
         public static string btnRenumberGrids {
             get {
@@ -187,7 +187,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-parking-spaces.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-parking-spaces.
         /// </summary>
         public static string btnRenumberParking {
             get {
@@ -196,7 +196,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/manage/package-project.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/manage/package-project.
         /// </summary>
         public static string btnRevitZip {
             get {
@@ -205,7 +205,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/topography/slope-grading-by-pads.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/topography/slope-grading-by-pads.
         /// </summary>
         public static string btnTopoSlope {
             get {
@@ -214,7 +214,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/modify-elements/join-elements.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements.
         /// </summary>
         public static string sptJoinElements {
             get {
@@ -223,7 +223,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/renumber-columns.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns.
         /// </summary>
         public static string sptRenumberColumns {
             get {
@@ -232,7 +232,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://t-almeidaeng.gitbook.io/onboxapp/renumber-elements/parking.
+        ///   Looks up a localized string similar to https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/parking.
         /// </summary>
         public static string sptRenumberParking {
             get {
