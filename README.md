@@ -12,7 +12,7 @@ Originally created in 2014 as a collection of macros to improve and speed up wor
 
 If you are a developer, feel free to branch the repository and send pull requests.
 
-Official Documentation: https://t-almeidaeng.gitbook.io/onboxapp/
+Official Documentation: https://onboxapp-onbox.gitbook.io/onboxapp/
 
 Download Executable: http://onboxdesign.com.br/
 
