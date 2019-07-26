@@ -14,7 +14,7 @@ If you are a developer, feel free to branch the repository and send pull request
 
 Official Documentation: https://onboxapp-onbox.gitbook.io/onboxapp/
 
-Download Executable: http://onboxdesign.com.br/
+Download Executable: https://apps.autodesk.com/RVT/en/Detail/Index?id=7481675320348789487&appLang=en&os=Win64
 
 Follow me on linkedin: https://www.linkedin.com/in/thiago-almeida-034a2931/
 
@@ -29,7 +29,7 @@ Se voce é um desenvolvedor, sinta-se livre para dar um branch no repositõrio e
 
 Documentação Oficial (Em inglês): https://onboxapp-onbox.gitbook.io/onboxapp/
 
-Download do App: http://onboxdesign.com.br/
+Download do App: https://apps.autodesk.com/RVT/en/Detail/Index?id=7481675320348789487&appLang=en&os=Win64
 
 Me siga no linkedin: https://www.linkedin.com/in/thiago-almeida-034a2931/
 
