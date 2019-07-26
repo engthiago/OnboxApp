@@ -62,7 +62,7 @@ namespace ONBOXAppl
                 string seconCatName = (currentUI.comboSecondCategory.SelectedItem as ComboBoxItem).Content.ToString();
 
                 BuiltInCategory firstCat = checkCategory(currentUI.comboFirstCategory.SelectedIndex);
-                BuiltInCategory secondCat = checkCategory(currentUI.comboFirstCategory.SelectedIndex);
+                BuiltInCategory secondCat = checkCategory(currentUI.comboSecondCategory.SelectedIndex);
 
                 if (firstCat == BuiltInCategory.INVALID || secondCat == BuiltInCategory.INVALID)
                 {

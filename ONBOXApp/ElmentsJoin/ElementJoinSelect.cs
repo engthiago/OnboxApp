@@ -30,7 +30,7 @@ namespace ONBOXAppl
                 if (currentComboboxIndex == 0)
                 {
                     if (categoryId == BuiltInCategory.OST_Walls.GetHashCode() || categoryId == BuiltInCategory.OST_StructuralFraming.GetHashCode() ||
-                        categoryId == BuiltInCategory.OST_Columns.GetHashCode() || categoryId == BuiltInCategory.OST_Floors.GetHashCode())
+                        categoryId == BuiltInCategory.OST_StructuralColumns.GetHashCode() || categoryId == BuiltInCategory.OST_Floors.GetHashCode())
                         return true;
                 }
                 else if (currentComboboxIndex == 1)
@@ -45,7 +45,7 @@ namespace ONBOXAppl
                 }
                 else if (currentComboboxIndex == 3)
                 {
-                    if (categoryId == BuiltInCategory.OST_Columns.GetHashCode())
+                    if (categoryId == BuiltInCategory.OST_StructuralColumns.GetHashCode())
                         return true;
                 }
                 else if (currentComboboxIndex == 4)
