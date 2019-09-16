@@ -25,13 +25,17 @@ Onbox é um aplicativo para Revit gratuito e de código aberto que ajuda tarefas
 
 Originalmente criado em 2014 como uma coleção de macros para melhorar e acelerar os fluxos de trabalho de edifícios de vários andares, teve seu primeiro lançamento público em setembro de 2016 como um aplicativo Revit. Tornou-se muito popular no Brasil e em outros países, como Espanha, México e Portugal, ajudando estudantes e profissionais da AEC em 39 países diferentes a serem mais produtivos e eficientes.
 
-Se voce é um desenvolvedor, sinta-se livre para dar um branch no repositõrio e me enviar pull requests.
+Se voce é um desenvolvedor, sinta-se livre para dar um branch no repositório e me enviar pull requests.
 
-Documentação Oficial (Em inglês): https://onboxapp-onbox.gitbook.io/onboxapp/
+Documentação Oficial: https://onbox-pt.gitbook.io/onboxapp/
 
 Download do App: https://apps.autodesk.com/RVT/en/Detail/Index?id=7481675320348789487&appLang=en&os=Win64
 
 Me siga no linkedin: https://www.linkedin.com/in/thiago-almeida-034a2931/
+
+Agradecimento ao pessoal da Studio Ideia por traduzir a documentação para o português:
+![](https://raw.githubusercontent.com/engthiago/OnboxApp/master/logo-studio-ideia.png)
+https://www.studioideia.com/
 
 Presentation Video
 ----
