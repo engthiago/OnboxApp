@@ -330,6 +330,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HelpLinks.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\HelpLinks.pt-BR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpLinks.pt-BR.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Messages.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -419,6 +424,10 @@
       <DependentUpon>TopoSlopesUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="Properties\HelpLinks.pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HelpLinks.pt-BR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\HelpLinks.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>HelpLinks.Designer.cs</LastGenOutput>

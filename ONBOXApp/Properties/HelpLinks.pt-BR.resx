@@ -118,63 +118,63 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="btnCreateBeam" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-walls</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/elementos-estruturais/vigas-por-paredes</value>
+	</data>
 	<data name="btnCreateBeamsFromBuilding" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/create-beams-for-entire-building</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/elementos-estruturais/criar-vigas-para-todo-o-edificio</value>
+	</data>
 	<data name="btnCreateBeamsFromColumns" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/beams-from-structural-columns</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/elementos-estruturais/vigas-por-pilares-estruturais</value>
+	</data>
 	<data name="btnCreateColumnsFromDwg" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/structural-elements/columns-from-cad</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/elementos-estruturais/pilares-por-cad</value>
+	</data>
 	<data name="btnCreateTopoFromPointCloud" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/topography/surface-by-pointcloud</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/topografia/superficie-por-nuvem-de-pontos</value>
+	</data>
 	<data name="btnElementsCopyLevel" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/copy-beams</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/modificar-elementos/copiar-vigas</value>
+	</data>
 	<data name="btnElmentsJoin" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/modificar-elementos/unir-elementos</value>
+	</data>
 	<data name="btnElmentsSelectJoin" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-selected-elements</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/modificar-elementos/unir-elementos-selecionados</value>
+	</data>
 	<data name="btnRenumberBeams" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-beams</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-vigas</value>
+	</data>
 	<data name="btnRenumberBlockParking" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-nearest-spaces</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-estacionamentos-proximos</value>
+	</data>
 	<data name="btnRenumberClearParking" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/clear-parking-numbering</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/limpando-numeracao-de-estacionamentos</value>
+	</data>
 	<data name="btnRenumberColumns" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-pilares</value>
+	</data>
 	<data name="btnRenumberColumnsSelect" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns-by-selection</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-pilares-por-selecao</value>
+	</data>
 	<data name="btnRenumberGrids" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-grids</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerar-eixos</value>
+	</data>
 	<data name="btnRenumberParking" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-parking-spaces</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-estacionamentos</value>
+	</data>
 	<data name="btnRevitZip" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/manage/package-project</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/gerenciar/empacotar-projeto</value>
+	</data>
 	<data name="btnTopoSlope" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/topography/slope-grading-by-pads</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/topografia/talude-por-plataformas</value>
+	</data>
 	<data name="sptJoinElements" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/modify-elements/join-elements</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/modificar-elementos/unir-elementos</value>
+	</data>
 	<data name="sptRenumberColumns" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/renumber-columns</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-pilares</value>
+	</data>
 	<data name="sptRenumberParking" xml:space="preserve">
-    <value>https://onboxapp-onbox.gitbook.io/onboxapp/renumber-elements/parking</value>
-  </data>
+		<value>https://onbox-pt.gitbook.io/onboxapp/renumerando-elementos/renumerando-estacionamentos</value>
+	</data>
 </root>
