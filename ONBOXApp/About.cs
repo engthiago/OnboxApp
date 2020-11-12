@@ -33,6 +33,18 @@ namespace ONBOXAppl
             return Result.Succeeded;
         }
     }
+
+    [Transaction(TransactionMode.Manual)]
+    class Privacy : IExternalCommand
+    {
+        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+        {
+            PrivacyUI privacyUI = new PrivacyUI();
+            privacyUI.ShowDialog();
+            return Result.Succeeded;
+        }
+    }
+
     [Transaction(TransactionMode.Manual)]
     class ProjectFolder : IExternalCommand
     {

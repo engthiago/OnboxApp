@@ -463,6 +463,19 @@ Originally created in 2014 as a collection of macros to improve and speed up wor
   <data name="JoinUnjoin_Walls" xml:space="preserve">
     <value>Walls</value>
   </data>
+  <data name="Privacy_EditAccount" xml:space="preserve">
+    <value>Edit my Account</value>
+  </data>
+  <data name="Privacy_Information" xml:space="preserve">
+    <value>OnboxApp only stores your email from a notification system that the Autodesk Exchange App Store sends to it when you download the application. This is the only instance where we have any identification of who is the using the application though, after download and installation, NO tracking of any type is used, not even for diagnostics or statistics.  The exact source code that you can audit on https://github.com/engthiago/OnboxApp is the one deployed to your computer.
+
+Your email is only stored in our own database and will Never be shared with ANY third party of any kind. We might, however, use this email for:
+
+1.	Send you information about the release or update of our own software packages.
+2.	Send you information about events or publications that OnboxApp or its creator is participating.
+
+Since OnboxApp was first released in 2015, no emails were sent and we will only do so when there is a very good reason to do so, as we also hate any type of spams as you probably do as well. If in any case you absolutely want to erase your email from our database, you can do so by clicking on “Edit my Account” below and follow the instructions to get access to your account.</value>
+  </data>
   <data name="RenumberBeamLevelOptions_Name" xml:space="preserve">
     <value>Name</value>
   </data>

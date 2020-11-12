@@ -240,6 +240,9 @@
     </Compile>
     <Compile Include="ONBOXApp.cs" />
     <Compile Include="PadsFromFloor\PadsFromFloors.cs" />
+    <Compile Include="PrivacyUI.xaml.cs">
+      <DependentUpon>PrivacyUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -426,6 +429,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PrivacyUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RenumberBeams\RenumberBeamsUI.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -500,6 +507,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\privacy16.png" />
+    <Resource Include="Resources\privacy32.png" />
     <Resource Include="Resources\btnProjectExamplesFolder16.png" />
     <Resource Include="Resources\btnPackage32.png" />
     <Resource Include="Resources\btnPackage16.png" />

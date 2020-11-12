@@ -769,4 +769,16 @@ Originalmente criado em 2014 como uma coleção de macros para melhorar e aceler
   <data name="RenumberGrids_FlipOrientation" xml:space="preserve">
     <value>Trocar Orientação</value>
   </data>
+  <data name="Privacy_EditAccount" xml:space="preserve">
+    <value>Editar minha Conta</value>
+  </data>
+  <data name="Privacy_Information" xml:space="preserve">
+    <value>OnboxApp somente salva o seu e-mail quanto uma notificação da loja de aplicativos da Autodesk é enviada, quando você baixa o aplicativo. Esta é a única ocasião que temos qualquer identificação de quem está usando o aplicativo, pois depois da instalação, NENHUM tipo de rastreamento é feito, nem mesmo de diagnóstico de erros ou estatísticas. O exato código fonte que pode ser auditado em https://github.com/engthiago/OnboxApp é o que será instalado em seu computador.
+
+Seu e-mail é somente salvo em nosso banco de dados e NUNCA será compartilhado com nenhum terceiro de qualquer tipo. Nós, poderemos usar este e-mail, entretanto para:
+1.	Enviar a você informações sobre lançamentos ou atualizações de nossos próprios softwares.
+2.	Enviar a você informações sobre eventos ou publicações que o OnboxApp ou seu criador participarão.
+
+Desde quando o OnboxApp foi lançado em 2015, nenhum e-mail foi enviado e nos somente iremos enviar por algum motivo importante, pois nos também odiamos qualquer tipo de spam. Mas se por qualquer motivo, você absolutamente deseja apagar seu e-mail de nosso banco de dados, você pode fazê-lo clicando em “Editar minha Conta” abaixo e seguindo os passos para acessar sua conta.</value>
+  </data>
 </root>

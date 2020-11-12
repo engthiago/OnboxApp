@@ -19,7 +19,7 @@ namespace ONBOXAppl.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class RibbonLanguage {
@@ -75,6 +75,15 @@ namespace ONBOXAppl.Properties {
         public static string About_Onbox_ToolTip {
             get {
                 return ResourceManager.GetString("About_Onbox_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy Info.
+        /// </summary>
+        public static string About_Privacy {
+            get {
+                return ResourceManager.GetString("About_Privacy", resourceCulture);
             }
         }
         
@@ -349,7 +358,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Command to automatically renumber grids: A sequence of numbers or letters can be selected, including sub letters and sub numers. This command has also the ability to use a table to reorder and organize all grids.
+        ///   Looks up a localized string similar to Command to automatically renumber grids: A sequence of numbers or letters can be selected, including subletters and sub numbers. This command has also the ability to use a table to reorder and organize all grids.
         /// </summary>
         public static string RenumberElements_Grids_Descrip {
             get {
@@ -511,7 +520,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This command reads all walls in the current project or in a linked file to create structural beams in all choosen levels.
+        ///   Looks up a localized string similar to This command reads all walls in the current project or in a linked file to create structural beams in all chosen levels.
         /// </summary>
         public static string StructuralElements_BeamsForBuilding_Descrip {
             get {
@@ -538,7 +547,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This command creates structural beams from selected structural columns, the command creates the types automatically, it is possible to pre estabilish the beam height, create them in chain along with other options.
+        ///   Looks up a localized string similar to This command creates structural beams from selected structural columns, the command creates the types automatically, it is possible to pre-establish the beam height, create them in a chain along with other options.
         /// </summary>
         public static string StructuralElements_BeamsFromColumns_Descrip {
             get {
@@ -565,7 +574,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This command creates structural beams from walls, it creates all types automatically, it is possible to pre estabilish the beam height, join these beams with nearest walls and utilize linked files along with other options.
+        ///   Looks up a localized string similar to This command creates structural beams from walls, it creates all types automatically, it is possible to pre-establish the beam height, join these beams with nearest walls and utilize linked files along with other options.
         /// </summary>
         public static string StructuralElements_BeamsFromWalls_Descrip {
             get {
@@ -601,7 +610,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create structural columns form a CAD import or link.
+        ///   Looks up a localized string similar to Create structural columns from a CAD import or link.
         /// </summary>
         public static string StructuralElements_ColumnsFromCAD_ToolTip {
             get {

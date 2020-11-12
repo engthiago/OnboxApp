@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,233 +59,236 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="About_Onbox_ToolTip" xml:space="preserve">
-		<value>Sobre este aplicativo</value>
-	</data>
-	<data name="About_SampleProjects" xml:space="preserve">
-		<value>Projetos\nExemplos</value>
-	</data>
-	<data name="About_SampleProjects_ToolTip" xml:space="preserve">
-		<value>Pasta que contém os projetos de exemplo do Onbox</value>
-	</data>
-	<data name="About_Site_ToolTip" xml:space="preserve">
-		<value>Ir para o Site do Onbox</value>
-	</data>
-	<data name="About_Title" xml:space="preserve">
-		<value>Sobre</value>
-	</data>
-	<data name="Manage_PackageProject" xml:space="preserve">
-		<value>Empacotar\nProjeto</value>
-	</data>
-	<data name="Manage_PackageProject_ToolTip" xml:space="preserve">
-		<value>Cria um arquivo zipado com todos os arquivos relacionados do projeto</value>
-	</data>
-	<data name="Manage_Title" xml:space="preserve">
-		<value>Gerenciar</value>
-	</data>
-	<data name="ModifyElements_CopyBeamsToLevels" xml:space="preserve">
-		<value>Copiar Vigas\nPara os Pavimentos</value>
-	</data>
-	<data name="ModifyElements_CopyBeamsToLevels_Descrip" xml:space="preserve">
-		<value>Este comando copia as vigas estruturais para o pavimento selecionado a partir do pavimento da viga selecionada, todos as vigas do pavimento fonte serão copiadas</value>
-	</data>
-	<data name="ModifyElements_CopyBeamsToLevels_ToolTip" xml:space="preserve">
-		<value>Criar vigas selecionando pilares estruturais</value>
-	</data>
-	<data name="ModifyElements_JoinElements" xml:space="preserve">
-		<value>Unir Elementos</value>
-	</data>
-	<data name="ModifyElements_JoinElements_ToolTip" xml:space="preserve">
-		<value>Unir elementos estruturais e não estruturais</value>
-	</data>
-	<data name="ModifyElements_JoinMultipleElements" xml:space="preserve">
-		<value>Unir Múltiplos Elementos</value>
-	</data>
-	<data name="ModifyElements_SelectElementsToJoin" xml:space="preserve">
-		<value>Selecionar Elemento\nPara Unir</value>
-	</data>
-	<data name="ModifyElements_SelectElementsToJoin_ToolTip" xml:space="preserve">
-		<value>Selecione e junte elementos estruturais e não estruturais</value>
-	</data>
-	<data name="ModifyElements_Title" xml:space="preserve">
-		<value>Modificar Elementos</value>
-	</data>
-	<data name="MoreInfo_Title" xml:space="preserve">
-		<value>Mais Informações</value>
-	</data>
-	<data name="Notififications_Title" xml:space="preserve">
-		<value>Notificações</value>
-	</data>
-	<data name="RenumberElements_ClearParkingNumbering" xml:space="preserve">
-		<value>Limpar\nNumeração</value>
-	</data>
-	<data name="RenumberElements_Columns" xml:space="preserve">
-		<value>Pilares</value>
-	</data>
-	<data name="RenumberElements_Columns_Descrip" xml:space="preserve">
-		<value>Comando para renumerar automaticamente as colunas estruturais</value>
-	</data>
-	<data name="RenumberElements_Columns_ToolTip" xml:space="preserve">
-		<value>Renumerar pilares</value>
-	</data>
-	<data name="RenumberElements_Grids" xml:space="preserve">
-		<value>Eixos</value>
-	</data>
-	<data name="RenumberElements_Grids_Descrip" xml:space="preserve">
-		<value>Comando para renumerar automaticamente os eixos: Uma sequência de números ou letras pode ser selecionada, incluindo sub letras e subnúmeros. Este comando também tem a capacidade de usar uma tabela para reordenar e organizar todas os eixos</value>
-	</data>
-	<data name="RenumberElements_Grids_ToolTip" xml:space="preserve">
-		<value>Renumerar Eixos</value>
-	</data>
-	<data name="RenumberElements_NearestSpaces" xml:space="preserve">
-		<value>Estacionamentos\nPróximos</value>
-	</data>
-	<data name="RenumberElements_ParkingSpaces" xml:space="preserve">
-		<value>Estacinamentos</value>
-	</data>
-	<data name="RenumberElements_RenumberBeams" xml:space="preserve">
-		<value>Vigas</value>
-	</data>
-	<data name="RenumberElements_RenumberBeams_Descrip" xml:space="preserve">
-		<value>Comando para renumerar automaticamente vigas estruturais</value>
-	</data>
-	<data name="RenumberElements_RenumberBeams_ToolTip" xml:space="preserve">
-		<value>Renumerar Vigas Estruturais</value>
-	</data>
-	<data name="RenumberElements_RenumberColumns" xml:space="preserve">
-		<value>Renumerar Pilares</value>
-	</data>
-	<data name="RenumberElements_RenumberParkingSpaces" xml:space="preserve">
-		<value>Renumerar Estacionamentos</value>
-	</data>
-	<data name="RenumberElements_RenumberParkingSpaces_ToolTip" xml:space="preserve">
-		<value>Renumerar estacionamentos</value>
-	</data>
-	<data name="RenumberElements_SelectColumns" xml:space="preserve">
-		<value>Selecione\nPilares</value>
-	</data>
-	<data name="RenumberElements_SelectColumns_Descrip" xml:space="preserve">
-		<value>Comando para renumerar automaticamente os pilares estruturais selecionados</value>
-	</data>
-	<data name="RenumberElements_SelectColumns_ToolTip" xml:space="preserve">
-		<value>Renumerar pilares selecionados</value>
-	</data>
-	<data name="RenumberElements_Title" xml:space="preserve">
-		<value>Renumerar Elementos</value>
-	</data>
-	<data name="StructuralElements_BeamsForBuilding" xml:space="preserve">
-		<value>Criar Vigas</value>
-	</data>
-	<data name="StructuralElements_BeamsForBuilding_Descrip" xml:space="preserve">
-		<value>Este comando lê todas as paredes no projeto atual ou em um arquivo vinculado para criar vigas estruturais em todos os pavimentos escolhidos</value>
-	</data>
-	<data name="StructuralElements_BeamsForBuilding_ToolTip" xml:space="preserve">
-		<value>Distribuir vigas em todas as paredes válidas do edifício</value>
-	</data>
-	<data name="StructuralElements_BeamsFromColumns" xml:space="preserve">
-		<value>Vigas\nPor Pilares</value>
-	</data>
-	<data name="StructuralElements_BeamsFromColumns_Descrip" xml:space="preserve">
-		<value>Este comando cria vigas estruturais a partir de pilares estruturais selecionados, o comando cria os tipos automaticamente, é possível pré-estabelecer a altura da viga, criá-las em uma cadeia juntamente com outras opções</value>
-	</data>
-	<data name="StructuralElements_BeamsFromColumns_ToolTip" xml:space="preserve">
-		<value>Criar vigas estruturais a partir de colunas estruturais</value>
-	</data>
-	<data name="StructuralElements_BeamsFromWalls" xml:space="preserve">
-		<value>Vigas\nPor Paredes</value>
-	</data>
-	<data name="StructuralElements_BeamsFromWalls_Descrip" xml:space="preserve">
-		<value>Este comando cria vigas estruturais a partir de paredes, cria todos os tipos automaticamente, é possível pré-estabelecer a altura do feixe, unir esses feixes com as paredes mais próximas e utilizar arquivos vinculados junto com outras opções</value>
-	</data>
-	<data name="StructuralElements_BeamsFromWalls_ToolTip" xml:space="preserve">
-		<value>Criar vigas selecionando paredes arquitetônicas</value>
-	</data>
-	<data name="StructuralElements_ColumnsFromCAD" xml:space="preserve">
-		<value>Pilares\nPor CAD</value>
-	</data>
-	<data name="StructuralElements_ColumnsFromCAD_Descrip" xml:space="preserve">
-		<value>Esse comando cria pilares estruturais a partir de arquivos CAD 2D vinculados, lê os retângulos e círculos fechados na camada selecionada e se restringe às alturas dos pavimentos especificados</value>
-	</data>
-	<data name="StructuralElements_ColumnsFromCAD_ToolTip" xml:space="preserve">
-		<value>Criar colunas estruturais a partir de uma importação ou link CAD</value>
-	</data>
-	<data name="StructuralElements_Title" xml:space="preserve">
-		<value>Elementos Estruturais</value>
-	</data>
-	<data name="Topography_SlopeByPads" xml:space="preserve">
-		<value>Talude\nPor Plataformas</value>
-	</data>
-	<data name="Topography_SlopeByPads_Descrip" xml:space="preserve">
-		<value>Este comando cria gradações de declives a partir de blocos de construção selecionados, é possível definir o ângulo e o número de pontos de interação por cada segmento</value>
-	</data>
-	<data name="Topography_SlopeByPads_ToolTip" xml:space="preserve">
-		<value>Criar taludes a partir de plataformas selecionadas</value>
-	</data>
-	<data name="Topography_SurfaceByPointCloud" xml:space="preserve">
-		<value>Superfície\nPor Nuvem de Pontos</value>
-	</data>
-	<data name="Topography_SurfaceByPointCloud_ToolTip" xml:space="preserve">
-		<value>Criar Toposuperfície a partir de uma instância PointCloud selecionada</value>
-	</data>
-	<data name="Topography_Title" xml:space="preserve">
-		<value>Topografia</value>
-	</data>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Onbox_ToolTip" xml:space="preserve">
+    <value>Sobre este aplicativo</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="About_SampleProjects" xml:space="preserve">
+    <value>Projetos\nExemplos</value>
+  </data>
+  <data name="About_SampleProjects_ToolTip" xml:space="preserve">
+    <value>Pasta que contém os projetos de exemplo do Onbox</value>
+  </data>
+  <data name="About_Site_ToolTip" xml:space="preserve">
+    <value>Ir para o Site do Onbox</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="Manage_PackageProject" xml:space="preserve">
+    <value>Empacotar\nProjeto</value>
+  </data>
+  <data name="Manage_PackageProject_ToolTip" xml:space="preserve">
+    <value>Cria um arquivo zipado com todos os arquivos relacionados do projeto</value>
+  </data>
+  <data name="Manage_Title" xml:space="preserve">
+    <value>Gerenciar</value>
+  </data>
+  <data name="ModifyElements_CopyBeamsToLevels" xml:space="preserve">
+    <value>Copiar Vigas\nPara os Pavimentos</value>
+  </data>
+  <data name="ModifyElements_CopyBeamsToLevels_Descrip" xml:space="preserve">
+    <value>Este comando copia as vigas estruturais para o pavimento selecionado a partir do pavimento da viga selecionada, todos as vigas do pavimento fonte serão copiadas</value>
+  </data>
+  <data name="ModifyElements_CopyBeamsToLevels_ToolTip" xml:space="preserve">
+    <value>Criar vigas selecionando pilares estruturais</value>
+  </data>
+  <data name="ModifyElements_JoinElements" xml:space="preserve">
+    <value>Unir Elementos</value>
+  </data>
+  <data name="ModifyElements_JoinElements_ToolTip" xml:space="preserve">
+    <value>Unir elementos estruturais e não estruturais</value>
+  </data>
+  <data name="ModifyElements_JoinMultipleElements" xml:space="preserve">
+    <value>Unir Múltiplos Elementos</value>
+  </data>
+  <data name="ModifyElements_SelectElementsToJoin" xml:space="preserve">
+    <value>Selecionar Elemento\nPara Unir</value>
+  </data>
+  <data name="ModifyElements_SelectElementsToJoin_ToolTip" xml:space="preserve">
+    <value>Selecione e junte elementos estruturais e não estruturais</value>
+  </data>
+  <data name="ModifyElements_Title" xml:space="preserve">
+    <value>Modificar Elementos</value>
+  </data>
+  <data name="MoreInfo_Title" xml:space="preserve">
+    <value>Mais Informações</value>
+  </data>
+  <data name="Notififications_Title" xml:space="preserve">
+    <value>Notificações</value>
+  </data>
+  <data name="RenumberElements_ClearParkingNumbering" xml:space="preserve">
+    <value>Limpar\nNumeração</value>
+  </data>
+  <data name="RenumberElements_Columns" xml:space="preserve">
+    <value>Pilares</value>
+  </data>
+  <data name="RenumberElements_Columns_Descrip" xml:space="preserve">
+    <value>Comando para renumerar automaticamente as colunas estruturais</value>
+  </data>
+  <data name="RenumberElements_Columns_ToolTip" xml:space="preserve">
+    <value>Renumerar pilares</value>
+  </data>
+  <data name="RenumberElements_Grids" xml:space="preserve">
+    <value>Eixos</value>
+  </data>
+  <data name="RenumberElements_Grids_Descrip" xml:space="preserve">
+    <value>Comando para renumerar automaticamente os eixos: Uma sequência de números ou letras pode ser selecionada, incluindo sub letras e subnúmeros. Este comando também tem a capacidade de usar uma tabela para reordenar e organizar todas os eixos</value>
+  </data>
+  <data name="RenumberElements_Grids_ToolTip" xml:space="preserve">
+    <value>Renumerar Eixos</value>
+  </data>
+  <data name="RenumberElements_NearestSpaces" xml:space="preserve">
+    <value>Estacionamentos\nPróximos</value>
+  </data>
+  <data name="RenumberElements_ParkingSpaces" xml:space="preserve">
+    <value>Estacinamentos</value>
+  </data>
+  <data name="RenumberElements_RenumberBeams" xml:space="preserve">
+    <value>Vigas</value>
+  </data>
+  <data name="RenumberElements_RenumberBeams_Descrip" xml:space="preserve">
+    <value>Comando para renumerar automaticamente vigas estruturais</value>
+  </data>
+  <data name="RenumberElements_RenumberBeams_ToolTip" xml:space="preserve">
+    <value>Renumerar Vigas Estruturais</value>
+  </data>
+  <data name="RenumberElements_RenumberColumns" xml:space="preserve">
+    <value>Renumerar Pilares</value>
+  </data>
+  <data name="RenumberElements_RenumberParkingSpaces" xml:space="preserve">
+    <value>Renumerar Estacionamentos</value>
+  </data>
+  <data name="RenumberElements_RenumberParkingSpaces_ToolTip" xml:space="preserve">
+    <value>Renumerar estacionamentos</value>
+  </data>
+  <data name="RenumberElements_SelectColumns" xml:space="preserve">
+    <value>Selecione\nPilares</value>
+  </data>
+  <data name="RenumberElements_SelectColumns_Descrip" xml:space="preserve">
+    <value>Comando para renumerar automaticamente os pilares estruturais selecionados</value>
+  </data>
+  <data name="RenumberElements_SelectColumns_ToolTip" xml:space="preserve">
+    <value>Renumerar pilares selecionados</value>
+  </data>
+  <data name="RenumberElements_Title" xml:space="preserve">
+    <value>Renumerar Elementos</value>
+  </data>
+  <data name="StructuralElements_BeamsForBuilding" xml:space="preserve">
+    <value>Criar Vigas</value>
+  </data>
+  <data name="StructuralElements_BeamsForBuilding_Descrip" xml:space="preserve">
+    <value>Este comando lê todas as paredes no projeto atual ou em um arquivo vinculado para criar vigas estruturais em todos os pavimentos escolhidos</value>
+  </data>
+  <data name="StructuralElements_BeamsForBuilding_ToolTip" xml:space="preserve">
+    <value>Distribuir vigas em todas as paredes válidas do edifício</value>
+  </data>
+  <data name="StructuralElements_BeamsFromColumns" xml:space="preserve">
+    <value>Vigas\nPor Pilares</value>
+  </data>
+  <data name="StructuralElements_BeamsFromColumns_Descrip" xml:space="preserve">
+    <value>Este comando cria vigas estruturais a partir de pilares estruturais selecionados, o comando cria os tipos automaticamente, é possível pré-estabelecer a altura da viga, criá-las em uma cadeia juntamente com outras opções</value>
+  </data>
+  <data name="StructuralElements_BeamsFromColumns_ToolTip" xml:space="preserve">
+    <value>Criar vigas estruturais a partir de colunas estruturais</value>
+  </data>
+  <data name="StructuralElements_BeamsFromWalls" xml:space="preserve">
+    <value>Vigas\nPor Paredes</value>
+  </data>
+  <data name="StructuralElements_BeamsFromWalls_Descrip" xml:space="preserve">
+    <value>Este comando cria vigas estruturais a partir de paredes, cria todos os tipos automaticamente, é possível pré-estabelecer a altura do feixe, unir esses feixes com as paredes mais próximas e utilizar arquivos vinculados junto com outras opções</value>
+  </data>
+  <data name="StructuralElements_BeamsFromWalls_ToolTip" xml:space="preserve">
+    <value>Criar vigas selecionando paredes arquitetônicas</value>
+  </data>
+  <data name="StructuralElements_ColumnsFromCAD" xml:space="preserve">
+    <value>Pilares\nPor CAD</value>
+  </data>
+  <data name="StructuralElements_ColumnsFromCAD_Descrip" xml:space="preserve">
+    <value>Esse comando cria pilares estruturais a partir de arquivos CAD 2D vinculados, lê os retângulos e círculos fechados na camada selecionada e se restringe às alturas dos pavimentos especificados</value>
+  </data>
+  <data name="StructuralElements_ColumnsFromCAD_ToolTip" xml:space="preserve">
+    <value>Criar colunas estruturais a partir de uma importação ou link CAD</value>
+  </data>
+  <data name="StructuralElements_Title" xml:space="preserve">
+    <value>Elementos Estruturais</value>
+  </data>
+  <data name="Topography_SlopeByPads" xml:space="preserve">
+    <value>Talude\nPor Plataformas</value>
+  </data>
+  <data name="Topography_SlopeByPads_Descrip" xml:space="preserve">
+    <value>Este comando cria gradações de declives a partir de blocos de construção selecionados, é possível definir o ângulo e o número de pontos de interação por cada segmento</value>
+  </data>
+  <data name="Topography_SlopeByPads_ToolTip" xml:space="preserve">
+    <value>Criar taludes a partir de plataformas selecionadas</value>
+  </data>
+  <data name="Topography_SurfaceByPointCloud" xml:space="preserve">
+    <value>Superfície\nPor Nuvem de Pontos</value>
+  </data>
+  <data name="Topography_SurfaceByPointCloud_ToolTip" xml:space="preserve">
+    <value>Criar Toposuperfície a partir de uma instância PointCloud selecionada</value>
+  </data>
+  <data name="Topography_Title" xml:space="preserve">
+    <value>Topografia</value>
+  </data>
 </root>

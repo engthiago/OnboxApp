@@ -19,7 +19,7 @@ namespace ONBOXAppl.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class WindowLanguage {
@@ -1087,6 +1087,26 @@ namespace ONBOXAppl.Properties {
         public static string JoinUnjoinSelected_Walls {
             get {
                 return ResourceManager.GetString("JoinUnjoinSelected_Walls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit my Account.
+        /// </summary>
+        public static string Privacy_EditAccount {
+            get {
+                return ResourceManager.GetString("Privacy_EditAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OnboxApp only stores your email from a notification system that the Autodesk Exchange App Store sends to it when you download the application. This is the only instance where we have any identification of who is the using the application though, after download and installation, NO tracking of any type is used, not even for diagnostics or statistics.  The exact source code that you can audit on https://github.com/engthiago/OnboxApp is the one deployed to your computer.
+        ///
+        ///Your email is only stored in our own [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Privacy_Information {
+            get {
+                return ResourceManager.GetString("Privacy_Information", resourceCulture);
             }
         }
         

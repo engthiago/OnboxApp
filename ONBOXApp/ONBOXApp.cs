@@ -244,6 +244,7 @@ namespace ONBOXAppl
             PushButton btnONBOXSite = panelAbout.AddItem(new PushButtonData("  Onbox  ", "  Onbox  ", dll, "ONBOXAppl.SiteONBOX")) as PushButton;
             //PushButton btnProjectExamplesFolder = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_SampleProjects, Properties.RibbonLanguage.About_SampleProjects.Replace("\\n", "\n"), dll, "ONBOXAppl.ProjectFolder")) as PushButton;
             PushButton btnInfo = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_Title, Properties.RibbonLanguage.About_Title, dll, "ONBOXAppl.AboutONBOXApp")) as PushButton;
+            PushButton btnPrivacy = panelAbout.AddItem(new PushButtonData(Properties.RibbonLanguage.About_Privacy, Properties.RibbonLanguage.About_Privacy, dll, "ONBOXAppl.Privacy")) as PushButton;
 
             //SplitButtons for Parking
             PushButton btnRenumberParking = sptRenumberParking.AddPushButton(new PushButtonData(Properties.RibbonLanguage.RenumberElements_ParkingSpaces, Properties.RibbonLanguage.RenumberElements_ParkingSpaces.Replace("\\n", "\n"), dll, "ONBOXAppl.RenumberParking")) as PushButton;
@@ -297,6 +298,8 @@ namespace ONBOXAppl
             BitmapImage ONBOX16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/onBox16.png", UriKind.Absolute));
             BitmapImage INFO32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnInfo32.png", UriKind.Absolute));
             BitmapImage INFO16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnInfo16.png", UriKind.Absolute));
+            BitmapImage privacy32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/privacy32.png", UriKind.Absolute));
+            BitmapImage privacy16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/privacy16.png", UriKind.Absolute));
             //BitmapImage ProjectExamples16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder16.png", UriKind.Absolute));
             //BitmapImage ProjectExamples32 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnProjectExamplesFolder.png", UriKind.Absolute));
             BitmapImage Package16 = new BitmapImage(new Uri("pack://application:,,,/ONBOXAppl;component/Resources/btnPackage16.png", UriKind.Absolute));
@@ -386,6 +389,9 @@ namespace ONBOXAppl
             btnInfo.Image = INFO16;
             btnInfo.ToolTip = Properties.RibbonLanguage.About_Onbox_ToolTip;
             btnInfo.ToolTip = Properties.RibbonLanguage.About_Onbox_Descrip;
+
+            btnPrivacy.LargeImage = privacy32;
+            btnPrivacy.Image = privacy16;
 
             //btnProjectExamplesFolder.Image = ProjectExamples16;
             //btnProjectExamplesFolder.LargeImage = ProjectExamples32;
