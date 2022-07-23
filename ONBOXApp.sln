@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONBOXApp", "ONBOXApp\ONBOXApp.csproj", "{59DC5911-8879-4F59-86E0-7499B48BB7A5}"
 EndProject
@@ -12,9 +12,11 @@ Global
 		Debug2019|x64 = Debug2019|x64
 		Debug2020|x64 = Debug2020|x64
 		Debug2021|x64 = Debug2021|x64
+		Debug2022|x64 = Debug2022|x64
 		Release2019|x64 = Release2019|x64
 		Release2020|x64 = Release2020|x64
 		Release2021|x64 = Release2021|x64
+		Release2022|x64 = Release2022|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2019|x64.ActiveCfg = Debug2019|x64
@@ -23,18 +25,24 @@ Global
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2020|x64.Build.0 = Debug2020|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2021|x64.ActiveCfg = Debug2021|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2021|x64.Build.0 = Debug2021|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2022|x64.ActiveCfg = Debug2022|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Debug2022|x64.Build.0 = Debug2022|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2019|x64.ActiveCfg = Release2019|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2019|x64.Build.0 = Release2019|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2020|x64.ActiveCfg = Release2020|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2020|x64.Build.0 = Release2020|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2021|x64.ActiveCfg = Release2021|x64
 		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2021|x64.Build.0 = Release2021|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2022|x64.ActiveCfg = Release2022|x64
+		{59DC5911-8879-4F59-86E0-7499B48BB7A5}.Release2022|x64.Build.0 = Release2022|x64
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2019|x64.ActiveCfg = Debug
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2020|x64.ActiveCfg = Debug
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2021|x64.ActiveCfg = Debug
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Debug2022|x64.ActiveCfg = Debug
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2019|x64.ActiveCfg = Release
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2020|x64.ActiveCfg = Release
 		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2021|x64.ActiveCfg = Release
+		{F781CC4A-56F0-4DEA-8C74-14FF4B5A5FB9}.Release2022|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
