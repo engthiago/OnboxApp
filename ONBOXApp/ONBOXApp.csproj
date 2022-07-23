@@ -78,7 +78,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
-  
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2019|x64'">
     <OutputPath>bin\x64\Release2019\</OutputPath>
     <DefineConstants>TRACE;R2019</DefineConstants>
@@ -131,8 +130,7 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
-  
-  <ItemGroup Condition="'$(Configuration)' == 'Debug2019'">
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2019' OR '$(Configuration)' == 'Release2019'">
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -146,7 +144,7 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug2020'">
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2020' OR '$(Configuration)' == 'Release2020'">
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -160,7 +158,7 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug2021'">
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2021' OR '$(Configuration)' == 'Release2021'">
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -174,7 +172,7 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug2022'">
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2022' OR '$(Configuration)' == 'Release2022'">
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -188,7 +186,7 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Debug2023'">
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2023' OR '$(Configuration)' == 'Release2023'">
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2023\RevitAPI.dll</HintPath>
       <Private>False</Private>
@@ -202,78 +200,6 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  
-  <ItemGroup Condition="'$(Configuration)' == 'Release2019'">
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIIFC">
-      <HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPIIFC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Release2020'">
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIIFC">
-      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPIIFC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Release2021'">
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIIFC">
-      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPIIFC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Release2022'">
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIIFC">
-      <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPIIFC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)' == 'Release2023'">
-    <Reference Include="RevitAPI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2023\RevitAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>C:\Program Files\Autodesk\Revit 2023\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="RevitAPIIFC">
-      <HintPath>C:\Program Files\Autodesk\Revit 2023\RevitAPIIFC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -716,12 +642,16 @@ if $(Configuration) == Debug2018 goto D2018
 if $(Configuration) == Debug2019 goto D2019
 if $(Configuration) == Debug2020 goto D2020
 if $(Configuration) == Debug2021 goto D2021
+if $(Configuration) == Debug2022 goto D2022
+if $(Configuration) == Debug2023 goto D2023
 
 if $(Configuration) == Release2017 goto R2017
 if $(Configuration) == Release2018 goto R2018
 if $(Configuration) == Release2019 goto R2019
 if $(Configuration) == Release2020 goto R2020
 if $(Configuration) == Release2021 goto R2021
+if $(Configuration) == Release2022 goto R2022
+if $(Configuration) == Release2023 goto R2023
 
 echo ######## INVALID CONFIGURATION SPECIFIED ########
 
@@ -748,6 +678,20 @@ XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2021\ONBOX\" /Y 
 copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2021\"
 goto exit
 
+:D2022
+echo Copying results to 2022
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2022\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2022\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2022\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2022\"
+goto exit
+
+:D2023
+echo Copying results to 2023
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2023\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2023\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2023\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2023\"
+goto exit
+
 :R2019
 echo Copying results to bundle 2019
 if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2019\ONBOX" mkdir "$(SolutionDir)OnboxApp.bundle\Contents\2019\ONBOX"
@@ -769,6 +713,19 @@ XCOPY "$(TargetDir)\*" "$(SolutionDir)OnboxApp.bundle\Contents\2021\ONBOX\" /Y /
 copy "$(ProjectDir)\ONBOXApp.addin" "$(SolutionDir)OnboxApp.bundle\Contents\2021\"
 goto exit
 
+:R2022
+echo Copying results to bundle 2022
+if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2022\ONBOX" mkdir "$(SolutionDir)OnboxApp.bundle\Contents\2022\ONBOX"
+XCOPY "$(TargetDir)\*" "$(SolutionDir)OnboxApp.bundle\Contents\2022\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "$(SolutionDir)OnboxApp.bundle\Contents\2022\"
+goto exit
+
+:R2023
+echo Copying results to bundle 2023
+if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2023\ONBOX" mkdir "$(SolutionDir)OnboxApp.bundle\Contents\2023\ONBOX"
+XCOPY "$(TargetDir)\*" "$(SolutionDir)OnboxApp.bundle\Contents\2023\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "$(SolutionDir)OnboxApp.bundle\Contents\2023\"
+goto exit
 :exit</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
