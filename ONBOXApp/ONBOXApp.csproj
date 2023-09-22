@@ -78,6 +78,18 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2024|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputPath>bin\x64\Debug2024\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;R2024</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2019|x64'">
     <OutputPath>bin\x64\Release2019\</OutputPath>
     <DefineConstants>TRACE;R2019</DefineConstants>
@@ -123,6 +135,17 @@
     <OutputPath>bin\x64\Release2023\</OutputPath>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <DefineConstants>TRACE;R2023</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release2024|x64'">
+    <OutputPath>bin\x64\Release2024\</OutputPath>
+    <DefineConstants>TRACE;R2024</DefineConstants>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -197,6 +220,20 @@
     </Reference>
     <Reference Include="RevitAPIIFC">
       <HintPath>C:\Program Files\Autodesk\Revit 2023\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug2024' OR '$(Configuration)' == 'Release2024'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPIIFC.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -365,6 +402,10 @@
       <DependentUpon>RevitZipUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="Storage.cs" />
+    <Compile Include="TopoEdit\Canvas.xaml.cs">
+      <DependentUpon>Canvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TopoEdit\TopoEditCommand.cs" />
     <Compile Include="TopoFromDwgMarks\TopoFromDwgMarks.cs" />
     <Compile Include="TopoFromPointCloud\CreateBoundingBoxReferencePlanes.cs" />
     <Compile Include="TopoFromPointCloud\TopoFromPointCloudAdvanced.cs" />
@@ -530,6 +571,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="TopoEdit\Canvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TopoFromPointCloud\TopoPointCloudUIAdvanced.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -644,6 +689,7 @@ if $(Configuration) == Debug2020 goto D2020
 if $(Configuration) == Debug2021 goto D2021
 if $(Configuration) == Debug2022 goto D2022
 if $(Configuration) == Debug2023 goto D2023
+if $(Configuration) == Debug2024 goto D2024
 
 if $(Configuration) == Release2017 goto R2017
 if $(Configuration) == Release2018 goto R2018
@@ -652,6 +698,7 @@ if $(Configuration) == Release2020 goto R2020
 if $(Configuration) == Release2021 goto R2021
 if $(Configuration) == Release2022 goto R2022
 if $(Configuration) == Release2023 goto R2023
+if $(Configuration) == Release2024 goto R2024
 
 echo ######## INVALID CONFIGURATION SPECIFIED ########
 
@@ -692,6 +739,13 @@ XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2023\ONBOX\" /Y 
 copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2023\"
 goto exit
 
+:D2024
+echo Copying results to 2024
+if not exist "%25ProgramData%25\Autodesk\Revit\Addins\2023\ONBOX\" mkdir "%25ProgramData%25\Autodesk\Revit\Addins\2024\ONBOX\"
+XCOPY "$(TargetDir)\*" "%25ProgramData%25\Autodesk\Revit\Addins\2024\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "%25ProgramData%25\Autodesk\Revit\Addins\2024\"
+goto exit
+
 :R2019
 echo Copying results to bundle 2019
 if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2019\ONBOX" mkdir "$(SolutionDir)OnboxApp.bundle\Contents\2019\ONBOX"
@@ -726,6 +780,14 @@ if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2023\ONBOX" mkdir "$(Soluti
 XCOPY "$(TargetDir)\*" "$(SolutionDir)OnboxApp.bundle\Contents\2023\ONBOX\" /Y /R /F /I /S
 copy "$(ProjectDir)\ONBOXApp.addin" "$(SolutionDir)OnboxApp.bundle\Contents\2023\"
 goto exit
+
+:R2024
+echo Copying results to bundle 2024
+if not exist "$(SolutionDir)OnboxApp.bundle\Contents\2024\ONBOX" mkdir "$(SolutionDir)OnboxApp.bundle\Contents\2024\ONBOX"
+XCOPY "$(TargetDir)\*" "$(SolutionDir)OnboxApp.bundle\Contents\2024\ONBOX\" /Y /R /F /I /S
+copy "$(ProjectDir)\ONBOXApp.addin" "$(SolutionDir)OnboxApp.bundle\Contents\2024\"
+goto exit
+
 :exit</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
