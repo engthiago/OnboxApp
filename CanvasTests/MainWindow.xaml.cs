@@ -24,5 +24,21 @@ namespace CanvasTests
         {
             InitializeComponent();
         }
+
+        private void Polygon_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (e.OriginalSource is Shape shape)
+            {
+                shape.Stroke = new SolidColorBrush(Colors.Black);
+            }
+        }
+
+        private void Polygon_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (e.OriginalSource is Shape shape)
+            {
+                shape.Stroke = new SolidColorBrush(Colors.Transparent);
+            }
+        }
     }
 }
