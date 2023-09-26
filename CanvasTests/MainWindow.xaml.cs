@@ -230,9 +230,8 @@ namespace CanvasTests
                 this.dragCursorWorld = this.ScreenToWorld(this.cursorPos, this.panningOffset, zoom);
                 if (this.selectedShape != null)
                 {
-                    var closestPoint = this.topography.Points.OrderBy(p => p.Distance(this.dragCursorWorld)).FirstOrDefault();
-                    closestPoint.X = this.dragCursorWorld.X;
-                    closestPoint.Y = this.dragCursorWorld.Y;
+                    this.selectedShapePos.X = this.dragCursorWorld.X;
+                    this.selectedShapePos.Y = this.dragCursorWorld.Y;
                 }
                 this.Update();
             }
@@ -287,6 +286,7 @@ namespace CanvasTests
                     if (shape.Tag?.ToString() != "drag")
                     {
                         this.selectedShape = shape;
+                        this.selectedShapePos = this.topography.Points.OrderBy(p => p.Distance(dragCursorWorld)).FirstOrDefault();
                     }
                 }
             }
