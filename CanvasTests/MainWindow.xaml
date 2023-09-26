@@ -8,13 +8,14 @@
         MouseDown="Window_MouseDown"
         MouseLeave="Window_MouseLeave"
         MouseUp="Polygon_MouseUp"
+        MouseWheel="Window_MouseWheel"
         mc:Ignorable="d"
         
         Title="MainWindow" Height="500" Width="650">
     <Grid>
         <Canvas x:Name="Canvas">
 
-            <Polygon x:Name="Poly" StrokeThickness="4" Stroke="Transparent" MouseDown="Ellipse_MouseDown" MouseUp="Polygon_MouseUp" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Points="-5,350 100,320 120,310 160,330 180,320 650,320 650,500 -5,500">
+            <Polygon x:Name="Terrain" StrokeThickness="4" Stroke="Transparent" MouseDown="Ellipse_MouseDown" MouseUp="Polygon_MouseUp" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave">
                 <Polygon.Fill>
                     <ImageBrush ImageSource="/earth3.png" TileMode="Tile" RenderOptions.EdgeMode="Aliased">
                         <ImageBrush.RelativeTransform>
@@ -25,15 +26,6 @@
                     </ImageBrush>
                 </Polygon.Fill>
             </Polygon>
-
-
-            <Ellipse ToolTip="Test" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" StrokeThickness="4"  Stroke="Transparent" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="-5" Canvas.Top="350"  Margin="-8,-8"/>
-            <Ellipse ToolTip="Test" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" StrokeThickness="4"  Stroke="Transparent" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="100" Canvas.Top="320" Margin="-8,-8" />
-            <Ellipse StrokeThickness="4" ToolTip="Test"  Stroke="Transparent" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="120" Canvas.Top="310" Margin="-8,-8"/>
-            <Ellipse StrokeThickness="4" ToolTip="Test"  Stroke="Transparent" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="160" Canvas.Top="330" Margin="-8,-8"/>
-            <Ellipse StrokeThickness="4" ToolTip="Test"  Stroke="Transparent" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="180" Canvas.Top="320" Margin="-8,-8"/>
-            <Ellipse StrokeThickness="4" ToolTip="Test"  Stroke="Transparent" ToolTipService.BetweenShowDelay="0" ToolTipService.ShowDuration="99999" ToolTipService.InitialShowDelay="0" MouseDown="Ellipse_MouseDown" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave" Fill="Black" Width="16" Height="16" Canvas.Left="650" Canvas.Top="320" Margin="-8,-8"/>
-
 
         </Canvas>
     </Grid>
