@@ -82,7 +82,6 @@ namespace CanvasTests
     public partial class MainWindow : Window
     {
         private bool pressed = false;
-        private bool renderDragCursor;
         private Point2d cursorPos = new Point2d();
 
         private Shape selectedShape;
@@ -96,6 +95,7 @@ namespace CanvasTests
         private TopoLineProfile topography = new TopoLineProfile();
         private double pointSize = 8;
         private Point2d dragCursorWorld = new Point2d();
+        private List<Point2d> debugPoints = new List<Point2d>();
 
         public MainWindow()
         {
@@ -131,7 +131,7 @@ namespace CanvasTests
 
         private double WorldToScreen(double n, double panningDiff, float zoom)
         {
-            return (n / zoom) + panningDiff;
+            return ((n / zoom) + panningDiff);
         }
 
         private Point2d ScreenToWorld(Point p, Point panningDiff, float zoom)
@@ -170,12 +170,13 @@ namespace CanvasTests
                 this.Canvas.Children.Add(rendererPoint);
             }
 
-            if (renderDragCursor)
+            foreach (var point in this.debugPoints)
             {
-                var transfPoint = this.WorldToScreen(this.dragCursorWorld, this.panningOffset, this.zoom);
-                var dragPoint = this.CreateRendererPoint(transfPoint, this.dragCursorWorld, this.pointSize);
-                dragPoint.Tag = "drag";
-                this.Canvas.Children.Add(dragPoint);
+                var transfPoint = this.WorldToScreen(point, this.panningOffset, this.zoom);
+                var debg = this.CreateRendererPoint(transfPoint, point, 30);
+                debg.IsEnabled = false;
+                debg.Fill = new SolidColorBrush(Colors.Red);
+                this.Canvas.Children.Add(debg);
             }
         }
 
@@ -227,7 +228,6 @@ namespace CanvasTests
             this.Cursor = Cursors.Arrow;
             this.selectedShape = null;
             this.pressed = false;
-            this.renderDragCursor = false;
             this.Update();
         }
 
@@ -279,7 +279,7 @@ namespace CanvasTests
 
                 if (e.ClickCount == 2)
                 {
-                    Debug.WriteLine("Zoom to fit");
+                    this.ZoomToFit();
                 }
             }
 
@@ -301,6 +301,42 @@ namespace CanvasTests
                 }
             }
 
+        }
+
+        private void ZoomToFit()
+        {
+            this.debugPoints.Clear();
+
+            if (this.topography.Points.Count == 0)
+            {
+                this.panningOffset = new Point2d();
+                this.zoom = 1;
+                return;
+            }
+
+            // Compute BB
+            var minX = Double.MaxValue;
+            var minY = Double.MaxValue;
+            var maxX = Double.MinValue;
+            var maxY = Double.MinValue;
+
+            foreach (var point in this.topography.Points)
+            {
+                minX = Math.Min(minX, point.X);
+                minY = Math.Min(minY, point.Y);
+                maxX = Math.Max(maxX, point.X);
+                maxY = Math.Max(maxY, point.Y);
+            }
+
+            var width = minX + maxX;
+            var height = minY + maxY;
+
+            this.debugPoints.Add(new Point2d(minX, minY));
+            this.debugPoints.Add(new Point2d(maxX, maxY));
+
+            this.debugPoints.Add(new Point2d(width / 2, height / 2));
+
+            this.Update();
         }
 
         private void Window_MouseWheel(object sender, MouseWheelEventArgs e)
