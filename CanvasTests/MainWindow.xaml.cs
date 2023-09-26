@@ -96,7 +96,6 @@ namespace CanvasTests
         private TopoLineProfile topography = new TopoLineProfile();
         private double pointSize = 8;
         private Point2d dragCursorWorld = new Point2d();
-        private Point2d prevPointScreen = new Point2d();
 
         public MainWindow()
         {
@@ -252,8 +251,6 @@ namespace CanvasTests
             {
                 this.Pan();
             }
-
-            Debug.WriteLine("Mouse moved");
         }
 
         private void Pan()
@@ -308,26 +305,26 @@ namespace CanvasTests
 
         private void Window_MouseWheel(object sender, MouseWheelEventArgs e)
         {
+            var pointOnWorldBefore = this.ScreenToWorld(this.cursorPos, panningOffset, zoom);
+
             if (e.Delta > 0) 
             {
                 if (zoom < 0.01) return;
-                zoom *= 0.95f;
+                zoom *= 0.90f;
             }
             else
             {
-                zoom *= 1.05f;
+                zoom *= 1.10f;
             }
 
-            //Debug.WriteLine("Zoom");
+            // Offset panning to zoom where the mouse cursor is
+            var screenDifference = this.WorldToScreen(pointOnWorldBefore, panningOffset, zoom);
+            var x = screenDifference.X - cursorPos.X;
+            var y = screenDifference.Y - cursorPos.Y;
+            this.panningOffset.X -= x;
+            this.panningOffset.Y -= y;
 
             this.Update();
-
-            var ellipe1 = this.CreateRendererPoint(this.prevPointScreen, prevPointScreen, this.pointSize);
-            ellipe1.IsEnabled = false;
-            ellipe1.Fill = new SolidColorBrush(Colors.Red);
-            this.Canvas.Children.Add(ellipe1);
-
-            this.prevPointScreen = this.cursorPos;
         }
     }
 }
