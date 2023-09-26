@@ -50,6 +50,11 @@ namespace CanvasTests
             return Math.Sqrt(dx * dx + dy * dy);
         }
 
+        public Point2d Sub(Point2d p2)
+        {
+            return new Point2d(this.X - p2.X, this.Y - p2.Y);
+        }
+
         static public implicit operator Point(Point2d point)
         {
             return new Point(point.X, point.Y);
@@ -58,6 +63,11 @@ namespace CanvasTests
         public static implicit operator Point2d(Point v)
         {
             return new Point2d(v.X, v.Y);
+        }
+
+        public override string ToString()
+        {
+            return $"{this.X} {this.Y}";
         }
     }
 
@@ -86,6 +96,7 @@ namespace CanvasTests
         private TopoLineProfile topography = new TopoLineProfile();
         private double pointSize = 8;
         private Point2d dragCursorWorld = new Point2d();
+        private Point2d prevPointScreen = new Point2d();
 
         public MainWindow()
         {
@@ -241,6 +252,8 @@ namespace CanvasTests
             {
                 this.Pan();
             }
+
+            Debug.WriteLine("Mouse moved");
         }
 
         private void Pan()
@@ -304,10 +317,17 @@ namespace CanvasTests
             {
                 zoom *= 1.05f;
             }
- 
+
+            //Debug.WriteLine("Zoom");
 
             this.Update();
 
+            var ellipe1 = this.CreateRendererPoint(this.prevPointScreen, prevPointScreen, this.pointSize);
+            ellipe1.IsEnabled = false;
+            ellipe1.Fill = new SolidColorBrush(Colors.Red);
+            this.Canvas.Children.Add(ellipe1);
+
+            this.prevPointScreen = this.cursorPos;
         }
     }
 }
