@@ -7,7 +7,7 @@
         MouseMove="Window_MouseMove"
         MouseDown="Window_MouseDown"
         MouseLeave="Window_MouseLeave"
-        MouseUp="Polygon_MouseUp"
+        MouseUp="Window_MouseUp"
         MouseWheel="Window_MouseWheel"
         mc:Ignorable="d"
         
@@ -15,7 +15,7 @@
     <Grid>
         <Canvas x:Name="Canvas">
 
-            <Polygon x:Name="Terrain" StrokeThickness="4" Stroke="Transparent" MouseDown="Ellipse_MouseDown" MouseUp="Polygon_MouseUp" MouseEnter="Polygon_MouseEnter" MouseLeave="Polygon_MouseLeave">
+            <Polygon x:Name="Terrain" StrokeThickness="4" Stroke="Transparent" >
                 <Polygon.Fill>
                     <ImageBrush ImageSource="/earth3.png" TileMode="Tile" RenderOptions.EdgeMode="Aliased">
                         <ImageBrush.RelativeTransform>
