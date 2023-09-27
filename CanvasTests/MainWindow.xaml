@@ -9,10 +9,12 @@
         MouseLeave="Window_MouseLeave"
         MouseUp="Window_MouseUp"
         MouseWheel="Window_MouseWheel"
+        SizeChanged="Window_SizeChanged"
         mc:Ignorable="d"
         
         Title="MainWindow" Height="500" Width="650">
     <Grid>
+        <Label x:Name="Coords"></Label>
         <Canvas x:Name="Canvas">
 
             <Polygon x:Name="Terrain" StrokeThickness="4" Stroke="Transparent" >

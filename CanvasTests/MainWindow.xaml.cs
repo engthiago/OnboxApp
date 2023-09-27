@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Shell;
 
 namespace CanvasTests
 {
@@ -48,6 +49,14 @@ namespace CanvasTests
             var dx = this.X - point.X;
             var dy = this.Y - point.Y;
             return Math.Sqrt(dx * dx + dy * dy);
+        }
+
+        public bool IsAlmostEqualTo(Point2d p1, double eps = 0.001)
+        {
+            if (Math.Abs(this.X - p1.X) > eps) return false;
+            if (Math.Abs(this.Y - p1.Y) > eps) return false;
+
+            return true;
         }
 
         public Point2d Sub(Point2d p2)
@@ -97,31 +106,25 @@ namespace CanvasTests
         private Point2d dragCursorWorld = new Point2d();
         private List<Point2d> debugPoints = new List<Point2d>();
 
+        private Point2d centerPoint = new Point2d();
+
         public MainWindow()
         {
             InitializeComponent();
 
             topography.Points = new List<Point2d>
             {
-                new Point2d(-5, 350),
-                new Point2d(100, 320),
-                new Point2d(120, 310),
-                new Point2d(160, 330),
-                new Point2d(180, 320),
-                new Point2d(650, 320),
-                new Point2d(650, 500),
-                new Point2d(-5, 500),
+                new Point2d(0, 0),
+                new Point2d(100, 120),
+                new Point2d(120, 110),
+                new Point2d(160, 130),
+                new Point2d(180, 120),
+                new Point2d(650, 120),
+                new Point2d(650, -100),
+                new Point2d(0, -100),
             };
 
             this.Update();
-        }
-
-        private bool IsCloseTo(Point2d p0, Point2d p1, double eps = 8)
-        {
-            if (Math.Abs(p0.X - p1.X) > eps) return false;
-            if (Math.Abs(p0.Y - p1.Y) > eps) return false;
-
-            return true;
         }
 
         private double ScreenToWorld(double n, double panningDiff, float zoom)
@@ -131,20 +134,25 @@ namespace CanvasTests
 
         private double WorldToScreen(double n, double panningDiff, float zoom)
         {
+            //n = viewHeight - n;
             return ((n / zoom) + panningDiff);
         }
 
         private Point2d ScreenToWorld(Point p, Point panningDiff, float zoom)
         {
             var x = ScreenToWorld(p.X, panningDiff.X, zoom);
-            var y = ScreenToWorld(p.Y, panningDiff.Y, zoom);
+            var y = ScreenToWorld(p.Y, -panningDiff.Y, zoom);
+            y = ActualHeight - y;
             return new Point2d(x, y);
         }
 
         private Point2d WorldToScreen(Point p, Point panningDiff, float zoom)
         {
             var x = WorldToScreen(p.X, panningDiff.X, zoom);
-            var y = WorldToScreen(p.Y, panningDiff.Y, zoom);
+
+            var y = ActualHeight - p.Y;
+            y = WorldToScreen(y, -panningDiff.Y, zoom);
+
             return new Point2d(x, y);
         }
 
@@ -162,7 +170,6 @@ namespace CanvasTests
             }
             this.Terrain.Points = new PointCollection(transformedPoints);
 
-
             foreach (Point2d point in topography.Points)
             {
                 var transfPoint = this.WorldToScreen(point, this.panningOffset, zoom);
@@ -173,11 +180,17 @@ namespace CanvasTests
             foreach (var point in this.debugPoints)
             {
                 var transfPoint = this.WorldToScreen(point, this.panningOffset, this.zoom);
-                var debg = this.CreateRendererPoint(transfPoint, point, 30);
+                var debg = this.CreateRendererPoint(transfPoint, point, 20);
                 debg.IsEnabled = false;
                 debg.Fill = new SolidColorBrush(Colors.Red);
                 this.Canvas.Children.Add(debg);
             }
+
+            var centerPointScreen = this.WorldToScreen(this.centerPoint, this.panningOffset, this.zoom);
+            var centerPointElem = this.CreateRendererPoint(centerPointScreen, this.centerPoint, this.pointSize);
+            centerPointElem.IsEnabled = false;
+            centerPointElem.Fill = new SolidColorBrush(Colors.Red);
+            this.Canvas.Children.Add(centerPointElem);
         }
 
         public Ellipse CreateRendererPoint(Point2d rendererPoint, Point2d originalPoint, double pointSize)
@@ -234,6 +247,10 @@ namespace CanvasTests
         private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             this.cursorPos = e.GetPosition(this);
+            var worldPos = this.ScreenToWorld(this.cursorPos, this.panningOffset, zoom);
+            var screenPos = this.WorldToScreen(worldPos, this.panningOffset, zoom);
+
+            this.Coords.Content = $"{cursorPos.X} {cursorPos.Y}\n{worldPos.X} {worldPos.Y}\n{screenPos.X} {screenPos.Y}";
 
             if (this.pressed)
             {
@@ -246,7 +263,6 @@ namespace CanvasTests
                 this.Update();
             }
 
-
             if (this.isPanning)
             {
                 this.Pan();
@@ -257,7 +273,7 @@ namespace CanvasTests
         {
             this.Update();
             this.panningOffset.X += this.cursorPos.X - this.prevPanning.X;
-            this.panningOffset.Y += this.cursorPos.Y - this.prevPanning.Y;
+            this.panningOffset.Y -= this.cursorPos.Y - this.prevPanning.Y;
             this.prevPanning = this.cursorPos;
         }
 
@@ -358,8 +374,16 @@ namespace CanvasTests
             var x = screenDifference.X - cursorPos.X;
             var y = screenDifference.Y - cursorPos.Y;
             this.panningOffset.X -= x;
-            this.panningOffset.Y -= y;
+            this.panningOffset.Y += y;
 
+            //Debug.WriteLine(pointOnWorldBefore);
+            //Debug.WriteLine(screenDifference);
+
+            this.Update();
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
             this.Update();
         }
     }
