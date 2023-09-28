@@ -125,8 +125,12 @@ namespace CanvasTests
             };
 
             this.WindowTitleHeight = new WindowChrome().CaptionHeight;
+            this.Loaded += MainWindow_Loaded;
+        }
 
-            this.Update();
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.ZoomToFit();
         }
 
         private double ScreenToWorld(double n, double panningDiff, float zoom)
@@ -365,8 +369,6 @@ namespace CanvasTests
 
         private void ZoomToFit()
         {
-            this.debugPoints.Clear();
-
             var bb = this.ComputeBoundingBox(topography.Points);
             if (bb.IsValid)
             {
