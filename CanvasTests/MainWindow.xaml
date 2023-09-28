@@ -22,7 +22,7 @@
                     <ImageBrush ImageSource="/earth3.png" TileMode="Tile" RenderOptions.EdgeMode="Aliased">
                         <ImageBrush.RelativeTransform>
                             <TransformGroup>
-                                <ScaleTransform CenterY="0" CenterX="0" ScaleX="0.1" ScaleY="0.3"/>
+                                <ScaleTransform x:Name="terrainScale" CenterY="0" CenterX="0" ScaleX="0.1" ScaleY="0.3"/>
                             </TransformGroup>
                         </ImageBrush.RelativeTransform>
                     </ImageBrush>

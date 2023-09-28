@@ -1,19 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Media.Media3D;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
 
@@ -85,6 +76,14 @@ namespace CanvasTests
         public List<Point2d> Points { get; set; }
     }
 
+    public class BoundingBox2d
+    {
+        public Point2d Min { get; set; }
+        public Point2d Max { get; set; }
+        public Point2d Center { get; set; }
+        public bool IsValid { get; set; }
+    }
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -107,6 +106,7 @@ namespace CanvasTests
         private List<Point2d> debugPoints = new List<Point2d>();
 
         private Point2d centerPoint = new Point2d();
+        private readonly double WindowTitleHeight;
 
         public MainWindow()
         {
@@ -123,6 +123,8 @@ namespace CanvasTests
                 new Point2d(650, -100),
                 new Point2d(0, -100),
             };
+
+            this.WindowTitleHeight = new WindowChrome().CaptionHeight;
 
             this.Update();
         }
@@ -169,6 +171,9 @@ namespace CanvasTests
                 transformedPoints.Add(transfPoint);
             }
             this.Terrain.Points = new PointCollection(transformedPoints);
+
+
+            //this.terrainScale.
 
             foreach (Point2d point in topography.Points)
             {
@@ -319,22 +324,20 @@ namespace CanvasTests
 
         }
 
-        private void ZoomToFit()
+        public BoundingBox2d ComputeBoundingBox(List<Point2d> points)
         {
-            this.debugPoints.Clear();
-
-            if (this.topography.Points.Count == 0)
-            {
-                this.panningOffset = new Point2d();
-                this.zoom = 1;
-                return;
-            }
+            var bb = new BoundingBox2d();
 
             // Compute BB
-            var minX = Double.MaxValue;
-            var minY = Double.MaxValue;
-            var maxX = Double.MinValue;
-            var maxY = Double.MinValue;
+            var minX = double.MaxValue;
+            var minY = double.MaxValue;
+            var maxX = double.MinValue;
+            var maxY = double.MinValue;
+
+            if (points.Count == 0)
+            {
+                return bb;
+            }
 
             foreach (var point in this.topography.Points)
             {
@@ -347,10 +350,49 @@ namespace CanvasTests
             var width = minX + maxX;
             var height = minY + maxY;
 
-            this.debugPoints.Add(new Point2d(minX, minY));
-            this.debugPoints.Add(new Point2d(maxX, maxY));
+            if (width > 0 && height > 0)
+            {
+                bb.IsValid = true;
+            }
 
-            this.debugPoints.Add(new Point2d(width / 2, height / 2));
+            bb.Min = new Point2d(minX, minY);
+            bb.Max = new Point2d(maxX, maxY);
+
+            bb.Center = new Point2d(width / 2, height / 2);
+
+            return bb;
+        }
+
+        private void ZoomToFit()
+        {
+            this.debugPoints.Clear();
+
+            var bb = this.ComputeBoundingBox(topography.Points);
+            if (bb.IsValid)
+            {
+                var minScreen = this.WorldToScreen(bb.Min, this.prevPanning, zoom);
+                var maxScreen = this.WorldToScreen(bb.Max, this.prevPanning, zoom);
+
+                var widthScreen = Math.Abs(maxScreen.X - minScreen.X);
+                var heightScreen = Math.Abs(maxScreen.Y - minScreen.Y);
+
+                var widthRatio = this.Width / widthScreen;
+                var heightRatio = this.Height / heightScreen;
+
+                var minRatio = Math.Min(widthRatio, heightRatio) * 0.9;
+
+                zoom /= (float)minRatio;
+
+                var pos = this.WorldToScreen(bb.Center, this.panningOffset, zoom);
+                this.panningOffset.Y = this.panningOffset.Y + pos.Y - (Height / 2) + this.WindowTitleHeight;
+                this.panningOffset.X = this.panningOffset.X - pos.X + (Width / 2) - 10;
+            }
+            else
+            {
+                this.panningOffset = new Point2d();
+                this.zoom = 1;
+                return;
+            }
 
             this.Update();
         }
