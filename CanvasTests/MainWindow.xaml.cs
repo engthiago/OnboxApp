@@ -380,8 +380,10 @@ namespace CanvasTests
                 var heightRatio = this.Height / heightScreen;
 
                 var minRatio = Math.Min(widthRatio, heightRatio) * 0.9;
-
-                zoom /= (float)minRatio;
+                if (minRatio > 0)
+                {
+                    zoom /= (float)minRatio;
+                }
 
                 var pos = this.WorldToScreen(bb.Center, this.panningOffset, zoom);
                 this.panningOffset.Y = this.panningOffset.Y + pos.Y - (Height / 2) + this.WindowTitleHeight;
