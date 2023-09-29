@@ -110,9 +110,9 @@ namespace CanvasTests
 
         public MainWindow()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
-            topography.Points = new List<Point2d>
+            this.topography.Points = new List<Point2d>
             {
                 new Point2d(0, 0),
                 new Point2d(100, 120),
@@ -125,63 +125,73 @@ namespace CanvasTests
             };
 
             this.WindowTitleHeight = new WindowChrome().CaptionHeight;
-            this.Loaded += MainWindow_Loaded;
+            this.Loaded += this.MainWindow_Loaded;
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            this.ZoomToFit();
+            //this.ZoomToFit();
         }
 
         private double ScreenToWorld(double n, double panningDiff, float zoom)
         {
-            return (n - panningDiff) * zoom;
+            return (n - panningDiff) / zoom;
         }
 
         private double WorldToScreen(double n, double panningDiff, float zoom)
         {
             //n = viewHeight - n;
-            return ((n / zoom) + panningDiff);
+            return ((n * zoom) + panningDiff);
         }
 
         private Point2d ScreenToWorld(Point p, Point panningDiff, float zoom)
         {
-            var x = ScreenToWorld(p.X, panningDiff.X, zoom);
-            var y = ScreenToWorld(p.Y, -panningDiff.Y, zoom);
-            y = ActualHeight - y;
+            var x = this.ScreenToWorld(p.X, panningDiff.X, zoom);
+            var y = this.ScreenToWorld(p.Y, -panningDiff.Y, zoom);
+            y = this.ActualHeight - y;
             return new Point2d(x, y);
         }
 
         private Point2d WorldToScreen(Point p, Point panningDiff, float zoom)
         {
-            var x = WorldToScreen(p.X, panningDiff.X, zoom);
+            var x = this.WorldToScreen(p.X, panningDiff.X, zoom);
 
-            var y = ActualHeight - p.Y;
-            y = WorldToScreen(y, -panningDiff.Y, zoom);
+            var y = this.ActualHeight - p.Y;
+            y = this.WorldToScreen(y, -panningDiff.Y, zoom);
 
             return new Point2d(x, y);
         }
 
         private void Update()
         {
-            Canvas.Children.Clear();
+            this.Canvas.Children.Clear();
 
             this.Canvas.Children.Add(this.Terrain);
 
             var transformedPoints = new List<Point>();
-            foreach (var point in topography.Points)
+            foreach (var point in this.topography.Points)
             {
                 var transfPoint = this.WorldToScreen(point, this.panningOffset, this.zoom);
                 transformedPoints.Add(transfPoint);
             }
             this.Terrain.Points = new PointCollection(transformedPoints);
 
-
-            //this.terrainScale.
-
-            foreach (Point2d point in topography.Points)
+            var bb = this.ComputeBoundingBox(this.topography.Points);
+            if (bb.IsValid)
             {
-                var transfPoint = this.WorldToScreen(point, this.panningOffset, zoom);
+                var widthInPx = this.WorldToScreen(Math.Abs(bb.Max.X - bb.Min.X), 0, this.zoom);
+                var heightInPx = this.WorldToScreen(Math.Abs(bb.Max.Y - bb.Min.Y), 0, this.zoom);
+
+                var width = bb.Max.X - bb.Min.X;
+                var ratio = widthInPx / heightInPx;
+
+                this.terrainScale.ScaleX = 6000 / (width) / 74;
+                this.terrainScale.ScaleY = ratio * this.terrainScale.ScaleX;
+            }
+
+            foreach (var point in this.topography.Points)
+            {
+                var transfPoint = this.WorldToScreen(point, this.panningOffset, this.zoom);
                 var rendererPoint = this.CreateRendererPoint(transfPoint, point, this.pointSize);
                 this.Canvas.Children.Add(rendererPoint);
             }
@@ -195,11 +205,19 @@ namespace CanvasTests
                 this.Canvas.Children.Add(debg);
             }
 
-            var centerPointScreen = this.WorldToScreen(this.centerPoint, this.panningOffset, this.zoom);
-            var centerPointElem = this.CreateRendererPoint(centerPointScreen, this.centerPoint, this.pointSize);
-            centerPointElem.IsEnabled = false;
-            centerPointElem.Fill = new SolidColorBrush(Colors.Red);
-            this.Canvas.Children.Add(centerPointElem);
+            //var centerPointScreen = this.WorldToScreen(this.centerPoint, this.panningOffset, this.zoom);
+            //var centerPointElem = this.CreateRendererPoint(centerPointScreen, this.centerPoint, this.pointSize);
+            //centerPointElem.IsEnabled = false;
+            //centerPointElem.Fill = new SolidColorBrush(Colors.Red);
+            //this.Canvas.Children.Add(centerPointElem);
+        }
+
+        private void UpdateMousePosStats()
+        {
+            var worldPos = this.ScreenToWorld(this.cursorPos, this.panningOffset, this.zoom);
+            var screenPos = this.WorldToScreen(worldPos, this.panningOffset, this.zoom);
+
+            this.Coords.Content = $"{this.cursorPos.X} {this.cursorPos.Y}\n{worldPos.X} {worldPos.Y}\n{screenPos.X} {screenPos.Y}\n{this.zoom}";
         }
 
         public Ellipse CreateRendererPoint(Point2d rendererPoint, Point2d originalPoint, double pointSize)
@@ -220,10 +238,10 @@ namespace CanvasTests
             ToolTipService.SetInitialShowDelay(ellipse, 0);
             ToolTipService.SetShowDuration(ellipse, 999999);
 
-            ellipse.MouseDown += Window_MouseDown;
-            ellipse.MouseUp += Window_MouseUp;
-            ellipse.MouseEnter += Polygon_MouseEnter;
-            ellipse.MouseLeave += Polygon_MouseLeave;
+            ellipse.MouseDown += this.Window_MouseDown;
+            ellipse.MouseUp += this.Window_MouseUp;
+            ellipse.MouseEnter += this.Polygon_MouseEnter;
+            ellipse.MouseLeave += this.Polygon_MouseLeave;
 
             return ellipse;
         }
@@ -256,14 +274,11 @@ namespace CanvasTests
         private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             this.cursorPos = e.GetPosition(this);
-            var worldPos = this.ScreenToWorld(this.cursorPos, this.panningOffset, zoom);
-            var screenPos = this.WorldToScreen(worldPos, this.panningOffset, zoom);
-
-            this.Coords.Content = $"{cursorPos.X} {cursorPos.Y}\n{worldPos.X} {worldPos.Y}\n{screenPos.X} {screenPos.Y}";
+            this.UpdateMousePosStats();
 
             if (this.pressed)
             {
-                this.dragCursorWorld = this.ScreenToWorld(this.cursorPos, this.panningOffset, zoom);
+                this.dragCursorWorld = this.ScreenToWorld(this.cursorPos, this.panningOffset, this.zoom);
                 if (this.selectedShape != null)
                 {
                     this.selectedShapePos.X = this.dragCursorWorld.X;
@@ -312,7 +327,7 @@ namespace CanvasTests
             {
                 this.cursorPos = e.GetPosition(this);
                 this.pressed = true;
-                this.dragCursorWorld = this.ScreenToWorld(this.cursorPos, this.panningOffset, zoom);
+                this.dragCursorWorld = this.ScreenToWorld(this.cursorPos, this.panningOffset, this.zoom);
                 //this.renderDragCursor = true;
                 this.Update();
 
@@ -321,7 +336,7 @@ namespace CanvasTests
                     if (shape.Tag?.ToString() != "drag")
                     {
                         this.selectedShape = shape;
-                        this.selectedShapePos = this.topography.Points.OrderBy(p => p.Distance(dragCursorWorld)).FirstOrDefault();
+                        this.selectedShapePos = this.topography.Points.OrderBy(p => p.Distance(this.dragCursorWorld)).FirstOrDefault();
                     }
                 }
             }
@@ -351,8 +366,8 @@ namespace CanvasTests
                 maxY = Math.Max(maxY, point.Y);
             }
 
-            var width = minX + maxX;
-            var height = minY + maxY;
+            var width = Math.Abs(maxX - minX);
+            var height = Math.Abs(maxY - minY);
 
             if (width > 0 && height > 0)
             {
@@ -362,18 +377,18 @@ namespace CanvasTests
             bb.Min = new Point2d(minX, minY);
             bb.Max = new Point2d(maxX, maxY);
 
-            bb.Center = new Point2d(width / 2, height / 2);
+            bb.Center = new Point2d((minX + maxX) / 2, (minY + maxY) / 2);
 
             return bb;
         }
 
         private void ZoomToFit()
         {
-            var bb = this.ComputeBoundingBox(topography.Points);
+            var bb = this.ComputeBoundingBox(this.topography.Points);
             if (bb.IsValid)
             {
-                var minScreen = this.WorldToScreen(bb.Min, this.prevPanning, zoom);
-                var maxScreen = this.WorldToScreen(bb.Max, this.prevPanning, zoom);
+                var minScreen = this.WorldToScreen(bb.Min, this.prevPanning, this.zoom);
+                var maxScreen = this.WorldToScreen(bb.Max, this.prevPanning, this.zoom);
 
                 var widthScreen = Math.Abs(maxScreen.X - minScreen.X);
                 var heightScreen = Math.Abs(maxScreen.Y - minScreen.Y);
@@ -384,12 +399,12 @@ namespace CanvasTests
                 var minRatio = Math.Min(widthRatio, heightRatio) * 0.9;
                 if (minRatio > 0)
                 {
-                    zoom /= (float)minRatio;
+                    this.zoom *= (float)minRatio;
                 }
 
-                var pos = this.WorldToScreen(bb.Center, this.panningOffset, zoom);
-                this.panningOffset.Y = this.panningOffset.Y + pos.Y - (Height / 2) + this.WindowTitleHeight;
-                this.panningOffset.X = this.panningOffset.X - pos.X + (Width / 2) - 10;
+                var pos = this.WorldToScreen(bb.Center, this.panningOffset, this.zoom);
+                this.panningOffset.Y = this.panningOffset.Y + pos.Y - (this.Height / 2) + this.WindowTitleHeight;
+                this.panningOffset.X = this.panningOffset.X - pos.X + (this.Width / 2) - this.WindowTitleHeight / 2;
             }
             else
             {
@@ -399,26 +414,28 @@ namespace CanvasTests
             }
 
             this.Update();
+            this.UpdateMousePosStats();
         }
 
         private void Window_MouseWheel(object sender, MouseWheelEventArgs e)
         {
-            var pointOnWorldBefore = this.ScreenToWorld(this.cursorPos, panningOffset, zoom);
+            var pointOnWorldBefore = this.ScreenToWorld(this.cursorPos, this.panningOffset, this.zoom);
 
             if (e.Delta > 0) 
             {
-                if (zoom < 0.01) return;
-                zoom *= 0.90f;
+                this.zoom *= 1.10f;
+                this.zoom = Math.Min(this.zoom, 100f);
             }
             else
             {
-                zoom *= 1.10f;
+                this.zoom *= 0.90f;
+                this.zoom = Math.Max(this.zoom, 0.01f);
             }
 
             // Offset panning to zoom where the mouse cursor is
-            var screenDifference = this.WorldToScreen(pointOnWorldBefore, panningOffset, zoom);
-            var x = screenDifference.X - cursorPos.X;
-            var y = screenDifference.Y - cursorPos.Y;
+            var screenDifference = this.WorldToScreen(pointOnWorldBefore, this.panningOffset, this.zoom);
+            var x = screenDifference.X - this.cursorPos.X;
+            var y = screenDifference.Y - this.cursorPos.Y;
             this.panningOffset.X -= x;
             this.panningOffset.Y += y;
 
@@ -426,6 +443,7 @@ namespace CanvasTests
             //Debug.WriteLine(screenDifference);
 
             this.Update();
+            this.UpdateMousePosStats();
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
