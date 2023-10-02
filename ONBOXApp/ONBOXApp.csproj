@@ -417,6 +417,7 @@
     <Compile Include="TopoSlope\TopoSlopesUI.xaml.cs">
       <DependentUpon>TopoSlopesUI.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TopoSlope\TopoSolidSlopeCommand.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Properties\HelpLinks.pt-BR.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
