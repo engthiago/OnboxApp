@@ -19,7 +19,7 @@ namespace ONBOXAppl.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class RibbonLanguage {
@@ -687,6 +687,33 @@ namespace ONBOXAppl.Properties {
         public static string Topography_Title {
             get {
                 return ResourceManager.GetString("Topography_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Slope Grading\nBy Floor.
+        /// </summary>
+        public static string Topography_TopoSolid_SlopeByFloor {
+            get {
+                return ResourceManager.GetString("Topography_TopoSolid_SlopeByFloor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This command creates slope gradings from selected floors, it is possible to define the angle and the number of iteration poins by each segment.
+        /// </summary>
+        public static string Topography_TopoSolid_SlopeByFloor_Descrip {
+            get {
+                return ResourceManager.GetString("Topography_TopoSolid_SlopeByFloor_Descrip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create slope grading from selected floors.
+        /// </summary>
+        public static string Topography_TopoSolid_SlopeByFloor_ToolTip {
+            get {
+                return ResourceManager.GetString("Topography_TopoSolid_SlopeByFloor_ToolTip", resourceCulture);
             }
         }
     }

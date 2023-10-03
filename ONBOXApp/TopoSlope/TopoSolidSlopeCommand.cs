@@ -8,7 +8,7 @@ using Autodesk.Revit.DB;
 using Autodesk.Revit.DB.IFC;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
-
+using ONBOXAppl.Properties;
 
 namespace ONBOXAppl
 {
@@ -164,7 +164,7 @@ namespace ONBOXAppl
 
             if (edgeLoops == null)
             {
-                result.ErrorMessage = "Error stabilishing floor edges";
+                result.ErrorMessage = Messages.Toposolid_SlopeGrading_NoFloorEdges;
             }
 
             //Sort the curves so the outer loop comes first
@@ -172,12 +172,12 @@ namespace ONBOXAppl
             var orderedLoops = curveLoopLoop.FirstOrDefault();
             if (orderedLoops == null)
             {
-                result.ErrorMessage = "Error sorting floor bounds";
+                result.ErrorMessage = Messages.Toposolid_SlopeGrading_ErrorSortingEdges;
             }
 
             if (orderedLoops.Count == 0)
             {
-                result.ErrorMessage = "Error finding the outer bounds of the floor";
+                result.ErrorMessage = Messages.Toposolid_SlopeGrading_ErrorFindingEdges;
             }
 
             result.OuterBounds = orderedLoops[0];
@@ -288,7 +288,7 @@ namespace ONBOXAppl
 
             if (topoSurfaces.Count == 0)
             {
-                message = "No Toposurface found in the project";
+                message = Messages.Toposolid_SlopeGrading_NoTopoSolid;
                 return Result.Failed;
             }
 
@@ -301,7 +301,7 @@ namespace ONBOXAppl
 
             var floorSelFilter = new TypeSelectionFilter<Floor>();
             Floor floor = null;
-            if (!this.PickOrGetSelectedElement(uidoc, floorSelFilter, "Pick a floor", out message, out floor))
+            if (!this.PickOrGetSelectedElement(uidoc, floorSelFilter, Messages.Toposolid_SlopeGrading_PickFloor, out message, out floor))
             {
                 return Result.Failed;
             }
@@ -406,7 +406,7 @@ namespace ONBOXAppl
 
             if (maxDist == double.NegativeInfinity)
             {
-                message = Properties.Messages.SlopeGradingFromPads_NoTopoAssociate;
+                message = Messages.SlopeGradingFromPads_NoTopoAssociate;
                 return Result.Failed;
             }
 
@@ -432,13 +432,13 @@ namespace ONBOXAppl
                         }
 
                         offsetOuterLoopPoints.Add((topoSolid, topoResult.HitPoint));
-                    }
 
-                    topoResult.Context.Dispose();
+                        topoResult.Context.Dispose();
+                    }
                 }
             }
 
-            using (var t = new Transaction(doc, "Offset"))
+            using (var t = new Transaction(doc, Messages.Toposolid_SlopeGrading_Create))
             {
                 t.Start();
 

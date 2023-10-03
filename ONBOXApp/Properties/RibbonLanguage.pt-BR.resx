@@ -291,4 +291,13 @@
   <data name="Topography_Title" xml:space="preserve">
     <value>Topografia</value>
   </data>
+  <data name="Topography_TopoSolid_SlopeByFloor" xml:space="preserve">
+    <value>Talude\nPor Piso</value>
+  </data>
+  <data name="Topography_TopoSolid_SlopeByFloor_Descrip" xml:space="preserve">
+    <value>Este comando cria gradações de declives em Sólido topográfico a partir de pisos selecionados, é possível definir o ângulo e o número de pontos de interação por cada segmento</value>
+  </data>
+  <data name="Topography_TopoSolid_SlopeByFloor_ToolTip" xml:space="preserve">
+    <value>Criar taludes em Sólidos topográficos a partir de pisos selecionadas</value>
+  </data>
 </root>

@@ -240,9 +240,8 @@ namespace ONBOXAppl
             PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SlopeByPads, Properties.RibbonLanguage.Topography_SlopeByPads.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSlopes")) as PushButton;
             btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnTopoSlope));
 #else
-            //PushButton btnTopoEdit = panelTopo.AddItem(new PushButtonData("TopoSolidGradingCommand", "TopoSolidGradingCommand", dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
-            PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SlopeByPads, Properties.RibbonLanguage.Topography_SlopeByPads.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
-            btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnTopoSlope));
+            PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor, Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
+            btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateToposolidGradingFromFloors));
 #endif
             PushButton btnRevitZip = panelManage.AddItem(new PushButtonData(Properties.RibbonLanguage.Manage_PackageProject, Properties.RibbonLanguage.Manage_PackageProject.Replace("\\n", "\n"), dll, "ONBOXAppl.RevitZip")) as PushButton;
             btnRevitZip.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRevitZip));
@@ -381,8 +380,14 @@ namespace ONBOXAppl
             //btnCreateTopoFromDwgMarks.Image = TopoFromDWG16;
             //btnCreateTopoFromDwgMarks.LargeImage = TopoFromDWG32;
 
+#if !R2024
             btnTopoSlope.ToolTip = Properties.RibbonLanguage.Topography_SlopeByPads_ToolTip;
             btnTopoSlope.LongDescription = Properties.RibbonLanguage.Topography_SlopeByPads_Descrip;
+#else
+            btnTopoSlope.ToolTip = Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor_ToolTip;
+            btnTopoSlope.LongDescription = Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor_Descrip;
+#endif
+
             btnTopoSlope.Image = TopoSlope16;
             btnTopoSlope.LargeImage = TopoSlope32;
 

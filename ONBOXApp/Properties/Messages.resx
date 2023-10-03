@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,302 +59,320 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="BeamsForBuilding_NoBeamFamilyLoaded" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BeamsForBuilding_NoBeamFamilyLoaded" xml:space="preserve">
     <value>There are no valid structural beam families loaded on the project. Please, load a least one and try to use this command again.</value>
   </data>
-	<data name="BeamsForBuilding_Transaction" xml:space="preserve">
+  <data name="BeamsForBuilding_Transaction" xml:space="preserve">
     <value>Create Beams</value>
   </data>
-	<data name="BeamsFromCAD_NoColumnFamilyLoaded" xml:space="preserve">
+  <data name="BeamsFromCAD_NoColumnFamilyLoaded" xml:space="preserve">
     <value>There are no valid structural column families loaded on the project. Please, load a least one and try to use this command again.</value>
   </data>
-	<data name="BeamsFromCAD_NoValidCADElements" xml:space="preserve">
+  <data name="BeamsFromCAD_NoValidCADElements" xml:space="preserve">
     <value>It was not possible to find any rectangular or circular 2D shapes in the selected instance. Please add these elements and try again.</value>
   </data>
-	<data name="BeamsFromCAD_RotateTransaction" xml:space="preserve">
+  <data name="BeamsFromCAD_RotateTransaction" xml:space="preserve">
     <value>Rotate Columns</value>
   </data>
-	<data name="BeamsFromCAD_SelectCADInstance" xml:space="preserve">
+  <data name="BeamsFromCAD_SelectCADInstance" xml:space="preserve">
     <value>Select a CAD instance.</value>
   </data>
-	<data name="BeamsFromCAD_Transaction" xml:space="preserve">
+  <data name="BeamsFromCAD_Transaction" xml:space="preserve">
     <value>Create Columns</value>
   </data>
-	<data name="BeamsFromColumns_DeletedBeamFamily" xml:space="preserve">
+  <data name="BeamsFromColumns_DeletedBeamFamily" xml:space="preserve">
     <value>This family was deleted from the project, please load the necessary families and click on the reload button on the floating window.</value>
   </data>
-	<data name="BeamsFromColumns_Not3dView" xml:space="preserve">
+  <data name="BeamsFromColumns_Not3dView" xml:space="preserve">
     <value>Please make sure you are on 3d view to run this command.</value>
   </data>
-	<data name="BeamsFromColumns_NotGraphicalView" xml:space="preserve">
+  <data name="BeamsFromColumns_NotGraphicalView" xml:space="preserve">
     <value>Please activate a graphical view to run this command.</value>
   </data>
-	<data name="BeamsFromColumns_SelectColumnToOffset" xml:space="preserve">
+  <data name="BeamsFromColumns_SelectColumnToOffset" xml:space="preserve">
     <value>Select the column to adjust its offset</value>
   </data>
-	<data name="BeamsFromColumns_SelectFirstColumn" xml:space="preserve">
+  <data name="BeamsFromColumns_SelectFirstColumn" xml:space="preserve">
     <value>Select the first structural column</value>
   </data>
-	<data name="BeamsFromColumns_SelectFirstColumnOrBeam" xml:space="preserve">
+  <data name="BeamsFromColumns_SelectFirstColumnOrBeam" xml:space="preserve">
     <value>Select the first column or the last beam to adjust the offset.</value>
   </data>
-	<data name="BeamsFromColumns_SelectSecondColumn" xml:space="preserve">
+  <data name="BeamsFromColumns_SelectSecondColumn" xml:space="preserve">
     <value>Select the second structural column.</value>
   </data>
-	<data name="BeamsFromColumns_Transaction" xml:space="preserve">
+  <data name="BeamsFromColumns_Transaction" xml:space="preserve">
     <value>Create Beam</value>
   </data>
-	<data name="BeamsFromColumns_Transaction_AdjustOffset" xml:space="preserve">
+  <data name="BeamsFromColumns_Transaction_AdjustOffset" xml:space="preserve">
     <value>Adjust offset</value>
   </data>
-	<data name="BeamsFromWalls_DeletedBeamFamily" xml:space="preserve">
+  <data name="BeamsFromWalls_DeletedBeamFamily" xml:space="preserve">
     <value>This family was deleted from the project, please load the necessary families and click on the reload button on the floating window.</value>
   </data>
-	<data name="BeamsFromWalls_NotGraphicalView" xml:space="preserve">
+  <data name="BeamsFromWalls_NotGraphicalView" xml:space="preserve">
     <value>Please activate a graphical view to run this command.</value>
   </data>
-	<data name="BeamsFromWalls_SelectArchitecturalWall" xml:space="preserve">
+  <data name="BeamsFromWalls_SelectArchitecturalWall" xml:space="preserve">
     <value>Select an architectural wall</value>
   </data>
-	<data name="BeamsFromWalls_SelectWallFromLink" xml:space="preserve">
+  <data name="BeamsFromWalls_SelectWallFromLink" xml:space="preserve">
     <value>Select an architectural wall from the linked model.</value>
   </data>
-	<data name="BeamsFromWalls_Transaction" xml:space="preserve">
+  <data name="BeamsFromWalls_Transaction" xml:space="preserve">
     <value>Create Beam</value>
   </data>
-	<data name="Common_Error" xml:space="preserve">
+  <data name="Common_Error" xml:space="preserve">
     <value>Error</value>
   </data>
-	<data name="CopyBeamsToLevels_SelectBeam" xml:space="preserve">
+  <data name="CopyBeamsToLevels_SelectBeam" xml:space="preserve">
     <value>Select a beam.</value>
   </data>
-	<data name="CopyBeamsToLevels_Transaction" xml:space="preserve">
+  <data name="CopyBeamsToLevels_Transaction" xml:space="preserve">
     <value>Copy Beams</value>
   </data>
-	<data name="ElementJoinSelect_JoinTransaction" xml:space="preserve">
+  <data name="ElementJoinSelect_JoinTransaction" xml:space="preserve">
     <value>Join Element</value>
   </data>
-	<data name="ElementJoinSelect_NotGraphicalView" xml:space="preserve">
+  <data name="ElementJoinSelect_NotGraphicalView" xml:space="preserve">
     <value>Please activate a graphical view to run this command.</value>
   </data>
-	<data name="ElementJoinSelect_SelectElements" xml:space="preserve">
+  <data name="ElementJoinSelect_SelectElements" xml:space="preserve">
     <value>Select elements to join.</value>
   </data>
-	<data name="ElementJoinSelect_UnJoinTransaction" xml:space="preserve">
+  <data name="ElementJoinSelect_UnJoinTransaction" xml:space="preserve">
     <value>Unjoin Element</value>
   </data>
-	<data name="ElementJoin_JoinTransaction" xml:space="preserve">
+  <data name="ElementJoin_JoinTransaction" xml:space="preserve">
     <value>Join Elements</value>
   </data>
-	<data name="ElementJoin_Transaction" xml:space="preserve">
+  <data name="ElementJoin_Transaction" xml:space="preserve">
     <value>Join Elements</value>
   </data>
-	<data name="ElementJoin_UnJoinTransaction" xml:space="preserve">
+  <data name="ElementJoin_UnJoinTransaction" xml:space="preserve">
     <value>Unjoin Elements</value>
   </data>
-	<data name="Exceptions_Data" xml:space="preserve">
+  <data name="Exceptions_Data" xml:space="preserve">
     <value>Data</value>
   </data>
-	<data name="Exceptions_Detail" xml:space="preserve">
+  <data name="Exceptions_Detail" xml:space="preserve">
     <value>Detail</value>
   </data>
-	<data name="Exceptions_Help" xml:space="preserve">
+  <data name="Exceptions_Help" xml:space="preserve">
     <value>Help</value>
   </data>
-	<data name="Exceptions_Location" xml:space="preserve">
+  <data name="Exceptions_Location" xml:space="preserve">
     <value>Location</value>
   </data>
-	<data name="Exceptions_Message" xml:space="preserve">
+  <data name="Exceptions_Message" xml:space="preserve">
     <value>Message</value>
   </data>
-	<data name="Exceptions_Source" xml:space="preserve">
+  <data name="Exceptions_Source" xml:space="preserve">
     <value>Source</value>
   </data>
-	<data name="PackageProject_FileTypeName" xml:space="preserve">
+  <data name="PackageProject_FileTypeName" xml:space="preserve">
     <value>Zip File</value>
   </data>
-	<data name="PackageProject_SaveProjectFirst" xml:space="preserve">
+  <data name="PackageProject_SaveProjectFirst" xml:space="preserve">
     <value>Please save the project before using this command.</value>
   </data>
-	<data name="RenumberBeams_NoBeamFamilyLoaded" xml:space="preserve">
+  <data name="RenumberBeams_NoBeamFamilyLoaded" xml:space="preserve">
     <value>There are no valid structural beam families loaded on the project. Please, load a least one and try to use this command again.</value>
   </data>
-	<data name="RenumberBeams_RenumberBeams" xml:space="preserve">
+  <data name="RenumberBeams_RenumberBeams" xml:space="preserve">
     <value>Renumber Beams</value>
   </data>
-	<data name="RenumberColumns_NoColumnFamilyLoaded" xml:space="preserve">
+  <data name="RenumberColumns_NoColumnFamilyLoaded" xml:space="preserve">
     <value>There are no valid structural column families loaded on the project. Please, load a least one and try to use this command again.</value>
   </data>
-	<data name="RenumberColumns_NoGuess" xml:space="preserve">
+  <data name="RenumberColumns_NoGuess" xml:space="preserve">
     <value>Please, before renumbering the columns click on the 'Guess' button or insert the number manually.</value>
   </data>
-	<data name="RenumberColumns_NotPlanView" xml:space="preserve">
+  <data name="RenumberColumns_NotPlanView" xml:space="preserve">
     <value>Please make sure to be on a plan view to run this command.</value>
   </data>
-	<data name="RenumberColumns_RemoveNumbers_Transaction" xml:space="preserve">
+  <data name="RenumberColumns_RemoveNumbers_Transaction" xml:space="preserve">
     <value>Remove Numbering from Columns</value>
   </data>
-	<data name="RenumberColumns_SelectFirstColumn" xml:space="preserve">
+  <data name="RenumberColumns_SelectFirstColumn" xml:space="preserve">
     <value>Select the first column to renumber.</value>
   </data>
-	<data name="RenumberColumns_SelectTheRowOfColumns" xml:space="preserve">
+  <data name="RenumberColumns_SelectTheRowOfColumns" xml:space="preserve">
     <value>Select the row of structural columns.</value>
   </data>
-	<data name="RenumberColumns_Transaction" xml:space="preserve">
+  <data name="RenumberColumns_Transaction" xml:space="preserve">
     <value>Renumber Columns</value>
   </data>
-	<data name="RenumberGrids_NoGrids" xml:space="preserve">
+  <data name="RenumberGrids_NoGrids" xml:space="preserve">
     <value>It was not possible to find any grids in the project, please create them and run the command again.</value>
   </data>
-	<data name="RenumberGrids_SameNumbering" xml:space="preserve">
+  <data name="RenumberGrids_SameNumbering" xml:space="preserve">
     <value>There are one or more grids with the same new numbering, please click on renumber table button or change them manually.</value>
   </data>
-	<data name="RenumberGrids_Transaction" xml:space="preserve">
+  <data name="RenumberGrids_Transaction" xml:space="preserve">
     <value>Renumber Grids</value>
   </data>
-	<data name="RenumberGrids_Transaction_AdjustNames" xml:space="preserve">
+  <data name="RenumberGrids_Transaction_AdjustNames" xml:space="preserve">
     <value>Adjust Names</value>
   </data>
-	<data name="RenumberParking_ClearParkNumbering" xml:space="preserve">
+  <data name="RenumberParking_ClearParkNumbering" xml:space="preserve">
     <value>Clear Parking Numbering</value>
   </data>
-	<data name="RenumberParking_IntegerNumber" xml:space="preserve">
+  <data name="RenumberParking_IntegerNumber" xml:space="preserve">
     <value>Please, input a valid integer number.</value>
   </data>
-	<data name="RenumberParking_NoParking" xml:space="preserve">
+  <data name="RenumberParking_NoParking" xml:space="preserve">
     <value>It was not possible to find any parking spaces in the project, please create them and run this command again.</value>
   </data>
-	<data name="RenumberParking_NotPlanView" xml:space="preserve">
+  <data name="RenumberParking_NotPlanView" xml:space="preserve">
     <value>Please make sure to be on a plan view to run this command.</value>
   </data>
-	<data name="RenumberParking_SelectFirstOrChangeNumbering" xml:space="preserve">
+  <data name="RenumberParking_SelectFirstOrChangeNumbering" xml:space="preserve">
     <value>Please select the first parking space or change the order of numbering.</value>
   </data>
-	<data name="RenumberParking_SelectFirstParkingSpace" xml:space="preserve">
+  <data name="RenumberParking_SelectFirstParkingSpace" xml:space="preserve">
     <value>Select the first parking space</value>
   </data>
-	<data name="RenumberParking_SelectParkingSpace" xml:space="preserve">
+  <data name="RenumberParking_SelectParkingSpace" xml:space="preserve">
     <value>Select a parking space</value>
   </data>
-	<data name="RenumberParking_Transaction" xml:space="preserve">
+  <data name="RenumberParking_Transaction" xml:space="preserve">
     <value>Renumber Parking Spaces</value>
   </data>
-	<data name="SlopeGradingFromPads_NoPads" xml:space="preserve">
+  <data name="SlopeGradingFromPads_NoPads" xml:space="preserve">
     <value>It was not possible to find building pads on the project.</value>
   </data>
-	<data name="SlopeGradingFromPads_Not3DView" xml:space="preserve">
+  <data name="SlopeGradingFromPads_Not3DView" xml:space="preserve">
     <value>Please make sure to be on a 3D view to run this command.</value>
   </data>
-	<data name="SlopeGradingFromPads_NoTopoAssociate" xml:space="preserve">
+  <data name="SlopeGradingFromPads_NoTopoAssociate" xml:space="preserve">
     <value>It was not possible to establish a toposurface associated with the pad, please recreate the pad to try again.</value>
   </data>
-	<data name="SlopeGradingFromPads_OuterLoopIssue" xml:space="preserve">
+  <data name="SlopeGradingFromPads_OuterLoopIssue" xml:space="preserve">
     <value>It was not possible to determine the outer limit of the pad, please try to recreate the pad.</value>
   </data>
-	<data name="SlopeGradingFromPads_OuterOffsetLoopIssue" xml:space="preserve">
+  <data name="SlopeGradingFromPads_OuterOffsetLoopIssue" xml:space="preserve">
     <value>It was not possible to determine the offset from the outer limit of the pad, please try again with a simpler geometry.</value>
   </data>
-	<data name="SlopeGradingFromPads_PadsWithMoreThanOneUpperFace" xml:space="preserve">
+  <data name="SlopeGradingFromPads_PadsWithMoreThanOneUpperFace" xml:space="preserve">
     <value>Pads with more than one upper face are not supported, please use a pad with only one upper face.</value>
   </data>
-	<data name="SlopeGradingFromPads_SelectPad" xml:space="preserve">
+  <data name="SlopeGradingFromPads_SelectPad" xml:space="preserve">
     <value>Select a building pad.</value>
   </data>
-	<data name="SlopeGradingFromPads_Transaction" xml:space="preserve">
+  <data name="SlopeGradingFromPads_Transaction" xml:space="preserve">
     <value>Create Slope Grading</value>
   </data>
-	<data name="SlopeGradingFromPads_UpperFaceNotPlanar" xml:space="preserve">
+  <data name="SlopeGradingFromPads_UpperFaceNotPlanar" xml:space="preserve">
     <value>The upper face of the pad must be planar.</value>
   </data>
-	<data name="TopoFromPointCloud_InvalidPointCloud" xml:space="preserve">
+  <data name="TopoFromPointCloud_InvalidPointCloud" xml:space="preserve">
     <value>Invalid element selected.</value>
   </data>
-	<data name="TopoFromPointCloud_MaxPointsReached" xml:space="preserve">
+  <data name="TopoFromPointCloud_MaxPointsReached" xml:space="preserve">
     <value>Maximum number of points reached, please change the iteration</value>
   </data>
-	<data name="TopoFromPointCloud_MinPointsReached" xml:space="preserve">
+  <data name="TopoFromPointCloud_MinPointsReached" xml:space="preserve">
     <value>Minimum number of points reached, please change the iteration</value>
   </data>
-	<data name="TopoFromPointCloud_Not3DView" xml:space="preserve">
+  <data name="TopoFromPointCloud_Not3DView" xml:space="preserve">
     <value>Please make sure to be on a 3D view to run this command.</value>
   </data>
-	<data name="TopoFromPointCloud_NotEnoughPoints" xml:space="preserve">
+  <data name="TopoFromPointCloud_NotEnoughPoints" xml:space="preserve">
     <value>Not enough points to create the toposurface, please change the iteration settings and run this command again.</value>
   </data>
-	<data name="TopoFromPointCloud_SelectPointCloudInstance" xml:space="preserve">
+  <data name="TopoFromPointCloud_SelectPointCloudInstance" xml:space="preserve">
     <value>Please select a pointcloud instance.</value>
   </data>
-	<data name="TopoFromPointCloud_Transaction" xml:space="preserve">
+  <data name="TopoFromPointCloud_Transaction" xml:space="preserve">
     <value>Create Toposurface</value>
   </data>
-	<data name="Common_Warning" xml:space="preserve">
+  <data name="Common_Warning" xml:space="preserve">
     <value>Warning</value>
   </data>
-	<data name="SampleProjects_DirNotFound" xml:space="preserve">
+  <data name="SampleProjects_DirNotFound" xml:space="preserve">
     <value>Directory not found! Please, reinstall the app or download a new version at http://www.onboxdesign.com.br/</value>
   </data>
-	<data name="Common_Issues" xml:space="preserve">
+  <data name="Common_Issues" xml:space="preserve">
     <value>Some issues were found:</value>
   </data>
-	<data name="Common_Sucess" xml:space="preserve">
+  <data name="Common_Sucess" xml:space="preserve">
     <value>Sucess</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_NoFloorEdges" xml:space="preserve">
+    <value>Error stabilishing floor edges. Please try to simplify the floor geometry and try again.</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_Create" xml:space="preserve">
+    <value>Create Slope Grading</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_ErrorFindingEdges" xml:space="preserve">
+    <value>Error finding the outer bounds of the floor. Please try to simplify the floor geometry and try again.</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_ErrorSortingEdges" xml:space="preserve">
+    <value>Error sorting floor bound edges. Please try to simplify the floor geometry and try again.</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_NoTopoSolid" xml:space="preserve">
+    <value>Could not find any Topo Solid in the project. Please create at least one Topo Solid to use this tool.</value>
+  </data>
+  <data name="Toposolid_SlopeGrading_PickFloor" xml:space="preserve">
+    <value>Please pick a floor above or below a Topo Solid.</value>
   </data>
 </root>

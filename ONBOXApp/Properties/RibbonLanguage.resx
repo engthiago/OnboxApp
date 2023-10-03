@@ -327,4 +327,13 @@
   <data name="Topography_Title" xml:space="preserve">
     <value>Topography</value>
   </data>
+  <data name="Topography_TopoSolid_SlopeByFloor" xml:space="preserve">
+    <value>Slope Grading\nBy Floor</value>
+  </data>
+  <data name="Topography_TopoSolid_SlopeByFloor_Descrip" xml:space="preserve">
+    <value>This command creates slope gradings from selected floors, it is possible to define the angle and the number of iteration poins by each segment</value>
+  </data>
+  <data name="Topography_TopoSolid_SlopeByFloor_ToolTip" xml:space="preserve">
+    <value>Create slope grading from selected floors</value>
+  </data>
 </root>

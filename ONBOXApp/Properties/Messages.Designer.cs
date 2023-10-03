@@ -19,7 +19,7 @@ namespace ONBOXAppl.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Messages {
@@ -61,223 +61,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Are you sure to deactivate te license?.
-        /// </summary>
-        public static string About_LicenseConfirm {
-            get {
-                return ResourceManager.GetString("About_LicenseConfirm", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Some issues were found:.
-        /// </summary>
-        public static string Activate_Issues {
-            get {
-                return ResourceManager.GetString("Activate_Issues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please, connect to the internet to continue..
-        /// </summary>
-        public static string Activate_Issues_ConnectToInternet {
-            get {
-                return ResourceManager.GetString("Activate_Issues_ConnectToInternet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to This version of the app is deactivated,.
-        /// </summary>
-        public static string Activate_Issues_DeactivatedApp {
-            get {
-                return ResourceManager.GetString("Activate_Issues_DeactivatedApp", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deactivated user for this version of the app,.
-        /// </summary>
-        public static string Activate_Issues_DeactivatedForUser {
-            get {
-                return ResourceManager.GetString("Activate_Issues_DeactivatedForUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User is deactivated,.
-        /// </summary>
-        public static string Activate_Issues_DeactivatedUser {
-            get {
-                return ResourceManager.GetString("Activate_Issues_DeactivatedUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deactivated user beacause of multiple tries,.
-        /// </summary>
-        public static string Activate_Issues_DeactivatedUserMultipleLogin {
-            get {
-                return ResourceManager.GetString("Activate_Issues_DeactivatedUserMultipleLogin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email not activated, please activate your email and try again,.
-        /// </summary>
-        public static string Activate_Issues_EmailNotActivated {
-            get {
-                return ResourceManager.GetString("Activate_Issues_EmailNotActivated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail can&apos;t be empty.
-        /// </summary>
-        public static string Activate_Issues_EmptyEmail {
-            get {
-                return ResourceManager.GetString("Activate_Issues_EmptyEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail or password can&apos;t be empty,.
-        /// </summary>
-        public static string Activate_Issues_EmptyEmailOrPassword {
-            get {
-                return ResourceManager.GetString("Activate_Issues_EmptyEmailOrPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password can&apos;t be empty.
-        /// </summary>
-        public static string Activate_Issues_EmptyPassword {
-            get {
-                return ResourceManager.GetString("Activate_Issues_EmptyPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to General error on licensing but the application is registred,.
-        /// </summary>
-        public static string Activate_Issues_GeneralError {
-            get {
-                return ResourceManager.GetString("Activate_Issues_GeneralError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to App our App version is invalid,.
-        /// </summary>
-        public static string Activate_Issues_InvalidAppOrVersion {
-            get {
-                return ResourceManager.GetString("Activate_Issues_InvalidAppOrVersion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Invalid e-mail.
-        /// </summary>
-        public static string Activate_Issues_InvalidEmail {
-            get {
-                return ResourceManager.GetString("Activate_Issues_InvalidEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail or password invalid,.
-        /// </summary>
-        public static string Activate_Issues_InvalidEmailOrPassword {
-            get {
-                return ResourceManager.GetString("Activate_Issues_InvalidEmailOrPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please, contact our support if you have any questions:.
-        /// </summary>
-        public static string Activate_Issues_Message {
-            get {
-                return ResourceManager.GetString("Activate_Issues_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Missing register data,.
-        /// </summary>
-        public static string Activate_Issues_MissingRegisterData {
-            get {
-                return ResourceManager.GetString("Activate_Issues_MissingRegisterData", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Multiple register at the same time,.
-        /// </summary>
-        public static string Activate_Issues_MultipleRegisters {
-            get {
-                return ResourceManager.GetString("Activate_Issues_MultipleRegisters", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User has multiple registers,.
-        /// </summary>
-        public static string Activate_Issues_MultipleRegistersUser {
-            get {
-                return ResourceManager.GetString("Activate_Issues_MultipleRegistersUser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The communication with the server failed,.
-        /// </summary>
-        public static string Activate_Issues_ServerCommunicationError {
-            get {
-                return ResourceManager.GetString("Activate_Issues_ServerCommunicationError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Server Error,.
-        /// </summary>
-        public static string Activate_Issues_ServerError {
-            get {
-                return ResourceManager.GetString("Activate_Issues_ServerError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Server or e-mail error.
-        /// </summary>
-        public static string Activate_Issues_ServerOrEmailError {
-            get {
-                return ResourceManager.GetString("Activate_Issues_ServerOrEmailError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Value exceeds the limit,.
-        /// </summary>
-        public static string Activate_Issues_ValueExceedsLimit {
-            get {
-                return ResourceManager.GetString("Activate_Issues_ValueExceedsLimit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Thanks for using OnboxApp.
-        /// </summary>
-        public static string Activate_ThanksForUsing {
-            get {
-                return ResourceManager.GetString("Activate_ThanksForUsing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There is no valid structural beam families loaded on the project. Please, load a least one and try to use this command again..
+        ///   Looks up a localized string similar to There are no valid structural beam families loaded on the project. Please, load a least one and try to use this command again..
         /// </summary>
         public static string BeamsForBuilding_NoBeamFamilyLoaded {
             get {
@@ -295,7 +79,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is no valid structural column families loaded on the project. Please, load a least one and try to use this command again..
+        ///   Looks up a localized string similar to There are no valid structural column families loaded on the project. Please, load a least one and try to use this command again..
         /// </summary>
         public static string BeamsFromCAD_NoColumnFamilyLoaded {
             get {
@@ -367,7 +151,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select the column to ajust its offset.
+        ///   Looks up a localized string similar to Select the column to adjust its offset.
         /// </summary>
         public static string BeamsFromColumns_SelectColumnToOffset {
             get {
@@ -439,7 +223,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select a architectural wall.
+        ///   Looks up a localized string similar to Select an architectural wall.
         /// </summary>
         public static string BeamsFromWalls_SelectArchitecturalWall {
             get {
@@ -448,7 +232,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select a architectural wall from the linked model..
+        ///   Looks up a localized string similar to Select an architectural wall from the linked model..
         /// </summary>
         public static string BeamsFromWalls_SelectWallFromLink {
             get {
@@ -480,15 +264,6 @@ namespace ONBOXAppl.Properties {
         public static string Common_Issues {
             get {
                 return ResourceManager.GetString("Common_Issues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to No Internet connection.
-        /// </summary>
-        public static string Common_NoConnection {
-            get {
-                return ResourceManager.GetString("Common_NoConnection", resourceCulture);
             }
         }
         
@@ -664,295 +439,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You should agree with the terms to use the application.
-        /// </summary>
-        public static string Register_AgreeWithTerms {
-            get {
-                return ResourceManager.GetString("Register_AgreeWithTerms", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail and password confirmation doesn&apos;t match.
-        /// </summary>
-        public static string Register_EmailDoesntMatch {
-            get {
-                return ResourceManager.GetString("Register_EmailDoesntMatch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to City can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyCity {
-            get {
-                return ResourceManager.GetString("Register_EmptyCity", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please choose a country.
-        /// </summary>
-        public static string Register_EmptyCountry {
-            get {
-                return ResourceManager.GetString("Register_EmptyCountry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyEmail {
-            get {
-                return ResourceManager.GetString("Register_EmptyEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Last name can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyLastName {
-            get {
-                return ResourceManager.GetString("Register_EmptyLastName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Name can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyName {
-            get {
-                return ResourceManager.GetString("Register_EmptyName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyPassword {
-            get {
-                return ResourceManager.GetString("Register_EmptyPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please choose a professional role.
-        /// </summary>
-        public static string Register_EmptyRole {
-            get {
-                return ResourceManager.GetString("Register_EmptyRole", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to State / Province can&apos;t be empty.
-        /// </summary>
-        public static string Register_EmptyState {
-            get {
-                return ResourceManager.GetString("Register_EmptyState", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to E-mail is invalid.
-        /// </summary>
-        public static string Register_InvalidEmail {
-            get {
-                return ResourceManager.GetString("Register_InvalidEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Some issues were found:.
-        /// </summary>
-        public static string Register_Issues {
-            get {
-                return ResourceManager.GetString("Register_Issues", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Deactivated app version,.
-        /// </summary>
-        public static string Register_Issues_AppVersionDeactivated {
-            get {
-                return ResourceManager.GetString("Register_Issues_AppVersionDeactivated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please, connect to the internet to continue..
-        /// </summary>
-        public static string Register_Issues_ConnectToInternet {
-            get {
-                return ResourceManager.GetString("Register_Issues_ConnectToInternet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Duplicated property during register,.
-        /// </summary>
-        public static string Register_Issues_DuplicatedProperties {
-            get {
-                return ResourceManager.GetString("Register_Issues_DuplicatedProperties", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to General error,.
-        /// </summary>
-        public static string Register_Issues_GeneralError {
-            get {
-                return ResourceManager.GetString("Register_Issues_GeneralError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Id property couldn&apos;t be called,.
-        /// </summary>
-        public static string Register_Issues_IdPropertyCantBeCalled {
-            get {
-                return ResourceManager.GetString("Register_Issues_IdPropertyCantBeCalled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Invalid e-mail,.
-        /// </summary>
-        public static string Register_Issues_InvalidEmail {
-            get {
-                return ResourceManager.GetString("Register_Issues_InvalidEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please, contact our support if you have any questions:.
-        /// </summary>
-        public static string Register_Issues_Message {
-            get {
-                return ResourceManager.GetString("Register_Issues_Message", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Missing required field,.
-        /// </summary>
-        public static string Register_Issues_MissingRequiredField {
-            get {
-                return ResourceManager.GetString("Register_Issues_MissingRequiredField", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password error,.
-        /// </summary>
-        public static string Register_Issues_PasswordError {
-            get {
-                return ResourceManager.GetString("Register_Issues_PasswordError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User deactivated for this version of the application,.
-        /// </summary>
-        public static string Register_Issues_RegisterDeactivatedForVersion {
-            get {
-                return ResourceManager.GetString("Register_Issues_RegisterDeactivatedForVersion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The main field is missing,.
-        /// </summary>
-        public static string Register_Issues_RegisterMainPropertyEmpty {
-            get {
-                return ResourceManager.GetString("Register_Issues_RegisterMainPropertyEmpty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Register or communication error with the server,.
-        /// </summary>
-        public static string Register_Issues_RegisterOrCommunicationError {
-            get {
-                return ResourceManager.GetString("Register_Issues_RegisterOrCommunicationError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Register has an empty or non known property, which is deactivated for that version of the application,.
-        /// </summary>
-        public static string Register_Issues_RegisterPropertyEmpty {
-            get {
-                return ResourceManager.GetString("Register_Issues_RegisterPropertyEmpty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Server error,.
-        /// </summary>
-        public static string Register_Issues_ServerError {
-            get {
-                return ResourceManager.GetString("Register_Issues_ServerError", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User already registred,.
-        /// </summary>
-        public static string Register_Issues_UserAlreadyRegistred {
-            get {
-                return ResourceManager.GetString("Register_Issues_UserAlreadyRegistred", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to User not allowed,.
-        /// </summary>
-        public static string Register_Issues_UserNotAllowed {
-            get {
-                return ResourceManager.GetString("Register_Issues_UserNotAllowed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Value exceeds limit,.
-        /// </summary>
-        public static string Register_Issues_ValueExceedsLimit {
-            get {
-                return ResourceManager.GetString("Register_Issues_ValueExceedsLimit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Value for required field missing,.
-        /// </summary>
-        public static string Register_Issues_ValueForRequiredFieldMissing {
-            get {
-                return ResourceManager.GetString("Register_Issues_ValueForRequiredFieldMissing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Password and password confirmation doesn&apos;t match.
-        /// </summary>
-        public static string Register_PasswordDoesntMatch {
-            get {
-                return ResourceManager.GetString("Register_PasswordDoesntMatch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Thank you for registering an account on OnboxApp. Verify your email at {0} to activate your account, then you can activate this and other computers..
-        /// </summary>
-        public static string Register_ThanksForRegistering {
-            get {
-                return ResourceManager.GetString("Register_ThanksForRegistering", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There is no valid structural beam families loaded on the project. Please, load a least one and try to use this command again..
+        ///   Looks up a localized string similar to There are no valid structural beam families loaded on the project. Please, load a least one and try to use this command again..
         /// </summary>
         public static string RenumberBeams_NoBeamFamilyLoaded {
             get {
@@ -970,7 +457,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There is no valid structural column families loaded on the project. Please, load a least one and try to use this command again..
+        ///   Looks up a localized string similar to There are no valid structural column families loaded on the project. Please, load a least one and try to use this command again..
         /// </summary>
         public static string RenumberColumns_NoColumnFamilyLoaded {
             get {
@@ -979,7 +466,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please before renumbering the columns click on the Guess button or insert the number manually..
+        ///   Looks up a localized string similar to Please, before renumbering the columns click on the &apos;Guess&apos; button or insert the number manually..
         /// </summary>
         public static string RenumberColumns_NoGuess {
             get {
@@ -1168,7 +655,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It was not possible to estabilish a toposurface associated with the pad, please recreate the pad to try again..
+        ///   Looks up a localized string similar to It was not possible to establish a toposurface associated with the pad, please recreate the pad to try again..
         /// </summary>
         public static string SlopeGradingFromPads_NoTopoAssociate {
             get {
@@ -1290,6 +777,60 @@ namespace ONBOXAppl.Properties {
         public static string TopoFromPointCloud_Transaction {
             get {
                 return ResourceManager.GetString("TopoFromPointCloud_Transaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Slope Grading.
+        /// </summary>
+        public static string Toposolid_SlopeGrading_Create {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error finding the outer bounds of the floor. Please try to simplify the floor geometry and try again..
+        /// </summary>
+        public static string Toposolid_SlopeGrading_ErrorFindingEdges {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_ErrorFindingEdges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error sorting floor bound edges. Please try to simplify the floor geometry and try again..
+        /// </summary>
+        public static string Toposolid_SlopeGrading_ErrorSortingEdges {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_ErrorSortingEdges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error stabilishing floor edges. Please try to simplify the floor geometry and try again..
+        /// </summary>
+        public static string Toposolid_SlopeGrading_NoFloorEdges {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_NoFloorEdges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not find any Topo Solid in the project. Please create at least one Topo Solid to use this tool..
+        /// </summary>
+        public static string Toposolid_SlopeGrading_NoTopoSolid {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_NoTopoSolid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please pick a floor above or below a Topo Solid..
+        /// </summary>
+        public static string Toposolid_SlopeGrading_PickFloor {
+            get {
+                return ResourceManager.GetString("Toposolid_SlopeGrading_PickFloor", resourceCulture);
             }
         }
     }

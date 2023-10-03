@@ -37,7 +37,7 @@ namespace ONBOXAppl
         {
             if (ONBOXApplication.isRegister)
             {
-                MessageBoxResult warning = MessageBox.Show(Properties.Messages.About_LicenseConfirm, Properties.Messages.Common_Warning, MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                MessageBoxResult warning = MessageBox.Show("", Properties.Messages.Common_Warning, MessageBoxButton.OKCancel, MessageBoxImage.Warning);
                 if (warning == MessageBoxResult.OK)
                 {
                     try
