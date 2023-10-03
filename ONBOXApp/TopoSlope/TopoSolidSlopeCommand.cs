@@ -1,14 +1,14 @@
-﻿using System;
+﻿#if R2024
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Controls;
-using System.Windows.Forms;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.DB.IFC;
-using Autodesk.Revit.DB.Structure;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
+
 
 namespace ONBOXAppl
 {
@@ -150,7 +150,7 @@ namespace ONBOXAppl
 
                     tempGroup.RollBack();
                 }
-            } 
+            }
             else
             {
                 GeometryObject currentFaceObj = floor.GetGeometryObjectFromReference(topFacesReferences[0]);
@@ -189,9 +189,9 @@ namespace ONBOXAppl
 
     public class ElementRayIntersectorResult
     {
-        public bool Success { get; set; }   
+        public bool Success { get; set; }
         public ReferenceWithContext Context { get; set; }
-        public XYZ HitPoint { get; set; }    
+        public XYZ HitPoint { get; set; }
     }
 
     public class ElementRayIntersector
@@ -210,7 +210,7 @@ namespace ONBOXAppl
             var result = new ElementRayIntersectorResult();
             var refPoint = new XYZ(point.X, point.Y, this.rayHeight);
             var refResult = refIntersector.FindNearest(refPoint, this.direction);
-            
+
             if (refResult != null)
             {
                 result.Success = true;
@@ -293,8 +293,8 @@ namespace ONBOXAppl
             }
 
             //var topoSolidFilter = new TypeSelectionFilter<Toposolid>();
-            //Toposolid toposolid = null;
-            //if (!this.PickOrGetSelectedElement(uidoc, topoSolidFilter, "Pick a topoSolid", out message, out toposolid))
+            //Toposolid topoSolid = null;
+            //if (!this.PickOrGetSelectedElement(uidoc, topoSolidFilter, "Pick a topoSolid", out message, out topoSolid))
             //{
             //    return Result.Failed;
             //}
@@ -306,7 +306,8 @@ namespace ONBOXAppl
                 return Result.Failed;
             }
 
-
+            //var stopWatch = new Stopwatch();
+            //stopWatch.Start();
 
             //var topFaces = HostObjectUtils.GetTopFaces(floor);
             //if (topFaces == null || topFaces.Count == 0)
@@ -353,96 +354,101 @@ namespace ONBOXAppl
             }
 
             var outerCuveLoop = CurveLoop.Create(allLines);
+
+
+            //foreach (var curve in outerCuveLoop)
+            //{
+            //    doc.Create.NewDetailCurve(doc.ActiveView, curve);
+            //}
+
+            //foreach (var curve in outerCurveOffset)
+            //{
+            //    doc.Create.NewDetailCurve(doc.ActiveView, curve);
+            //}
+
+            var topoIntersector = new ElementRayIntersector(topoSurfaces.Select(e => e.Id).ToList(), current3dView);
+            var floorIntersector = new ElementRayIntersector(new List<ElementId> { floor.Id }, current3dView);
+            var maxDist = double.NegativeInfinity;
+
+            var outerLoopPoints = new List<(Toposolid, XYZ)>();
+            var offsetOuterLoopPoints = new List<(Toposolid, XYZ)>();
+
+            foreach (var curve in outerCuveLoop)
+            {
+                var point = curve.GetEndPoint(0);
+                var topoResult = topoIntersector.Shoot(point);
+                if (topoResult.Success)
+                {
+                    var floorResult = floorIntersector.Shoot(point);
+                    if (floorResult.Success)
+                    {
+                        var topoSolid = doc.GetElement(topoResult.Context.GetReference().ElementId) as Toposolid;
+                        if (topoSolid.HostTopoId != ElementId.InvalidElementId)
+                        {
+                            var param = topoSolid.GetParameter(new ForgeTypeId("autodesk.revit.parameter:toposolidSubdivideHeignt-1.0.0"));
+                            if (param != null)
+                            {
+                                var zDiff = param.AsDouble();
+                                floorResult.HitPoint = new XYZ(floorResult.HitPoint.X, floorResult.HitPoint.Y, floorResult.HitPoint.Z - zDiff);
+                            }
+                            topoSolid = doc.GetElement(topoSolid.HostTopoId) as Toposolid;
+                        }
+                        outerLoopPoints.Add((topoSolid, floorResult.HitPoint));
+
+                        var currentDist = topoResult.HitPoint.DistanceTo(point);
+                        maxDist = Math.Max(maxDist, currentDist);
+
+                        floorResult.Context.Dispose();
+                    }
+                    topoResult.Context.Dispose();
+                }
+            }
+
+            if (maxDist == double.NegativeInfinity)
+            {
+                message = Properties.Messages.SlopeGradingFromPads_NoTopoAssociate;
+                return Result.Failed;
+            }
+
+            double offsetDist = maxDist / Math.Tan(0.524);
+            if (offsetDist > 0)
+            {
+                var outerCurveOffset = CurveLoop.CreateViaOffset(outerCuveLoop, offsetDist, XYZ.BasisZ);
+                foreach (var curve in outerCurveOffset)
+                {
+                    var topoResult = topoIntersector.Shoot(curve.GetEndPoint(0));
+                    if (topoResult.Success)
+                    {
+                        var topoSolid = doc.GetElement(topoResult.Context.GetReference().ElementId) as Toposolid;
+                        if (topoSolid.HostTopoId != ElementId.InvalidElementId)
+                        {
+                            var param = topoSolid.GetParameter(new ForgeTypeId("autodesk.revit.parameter:toposolidSubdivideHeignt-1.0.0"));
+                            if (param != null)
+                            {
+                                var zDiff = param.AsDouble();
+                                topoResult.HitPoint = new XYZ(topoResult.HitPoint.X, topoResult.HitPoint.Y, topoResult.HitPoint.Z - zDiff);
+                            }
+                            topoSolid = doc.GetElement(topoSolid.HostTopoId) as Toposolid;
+                        }
+
+                        offsetOuterLoopPoints.Add((topoSolid, topoResult.HitPoint));
+                    }
+
+                    topoResult.Context.Dispose();
+                }
+            }
+
             using (var t = new Transaction(doc, "Offset"))
             {
                 t.Start();
 
-                //foreach (var curve in outerCuveLoop)
-                //{
-                //    doc.Create.NewDetailCurve(doc.ActiveView, curve);
-                //}
-
-                //foreach (var curve in outerCurveOffset)
-                //{
-                //    doc.Create.NewDetailCurve(doc.ActiveView, curve);
-                //}
-
-                var topoIntersector = new ElementRayIntersector(topoSurfaces.Select(e => e.Id).ToList(), current3dView);
-                var floorIntersector = new ElementRayIntersector(new List<ElementId> { floor.Id }, current3dView);
-                var maxDist = double.NegativeInfinity;
-
-                var outerLoopPoints = new List<(Toposolid, XYZ)>();
-                var offsetOuterLoopPoints = new List<(Toposolid, XYZ)>();
-
-                foreach (var curve in outerCuveLoop)
-                {
-                    var point = curve.GetEndPoint(0);
-                    var topoResult = topoIntersector.Shoot(point);
-                    if (topoResult.Success)
-                    {
-                        var floorResult = floorIntersector.Shoot(point);
-                        if (floorResult.Success)
-                        {
-                            var topoSolid = doc.GetElement(topoResult.Context.GetReference().ElementId) as Toposolid;
-                            if (topoSolid.HostTopoId != ElementId.InvalidElementId)
-                            {
-                                var param = topoSolid.GetParameter(new ForgeTypeId("autodesk.revit.parameter:toposolidSubdivideHeignt-1.0.0"));
-                                if (param != null)
-                                {
-                                    var zDiff = param.AsDouble();
-                                    floorResult.HitPoint = new XYZ(floorResult.HitPoint.X, floorResult.HitPoint.Y, floorResult.HitPoint.Z - zDiff);
-                                }
-                                topoSolid = doc.GetElement(topoSolid.HostTopoId) as Toposolid;
-                            }
-                            outerLoopPoints.Add((topoSolid, floorResult.HitPoint));
-
-                            var currentDist = topoResult.HitPoint.DistanceTo(point);
-                            maxDist = Math.Max(maxDist, currentDist);
-
-                            floorResult.Context.Dispose();
-                        }
-                        topoResult.Context.Dispose();
-                    }
-                }
-
-                if (maxDist == double.NegativeInfinity)
-                {
-                    message = Properties.Messages.SlopeGradingFromPads_NoTopoAssociate;
-                    return Result.Failed;
-                }
-
-                double offsetDist = maxDist / Math.Tan(0.524);
-                if (offsetDist > 0)
-                {
-                    var outerCurveOffset = CurveLoop.CreateViaOffset(outerCuveLoop, offsetDist, XYZ.BasisZ);
-                    foreach (var curve in outerCurveOffset)
-                    {
-                        var topoResult = topoIntersector.Shoot(curve.GetEndPoint(0));
-                        if (topoResult.Success)
-                        {
-                            var topoSolid = doc.GetElement(topoResult.Context.GetReference().ElementId) as Toposolid;
-                            if (topoSolid.HostTopoId != ElementId.InvalidElementId)
-                            {
-                                var param = topoSolid.GetParameter(new ForgeTypeId("autodesk.revit.parameter:toposolidSubdivideHeignt-1.0.0"));
-                                if (param != null)
-                                {
-                                    var zDiff = param.AsDouble();
-                                    topoResult.HitPoint = new XYZ(topoResult.HitPoint.X, topoResult.HitPoint.Y, topoResult.HitPoint.Z - zDiff);
-                                }
-                                topoSolid = doc.GetElement(topoSolid.HostTopoId) as Toposolid;
-                            }
-
-                            offsetOuterLoopPoints.Add((topoSolid, topoResult.HitPoint));
-                        }
-
-                        topoResult.Context.Dispose();
-                    }
-                }
-
+                var topoSolids = new HashSet<Toposolid>();
                 foreach (var tuple in outerLoopPoints)
                 {
                     var topoSolid = tuple.Item1;
                     var point = tuple.Item2;
+
+                    topoSolids.Add(topoSolid);
 
                     topoSolid.GetSlabShapeEditor().DrawPoint(point);
                 }
@@ -452,13 +458,32 @@ namespace ONBOXAppl
                     var topoSolid = tuple.Item1;
                     var point = tuple.Item2;
 
+                    topoSolids.Add(topoSolid);
+
                     topoSolid.GetSlabShapeEditor().DrawPoint(point);
+                }
+
+                foreach (var toposolid in topoSolids)
+                {
+                    try
+                    {
+                        if (!JoinGeometryUtils.AreElementsJoined(doc, floor, toposolid))
+                        {
+                            JoinGeometryUtils.JoinGeometry(doc, floor, toposolid);
+                        }
+                    }
+                    catch{}
                 }
 
                 t.Commit();
             }
 
+            //stopWatch.Stop();
+            //TaskDialog.Show("Time", stopWatch.ElapsedMilliseconds.ToString());
+
             return Result.Succeeded;
         }
     }
 }
+
+#endif

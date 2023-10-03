@@ -235,11 +235,15 @@ namespace ONBOXAppl
             PushButton btnCreateTopoFromPointCloud = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SurfaceByPointCloud, Properties.RibbonLanguage.Topography_SurfaceByPointCloud.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoFromPointCloudAdvanced")) as PushButton;
             btnCreateTopoFromPointCloud.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateTopoFromPointCloud));
             //PushButton btnCreateTopoFromDwgMarks = panelTopo.AddItem(new PushButtonData("  Topografia por CAD planimétrico  ", "  Topografia por \n  planimetria  ", dll, "ONBOXAppl.TopoFromDwgMarks")) as PushButton;
+
+#if !R2024
             PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SlopeByPads, Properties.RibbonLanguage.Topography_SlopeByPads.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSlopes")) as PushButton;
             btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnTopoSlope));
-            
-            PushButton btnTopoEdit = panelTopo.AddItem(new PushButtonData("TopoSolidGradingCommand", "TopoSolidGradingCommand", dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
-
+#else
+            //PushButton btnTopoEdit = panelTopo.AddItem(new PushButtonData("TopoSolidGradingCommand", "TopoSolidGradingCommand", dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
+            PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_SlopeByPads, Properties.RibbonLanguage.Topography_SlopeByPads.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
+            btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnTopoSlope));
+#endif
             PushButton btnRevitZip = panelManage.AddItem(new PushButtonData(Properties.RibbonLanguage.Manage_PackageProject, Properties.RibbonLanguage.Manage_PackageProject.Replace("\\n", "\n"), dll, "ONBOXAppl.RevitZip")) as PushButton;
             btnRevitZip.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRevitZip));
 
