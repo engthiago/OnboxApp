@@ -29,7 +29,7 @@ namespace ONBOXAppl
 
         public bool AllowReference(Reference reference, XYZ position)
         {
-            return false;
+            return true;
         }
     }
 }

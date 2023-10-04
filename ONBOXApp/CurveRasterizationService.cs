@@ -83,6 +83,18 @@ namespace ONBOXAppl
 
             return lines;
         }
+
+        public List<Line> RasterizeByType(Curve curve, double maxSpacing)
+        {
+            if (curve is HermiteSpline || curve is NurbSpline)
+            {
+                return this.RasterizeByTesselation(curve, maxSpacing * 0.5);
+            }
+            else
+            {
+                return this.RasterizeByParameter(curve, maxSpacing);
+            }
+        }
     }
 }
 

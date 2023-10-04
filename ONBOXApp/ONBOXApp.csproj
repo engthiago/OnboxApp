@@ -419,6 +419,7 @@
     <Compile Include="ElementRayIntersectorResult.cs" />
     <Compile Include="TopoSlope\BoundsService.cs" />
     <Compile Include="TopoSlope\FindBoundsResult.cs" />
+    <Compile Include="TopoSlope\RetainingWallCommand.cs" />
     <Compile Include="TopoSlope\TopoSlopes.cs" />
     <Compile Include="TopoSlope\TopoSlopesUI.xaml.cs">
       <DependentUpon>TopoSlopesUI.xaml</DependentUpon>
