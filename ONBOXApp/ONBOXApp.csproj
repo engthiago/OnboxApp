@@ -401,6 +401,7 @@
     <Compile Include="RevitZip\RevitZipUI.xaml.cs">
       <DependentUpon>RevitZipUI.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SelectionUtils.cs" />
     <Compile Include="Storage.cs" />
     <Compile Include="TopoEdit\Canvas.xaml.cs">
       <DependentUpon>Canvas.xaml</DependentUpon>
@@ -413,11 +414,17 @@
     <Compile Include="TopoFromPointCloud\TopoPointCloudUIAdvanced.xaml.cs">
       <DependentUpon>TopoPointCloudUIAdvanced.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CurveRasterizationService.cs" />
+    <Compile Include="ElementRayIntersector.cs" />
+    <Compile Include="ElementRayIntersectorResult.cs" />
+    <Compile Include="TopoSlope\BoundsService.cs" />
+    <Compile Include="TopoSlope\FindBoundsResult.cs" />
     <Compile Include="TopoSlope\TopoSlopes.cs" />
     <Compile Include="TopoSlope\TopoSlopesUI.xaml.cs">
       <DependentUpon>TopoSlopesUI.xaml</DependentUpon>
     </Compile>
     <Compile Include="TopoSlope\TopoSolidSlopeCommand.cs" />
+    <Compile Include="TypeSelectionFilter.cs" />
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Properties\HelpLinks.pt-BR.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

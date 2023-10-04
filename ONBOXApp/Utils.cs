@@ -1,18 +1,12 @@
 ﻿using System;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using Autodesk.Revit.UI.Selection;
 using System.Collections.Generic;
-using Autodesk.Revit.Attributes;
-using Autodesk.Revit.ApplicationServices;
 using System.Linq;
 using ONBOXAppl;
-using System.Windows.Controls;
-using System.Windows;
 
 namespace Utils
 {
-
     public class beamFailureHandler : IFailuresPreprocessor
     {
         public FailureProcessingResult PreprocessFailures(FailuresAccessor failAcess)
