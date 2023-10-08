@@ -1,4 +1,5 @@
-﻿using Autodesk.Revit.Attributes;
+﻿#if R2024
+using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using ONBOXAppl.Properties;
@@ -198,3 +199,5 @@ namespace ONBOXAppl
         }
     }
 }
+
+#endif

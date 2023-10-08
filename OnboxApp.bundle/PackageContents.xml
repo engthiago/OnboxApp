@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="OnboxApp" AppVersion="1.1.5.0" Description="It is a collection of macros to improve and speed up workflows for multi-story buildings," Author="ONBOX" OnlineDocumentation="http://onboxdesign.com.br/" UpgradeCode="{0BCA6E77-D1C7-46B2-9B04-EF127F2AE065}" ProductCode="{D05C8FDA-2D50-4F03-9B4B-16B58B227812}" FriendlyVersion="1.1.3.0" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/help_en.html" Icon="./Contents/Resources/Icon.bmp" NamePtb="OnboxApp" DescriptionPtb="Foi criado originalmente em 2014 como uma coleção de macros para otimizar fluxos de trabalho em edifícios de múltiplos pavimentos." HelpFilePtb="./Contents/help_pt.html" IconPtb="./Contents/Resources/Icon.bmp">
-  <CompanyDetails Name="ONBOX" Email="contato@onboxdesign.com.br" Url="http://onboxdesign.com.br/" Phone=" " />
-  <RuntimeRequirements OS="Win64" SeriesMin="R2019" SeriesMax="R2023" Platform="Revit" />
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="OnboxApp" AppVersion="1.1.6.0" Description="It is a collection of macros to improve and speed up workflows for multi-story buildings," Author="ONBOX" OnlineDocumentation="http://onboxdesign.com.br/" UpgradeCode="{0BCA6E77-D1C7-46B2-9B04-EF127F2AE065}" ProductCode="{D05C8FDA-2D50-4F03-9B4B-16B58B227812}" FriendlyVersion="1.1.6.0" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/help_en.html" Icon="./Contents/Resources/Icon.bmp" NamePtb="OnboxApp" DescriptionPtb="Foi criado originalmente em 2014 como uma coleção de macros para otimizar fluxos de trabalho em edifícios de múltiplos pavimentos." HelpFilePtb="./Contents/help_pt.html" IconPtb="./Contents/Resources/Icon.bmp">
+  <CompanyDetails Name="ONBOX" Email="support@onboxdesign.com" Url="http://onboxdesign.com/" Phone=" " />
+  <RuntimeRequirements OS="Win64" SeriesMin="R2019" SeriesMax="R2024" Platform="Revit" />
   <Components Description="2019 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />
-    <ComponentEntry AppName="OnboxApp" Version="1.1.5.0" ModuleName="./Contents/2019/ONBOXApp.addin" AppDescription="OnboxApp" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2019/ONBOXApp.addin" AppDescription="OnboxApp" />
   </Components>
   <Components Description="2020 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
-    <ComponentEntry AppName="OnboxApp" Version="1.1.5.0" ModuleName="./Contents/2020/ONBOXApp.addin" AppDescription="OnboxApp" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2020/ONBOXApp.addin" AppDescription="OnboxApp" />
   </Components>
   <Components Description="2021 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2021" SeriesMax="R2021" />
-    <ComponentEntry AppName="OnboxApp" Version="1.1.5.0" ModuleName="./Contents/2021/ONBOXApp.addin" AppDescription="OnboxApp" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2021/ONBOXApp.addin" AppDescription="OnboxApp" />
   </Components>
   <Components Description="2022 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2022" SeriesMax="R2022" />
-    <ComponentEntry AppName="OnboxApp" Version="1.1.5.0" ModuleName="./Contents/2022/ONBOXApp.addin" AppDescription="OnboxApp" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2022/ONBOXApp.addin" AppDescription="OnboxApp" />
   </Components>
   <Components Description="2023 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2023" SeriesMax="R2023" />
-    <ComponentEntry AppName="OnboxApp" Version="1.1.5.0" ModuleName="./Contents/2023/ONBOXApp.addin" AppDescription="OnboxApp" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2023/ONBOXApp.addin" AppDescription="OnboxApp" />
+  </Components>
+    <Components Description="2024 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2024" SeriesMax="R2024" />
+    <ComponentEntry AppName="OnboxApp" Version="1.1.6.0" ModuleName="./Contents/2024/ONBOXApp.addin" AppDescription="OnboxApp" />
   </Components>
 </ApplicationPackage>
