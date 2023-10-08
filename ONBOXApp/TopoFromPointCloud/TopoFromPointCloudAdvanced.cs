@@ -156,7 +156,35 @@ namespace ONBOXAppl
                         return Result.Failed;
                     }
 
+//#if !R2024
+
                     TopographySurface topoSurface = TopographySurface.Create(doc, topographyPointList);
+                    var hostSurfaceId = topoSurface.Id;
+
+//#endif
+//                    var levels = new FilteredElementCollector(doc)
+//                        .OfCategory(BuiltInCategory.OST_Levels)
+//                        .WhereElementIsNotElementType()
+//                        .Cast<Level>()
+//                        .OrderBy(l => l.Elevation);
+
+//                    var closestLevelTo0Id = ElementId.InvalidElementId;
+//                    foreach (var level in levels)
+//                    {
+//                        closestLevelTo0Id = level.Id;
+//                        if (level.Elevation > 0)
+//                        {
+//                            break;
+//                        }
+//                    }
+
+//                    var topoTypeId = new FilteredElementCollector(doc)
+//                        .OfCategory(BuiltInCategory.OST_Toposolid)
+//                        .WhereElementIsElementType()
+//                        .FirstElementId();
+
+
+//                    Toposolid.Create(doc, topographyPointList, topoTypeId, closestLevelTo0Id);
 
                     t.Commit();
                 }
