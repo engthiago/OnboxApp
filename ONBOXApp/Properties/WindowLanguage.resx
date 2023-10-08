@@ -774,7 +774,7 @@ Since OnboxApp was first released in 2015, no emails were sent and we will only 
     <value>Max Slope Angle (Degrees)</value>
   </data>
   <data name="SlopeGrading_MaxDistance" xml:space="preserve">
-    <value>Max Distance Between Points (meters)</value>
+    <value>Max Distance Between Points (Meters)</value>
   </data>
   <data name="SlopeGrading_MultiplePads" xml:space="preserve">
     <value>Multiple Pads</value>

@@ -3,6 +3,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Controls;
+using System.Windows.Forms;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
@@ -38,6 +40,48 @@ namespace ONBOXAppl
                 return Result.Failed;
             }
 
+            //Runs the command
+            try
+            {
+                //UI
+                TopoSlopesUI topoSlopeWindow = new TopoSlopesUI();
+
+                if (topoSlopeWindow.ShowDialog() == false)
+                    return Result.Cancelled;
+
+                double maxPointDistInMeters = topoSlopeWindow.MaxDist;
+                double maxPointDistInFeet = UnitUtils.ConvertToInternalUnits(maxPointDistInMeters, UnitTypeId.Meters);
+                double targetAngle = topoSlopeWindow.Angle;
+                double targetAngleInRadians = UnitUtils.Convert(targetAngle, UnitTypeId.Degrees, UnitTypeId.Radians);
+                bool isContinuous = topoSlopeWindow.IsContinuous;
+
+                bool enterLoop = true;
+                while (enterLoop)
+                {
+                    if (isContinuous == false)
+                        enterLoop = false;
+
+                    if (RunTopoGrading(uidoc, topoSurfaces, ref message, maxPointDistInFeet, targetAngleInRadians) == Result.Failed)
+                    {
+                        return Result.Failed;
+                    }
+                }
+
+            }
+            catch (Exception excep)
+            {
+                ExceptionManager eManager = new ExceptionManager(excep);
+            }
+
+            return Result.Succeeded;
+
+
+        }
+
+        public Result RunTopoGrading(UIDocument uidoc, List<Element> topoSurfaces, ref string message, double maxPointDistInFeet, double targetAngleInRadians)
+        {
+            Document doc = uidoc.Document;
+            View3D current3dView = doc.ActiveView as View3D;
             //var topoSolidFilter = new TypeSelectionFilter<Toposolid>();
             //Toposolid topoSolid = null;
             //if (!this.PickOrGetSelectedElement(uidoc, topoSolidFilter, "Pick a topoSolid", out message, out topoSolid))
@@ -83,7 +127,7 @@ namespace ONBOXAppl
                 return Result.Failed;
             }
 
-            var maxSpacing = 5;
+            var maxSpacing = maxPointDistInFeet;
             var curveRaster = new CurveRasterizationService();
             var allLines = new List<Curve>();
             foreach (var curve in boundResult.OuterBounds)
@@ -157,7 +201,7 @@ namespace ONBOXAppl
                 return Result.Failed;
             }
 
-            double offsetDist = maxDist / Math.Tan(0.524);
+            double offsetDist = maxDist / Math.Tan(targetAngleInRadians);
             if (offsetDist > 0)
             {
                 var outerCurveOffset = CurveLoop.CreateViaOffset(outerCuveLoop, offsetDist, XYZ.BasisZ);
@@ -219,7 +263,7 @@ namespace ONBOXAppl
                             JoinGeometryUtils.JoinGeometry(doc, floor, toposolid);
                         }
                     }
-                    catch{}
+                    catch { }
                 }
 
                 t.Commit();

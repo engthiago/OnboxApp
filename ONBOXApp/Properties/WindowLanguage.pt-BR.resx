@@ -755,7 +755,7 @@ Originalmente criado em 2014 como uma coleção de macros para melhorar e aceler
     <value>Opções de Tipo</value>
   </data>
   <data name="SlopeGrading_MaxAngle" xml:space="preserve">
-    <value>Ângulo de inclinação máxima (graus)</value>
+    <value>Ângulo de inclinação máxima (Graus)</value>
   </data>
   <data name="SlopeGrading_MultiplePads" xml:space="preserve">
     <value>Múltiplas Plataformas</value>
