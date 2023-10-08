@@ -758,7 +758,7 @@ Originalmente criado em 2014 como uma coleção de macros para melhorar e aceler
     <value>Ângulo de inclinação máxima (Graus)</value>
   </data>
   <data name="SlopeGrading_MultiplePads" xml:space="preserve">
-    <value>Múltiplas Plataformas</value>
+    <value>Continuar Criando</value>
   </data>
   <data name="BeamsForBuildingLevelOptions_MatchCase" xml:space="preserve">
     <value>Sensível ao Caso</value>
@@ -780,5 +780,8 @@ Seu e-mail é somente salvo em nosso banco de dados e NUNCA será compartilhado 
 2.	Enviar a você informações sobre eventos ou publicações que o OnboxApp ou seu criador participarão.
 
 Desde quando o OnboxApp foi lançado em 2015, nenhum e-mail foi enviado e nos somente iremos enviar por algum motivo importante, pois nos também odiamos qualquer tipo de spam. Mas se por qualquer motivo, você absolutamente deseja apagar seu e-mail de nosso banco de dados, você pode fazê-lo clicando em “Editar minha Conta” abaixo e seguindo os passos para acessar sua conta.</value>
+  </data>
+  <data name="ToposolidSolidGrading_Title" xml:space="preserve">
+    <value>Talude topográfico por Piso</value>
   </data>
 </root>

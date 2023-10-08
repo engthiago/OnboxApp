@@ -76,6 +76,9 @@ namespace ONBOXAppl
         public TopoSlopesUI()
         {
             InitializeComponent();
+#if R2024
+            this.Title = Properties.WindowLanguage.ToposolidSolidGrading_Title;
+#endif
         }
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)

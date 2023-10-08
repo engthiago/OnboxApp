@@ -777,9 +777,12 @@ Since OnboxApp was first released in 2015, no emails were sent and we will only 
     <value>Max Distance Between Points (Meters)</value>
   </data>
   <data name="SlopeGrading_MultiplePads" xml:space="preserve">
-    <value>Multiple Pads</value>
+    <value>Continue Creation</value>
   </data>
   <data name="SlopeGrading_Title" xml:space="preserve">
     <value>Slope Grading by Pads</value>
+  </data>
+  <data name="ToposolidSolidGrading_Title" xml:space="preserve">
+    <value>Toposolid Grading by Floors</value>
   </data>
 </root>

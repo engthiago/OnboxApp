@@ -2011,7 +2011,7 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Multiple Pads.
+        ///   Looks up a localized string similar to Continue Creation.
         /// </summary>
         public static string SlopeGrading_MultiplePads {
             get {
@@ -2025,6 +2025,15 @@ namespace ONBOXAppl.Properties {
         public static string SlopeGrading_Title {
             get {
                 return ResourceManager.GetString("SlopeGrading_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toposolid Grading by Floors.
+        /// </summary>
+        public static string ToposolidSolidGrading_Title {
+            get {
+                return ResourceManager.GetString("ToposolidSolidGrading_Title", resourceCulture);
             }
         }
     }
