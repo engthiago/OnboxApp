@@ -59,9 +59,14 @@ namespace ONBOXAppl
                     if (isContinuous == false)
                         enterLoop = false;
 
-                    if (RunTopoGrading(uidoc, topoSurfaces, ref message, maxPointDistInFeet, targetAngleInRadians) == Result.Failed)
+                    var result = RunTopoGrading(uidoc, topoSurfaces, ref message, maxPointDistInFeet, targetAngleInRadians);
+                    if (result == Result.Failed)
                     {
-                        return Result.Failed;
+                        return result;
+                    }
+                    if (result == Result.Cancelled) // Cancel Picking
+                    {
+                        return Result.Succeeded;
                     }
                 }
 
