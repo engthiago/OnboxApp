@@ -243,8 +243,8 @@ namespace ONBOXAppl
             PushButton btnTopoSlope = panelTopo.AddItem(new PushButtonData(Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor, Properties.RibbonLanguage.Topography_TopoSolid_SlopeByFloor.Replace("\\n", "\n"), dll, "ONBOXAppl.TopoSolidSlopeCommand")) as PushButton;
             btnTopoSlope.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateToposolidGradingFromFloors));
 
-            PushButton btnTopoWall = panelTopo.AddItem(new PushButtonData("TopographyWall", "Retaining\nWall", dll, "ONBOXAppl.RetainingWallCommand")) as PushButton;
-            btnTopoWall.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateToposolidGradingFromFloors));
+            //PushButton btnTopoWall = panelTopo.AddItem(new PushButtonData("TopographyWall", "Retaining\nWall", dll, "ONBOXAppl.RetainingWallCommand")) as PushButton;
+            //btnTopoWall.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnCreateToposolidGradingFromFloors));
 #endif
             PushButton btnRevitZip = panelManage.AddItem(new PushButtonData(Properties.RibbonLanguage.Manage_PackageProject, Properties.RibbonLanguage.Manage_PackageProject.Replace("\\n", "\n"), dll, "ONBOXAppl.RevitZip")) as PushButton;
             btnRevitZip.SetContextualHelp(new ContextualHelp(ContextualHelpType.Url, Properties.HelpLinks.btnRevitZip));
