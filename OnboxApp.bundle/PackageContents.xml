@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="OnboxApp" AppVersion="1.1.6.0" Description="It is a collection of macros to improve and speed up workflows for multi-story buildings," Author="ONBOX" OnlineDocumentation="http://onboxdesign.com.br/" UpgradeCode="{0BCA6E77-D1C7-46B2-9B04-EF127F2AE065}" ProductCode="{D05C8FDA-2D50-4F03-9B4B-16B58B227812}" FriendlyVersion="1.1.6.0" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" HelpFile="./Contents/help_en.html" Icon="./Contents/Resources/Icon.bmp" NamePtb="OnboxApp" DescriptionPtb="Foi criado originalmente em 2014 como uma coleção de macros para otimizar fluxos de trabalho em edifícios de múltiplos pavimentos." HelpFilePtb="./Contents/help_pt.html" IconPtb="./Contents/Resources/Icon.bmp">
-  <CompanyDetails Name="ONBOX" Email="support@onboxdesign.com" Url="http://onboxdesign.com/" Phone=" " />
+  <CompanyDetails Name="ONBOX" Email="support@onboxdesign.com" Url="http://onboxdesign.com/"/>
   <RuntimeRequirements OS="Win64" SeriesMin="R2019" SeriesMax="R2024" Platform="Revit" />
   <Components Description="2019 parts">
     <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019" />

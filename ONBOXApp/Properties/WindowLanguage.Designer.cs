@@ -1100,9 +1100,9 @@ namespace ONBOXAppl.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OnboxApp only stores your email from a notification system that the Autodesk Exchange App Store sends to it when you download the application. This is the only instance where we have any identification of who is the using the application though, after download and installation, NO tracking of any type is used, not even for diagnostics or statistics.  The exact source code that you can audit on https://github.com/engthiago/OnboxApp is the one deployed to your computer.
+        ///   Looks up a localized string similar to Our team only have access to your email through the notification system from Autodesk Exchange App Store which stores it when you download the application. This is the only instance where we have any identification of who is the using the application though, after download and installation, NO tracking of any type is used, not even for diagnostics or statistics.  The exact source code that you can audit on https://github.com/engthiago/OnboxApp is the one deployed to your computer.
         ///
-        ///Your email is only stored in our own [rest of string was truncated]&quot;;.
+        ///Your email will Never b [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Privacy_Information {
             get {
